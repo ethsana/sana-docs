@@ -490,7 +490,7 @@ SWAP ethereum blockchain endpoint. Must be equipped with websockets.
 
 Send tracing spans to the tracing service. More information how to
 configure and visualize tracing data is available
-[here](/docs/bee-developers/useful-dev-info#tracing).
+[here](/docs/ant-developers/useful-dev-info#tracing).
 
 #### --tracing-endpoint
 

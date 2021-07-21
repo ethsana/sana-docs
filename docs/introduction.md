@@ -46,7 +46,7 @@ and accessibility, Bee provides high level constructs for file
 storage, feeds and key-value stores, while also providing the low
 level access with libraries that create Single Owner and Trojan chunks
 clientside, with total e2e privacy. Learn more about how to [develop
-on Swarm](/docs/dapps-on-swarm/introduction).
+on Swarm](/docs/dapps-on-sana/introduction).
 
 ## Incentives
 

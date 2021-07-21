@@ -142,7 +142,7 @@ Now, when we distribute links to our files, we must also specify the
 first two bytes of our overlay address as the *target*. If a chunk
 that has already been garbage collected by its storer nodes is
 requested, the storer node will send a message using
-[PSS](/docs/dapps-on-swarm/pss) to the swarm neighbourhood defined by
+[PSS](/docs/dapps-on-sana/pss) to the swarm neighbourhood defined by
 this prefix, of which our node is a member.
 
 Let's use the addresses API endpoint to find out our target prefix:

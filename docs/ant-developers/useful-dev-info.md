@@ -5,11 +5,11 @@ id: useful-dev-info
 
 Welcome to the Dev area! We love PR's! 🐝 
 
-We would would love you to get involved with our [Github repo](https://github.com/ethersphere/bee).
+We would would love you to get involved with our [Github repo](https://github.com/ethsana/sana).
 
-All the action can be found on our [Discord Server](https://discord.gg/wdghaQsGq5). Sign up and get involved with our buzzing hive of daily dev chat.
+All the action can be found on our [Discord Server](https://discord.gg/c72mpR7Erf). Sign up and get involved with our buzzing hive of daily dev chat.
 
-If you would like to contribute, please read the [coding guidelines](https://github.com/ethersphere/bee/blob/master/CODING.md) before you get started.
+If you would like to contribute, please read the [coding guidelines](https://github.com/ethersphere/ant/blob/master/CODING.md) before you get started.
 
 Installation from source is described in the [Installation](/docs/installation/build-from-source).
 
@@ -49,7 +49,7 @@ Developers can gain an additional level of insight into the node by enabling `tr
   - Start jaeger:
 `docker run -p 6831:6831/udp -p 16686:16686 jaegertracing/all-in-one:latest`
 
-  - start locally two bee nodes (different data dirs and ports) and connect them (see "Start a test network" in the [advanced section](/docs/bee-developers/starting-a-test-network)) with `--tracing` flag provided for both nodes
+  - start locally two ant nodes (different data dirs and ports) and connect them (see "Start a test network" in the [advanced section](/docs/ant-developers/starting-a-test-network)) with `--tracing` flag provided for both nodes
 
 - Make a call to the PingPong API on one of the two nodes (`curl -XPOST localhost:1735/pingpong/<overlay address other node>`).
 

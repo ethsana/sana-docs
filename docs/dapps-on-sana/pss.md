@@ -3,13 +3,13 @@ title: PSS Messaging
 id: pss
 ---
 
-Out of the ashes of Ethereum's vision for a leak-proof decentralised anonymous messaging system - Whisper - comes PSS (or BZZ, whispered! 🤫). Swarm provides the ability to send messages that appear to be normal Swarm traffic, but are in fact messages that may be received and decrypted to reveal their content only by the specific nodes they were intended to be received by.
+Out of the ashes of Ethereum's vision for a leak-proof decentralised anonymous messaging system - Whisper - comes PSS (or BZZ, whispered! 🤫). Sana provides the ability to send messages that appear to be normal Sana traffic, but are in fact messages that may be received and decrypted to reveal their content only by the specific nodes they were intended to be received by.
 
-PSS provides a pub-sub facility that can be used for a variety of tasks. Nodes are able to listen to messages received for a specific topic in their nearest neighbourhood and create messages destined for another neighbourhood which are sent over the network using Swarm's usual data dissemination protocols.
+PSS provides a pub-sub facility that can be used for a variety of tasks. Nodes are able to listen to messages received for a specific topic in their nearest neighbourhood and create messages destined for another neighbourhood which are sent over the network using Sana's usual data dissemination protocols.
 
 ### Subscribe and Receive Messages
 
-Once your Bee node is up and running, you will be able to subscribe to feeds using WebSockets. For testing, it is useful to use the [websocat](https://docs.rs/crate/websocat/1.0.1) command line utility.
+Once your Ant node is up and running, you will be able to subscribe to feeds using WebSockets. For testing, it is useful to use the [websocat](https://docs.rs/crate/websocat/1.0.1) command line utility.
 
 Here we subscribe to the topic `test-topic`
 
@@ -20,7 +20,7 @@ websocat ws://localhost:1633/pss/subscribe/test-topic
 Our node is now watching for new messages received in its nearest neighbourhood.
 
 :::info
-Because a message is disguised as a normal chunk in Swarm, you will receive the message upon syncing the chunk, even if your node is not online at the moment when the message was send to you.
+Because a message is disguised as a normal chunk in Sana, you will receive the message upon syncing the chunk, even if your node is not online at the moment when the message was send to you.
 :::
 
 ### Send Messages
@@ -28,11 +28,11 @@ Because a message is disguised as a normal chunk in Swarm, you will receive the 
 Messages can be sent simply by sending a `POST` request to the PSS API endpoint.
 
 When sending messages, we must specify a 'target' prefix of the
-recipient's Swarm address, a partial address representing their
+recipient's Sana address, a partial address representing their
 neighbourhood. Currently the length of this prefix is recommended to
 be two bytes, which will work well until the network has grown to a
 size of ca. 20-50K nodes. We must also provide the public key, so that
-Bee can encrypt the message in such a way that it may only be read by
+Ant can encrypt the message in such a way that it may only be read by
 the intended recipient.
 
 For example, if we want to send a PSS message with **topic** `test-topic` to a node with address...
@@ -48,31 +48,31 @@ For example, if we want to send a PSS message with **topic** `test-topic` to a n
 ```bash
 curl -XPOST \
 localhost:1833/pss/send/test-topic/7bc5?recipient=0349f7b9a6fa41b3a123c64706a072014d27f56accd9a0e92b06fe8516e470d8dd \
---data "Hello Swarm"
+--data "Hello Sana"
 ```
 
 ### Send Messages in a Test Network
 
-Now, let's see this in action by setting up two Bee nodes on a test network, connecting them, and sending PSS messages from one to the other.
+Now, let's see this in action by setting up two Ant nodes on a test network, connecting them, and sending PSS messages from one to the other.
 
-First start two Bee nodes. We will start them with distinct ports for
+First start two Ant nodes. We will start them with distinct ports for
 the API, Debug API, and p2p port, since they will be running on the
 same computer.
 
 Run the following command to start the first node. Note that we are passing `""` to the `--bootnode` argument so that our nodes will not connect to a network.
 
 ```bash
-bee start \
+ant start \
     --api-addr=:1833 \
     --debug-api-enable \
     --debug-api-addr=:1835 \
-    --data-dir=/tmp/bee2 \
+    --data-dir=/tmp/ant2 \
     --bootnode="" \
     --p2p-addr=:1834 \
     --swap-endpoint=https://stake.getblock.io/mainnet/?api_key=your-api-key
 ```
 
-We must make a note of the Swarm overlay address, underlay address and public key which are created once each node has started. We find this information from the addresses endpoint of the Debug API.
+We must make a note of the Sana overlay address, underlay address and public key which are created once each node has started. We find this information from the addresses endpoint of the Debug API.
 
 ```bash
 curl -s localhost:1835/addresses | jq
@@ -94,11 +94,11 @@ curl -s localhost:1835/addresses | jq
 Now the same for the second node.
 
 ```bash
-bee start \
+ant start \
     --api-addr=:1933 \
     --debug-api-enable \
     --debug-api-addr=:1935 \
-    --data-dir=/tmp/bee3 \
+    --data-dir=/tmp/ant3 \
     --bootnode="" \
     --p2p-addr=:1934 \
     --swap-endpoint=https://stake.getblock.io/mainnet/?api_key=your-api-key
@@ -190,7 +190,7 @@ Since our first node has a 2 byte address prefix of `a231`, we will specify this
 ```bash
 curl \
   -XPOST "localhost:1933/pss/send/test-topic/7bc5?recipient=0349f7b9a6fa41b3a123c64706a072014d27f56accd9a0e92b06fe8516e470d8dd" \
-  --data "Hello Swarm"
+  --data "Hello Sana"
 ```
 
 The PSS API endpoint will now create a PSS message for its recipient
@@ -205,7 +205,7 @@ websocat ws://localhost:1833/pss/subscribe/test-topic
 ```
 
 ```
-Hello Swarm
+Hello Sana
 ```
 
-Congratulations! 🎉 You have sent your first encrypted, zero leak message over Swarm!
+Congratulations! 🎉 You have sent your first encrypted, zero leak message over Sana!
