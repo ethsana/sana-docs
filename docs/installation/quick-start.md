@@ -12,7 +12,7 @@ Ant is a versatile piece of software that caters for a diverse array of use case
 
 If you want to interact with the Ant ecosystem in a decentralised way,
 but not earn SANA by storing or forwarding chunks, simply run a Ant
-[light node](/docs/access-the-sana/light-nodes) in the background on
+light node in the background on
 your laptop or desktop computer. This will enable direct access to the
 sana from your web browser and other applications.
 
@@ -20,9 +20,9 @@ sana from your web browser and other applications.
 
 ### Support the Network and Earn SANA by Running a Full Node
 
-Earn [SANA](/docs/working-with-ant/cashing-out) and help keep the sana
+Earn SANA and help keep the sana
 strong by running your own **full node**. It's easy to set up your own
-Ant on a [Raspberry Pi](/docs/installation/rasp-bee-ry-pi), cloud
+Ant on a Raspberry Pi, cloud
 host, or any home computer that's connected to the internet.
 
 [Install Ant](/docs/installation/install)

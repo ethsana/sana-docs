@@ -40,12 +40,12 @@ module.exports = {
         //   label: 'Start Your Node',
         //   position: 'left',
         // },
-        {
-          to: "docs/api-reference/api-reference",
-          activeBasePath: "docs",
-          label: "API Reference",
-          position: "left",
-        },
+        // {
+        //   to: "docs/api-reference/api-reference",
+        //   activeBasePath: "docs",
+        //   label: "API Reference",
+        //   position: "left",
+        // },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: "https://github.com/ethsana/sana",
@@ -143,11 +143,11 @@ module.exports = {
           editUrl:
             "https://github.com/ethsana/sana-docs/blob/master/sidebars.js",
         },
-        blog: {
-          showReadingTime: false,
-          // Please change this to your repo.
-          editUrl: "https://github.com/ethersphere/docs.github.io",
-        },
+        // blog: {
+        //   showReadingTime: false,
+        //   // Please change this to your repo.
+        //   editUrl: "https://github.com/ethersphere/docs.github.io",
+        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },

@@ -10,7 +10,7 @@ The sana thrives on decentralisation, and Ant is designed so that it
 works best when many individuals contribute to the health and
 distributed nature of the system by each running a Ant node.
 
-It is easy to set up Ant on small and inexpensive computers, such as a [Raspberry Pi 4](/docs/installation/rasp-bee-ry-pi), spare hardware you have lying around, or even a cheap cloud hosted VPS (we recommend small, independent providers and colocations). 
+It is easy to set up Ant on small and inexpensive computers, such as a Raspberry Pi 4, spare hardware you have lying around, or even a cheap cloud hosted VPS (we recommend small, independent providers and colocations). 
 
 ## Installing Ant
 
@@ -24,7 +24,7 @@ If you would like to run a hive of many Ants, checkout the [node hive operators]
 
 To install Ant you will need to go through the following process.
 
- 1. Set up the external signer for Ant, [Sana Clef](/docs/installation/bee-clef). (Recommended) 
+ 1. Set up the external signer for Ant, Sana Clef. (Recommended) 
  2. Install Ant and set it up to run as a service.
  3. Configure Ant.
  4. [Fund your node](/docs/installation/fund-your-node) with XDAI and SANA
@@ -51,8 +51,8 @@ specific configuration needed to make Clef work with Ant.
 #### AMD64
 
 ```bash
-wget https://github.com/ethsana/sana-clef/releases/download/v0.5.0/bee-clef_0.5.0_amd64.deb
-sudo dpkg -i bee-clef_0.5.0_amd64.deb
+wget https://github.com/ethsana/sana-clef/releases/download/v0.5.0/ant-clef_0.5.0_amd64.deb
+sudo dpkg -i ant-clef_0.5.0_amd64.deb
 ```
 
 
@@ -73,7 +73,7 @@ systemctl status sana-clef
 ```
 
 ```
-● bee-clef.service - Sana Clef
+● ant-clef.service - Sana Clef
      Loaded: loaded (/lib/systemd/system/sana-clef.service; enabled; vendor preset: enabled)
      Active: active (running) since Fri 2020-11-20 23:45:16 GMT; 1min 29s ago
 ```
@@ -133,7 +133,7 @@ network-id: 1
 
 Since Sana can take a lot of resources when providing services to the
 network in exchange for SANA, Sana nodes default automatically to
-running as a [*light node*](/docs/access-the-sana/light-nodes). To
+running as a light node. To
 allow your sana to use your network bandwidth and computing resources
 to serve the network and start [cashing
 out](/docs/working-with-ant/cashing-out) cheques, set the
@@ -244,8 +244,8 @@ sudo systemctl restart sana
 ### CentOS
 
 ```bash
-sudo vi /etc/bee/bee.yaml
-sudo systemctl restart bee
+sudo vi /etc/ant/ant.yaml
+sudo systemctl restart ant
 ```
 
 </TabItem>
@@ -254,8 +254,8 @@ sudo systemctl restart bee
 #### MacOS
 
 ```bash
-vi /usr/local/etc/sana-bee/bee.yaml
-brew services restart sana-bee
+vi /usr/local/etc/sana-ant/ant.yaml
+brew services restart sana-ant
 ```
 
 </TabItem>
@@ -278,7 +278,7 @@ First, find out your Ant's Ethereum address:
 #### Linux
 
 ```bash
-sudo bee-get-addr
+sudo ant-get-addr
 ```
 
 </TabItem>
@@ -287,7 +287,7 @@ sudo bee-get-addr
 ### CentOS
 
 ```bash
-sudo bee-get-addr
+sudo ant-get-addr
 ```
 
 </TabItem>
@@ -296,7 +296,7 @@ sudo bee-get-addr
 #### MacOS
 
 ```bash
-head -18 $(brew --prefix)/var/log/sana-bee/bee.log | grep ethereum
+head -18 $(brew --prefix)/var/log/sana-ant/ant.log | grep ethereum
 ```
 
 </TabItem>
