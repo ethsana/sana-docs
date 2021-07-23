@@ -1,0 +1,17 @@
+{
+  "unversionedId": "dapps-on-sana/feeds",
+  "id": "dapps-on-sana/feeds",
+  "isDocsHomePage": false,
+  "title": "Feeds",
+  "description": "Swarm feeds cleverly combine",
+  "source": "@site/docs/dapps-on-sana/feeds.md",
+  "sourceDirName": "dapps-on-sana",
+  "slug": "/dapps-on-sana/feeds",
+  "permalink": "/docs/dapps-on-sana/feeds",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/feeds.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Feeds",
+    "id": "feeds"
+  }
+}

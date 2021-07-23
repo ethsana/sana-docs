@@ -1,0 +1,17 @@
+{
+  "unversionedId": "access-the-sana/introduction",
+  "id": "access-the-sana/introduction",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "As well as earning BZZ and supporting the network, Bee is our",
+  "source": "@site/docs/access-the-sana/introduction.md",
+  "sourceDirName": "access-the-sana",
+  "slug": "/access-the-sana/introduction",
+  "permalink": "/docs/access-the-sana/introduction",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/introduction.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Introduction",
+    "id": "introduction"
+  }
+}

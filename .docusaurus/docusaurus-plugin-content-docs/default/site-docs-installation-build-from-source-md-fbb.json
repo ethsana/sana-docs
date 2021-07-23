@@ -1,0 +1,26 @@
+{
+  "unversionedId": "installation/build-from-source",
+  "id": "installation/build-from-source",
+  "isDocsHomePage": false,
+  "title": "Build from Source",
+  "description": "Sana is written using the Go language.",
+  "source": "@site/docs/installation/build-from-source.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/build-from-source",
+  "permalink": "/docs/installation/build-from-source",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/build-from-source.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Build from Source",
+    "id": "build-from-source"
+  },
+  "sidebar": "Balls",
+  "previous": {
+    "title": "Manual Installation",
+    "permalink": "/docs/installation/manual"
+  },
+  "next": {
+    "title": "Hive",
+    "permalink": "/docs/installation/hive"
+  }
+}

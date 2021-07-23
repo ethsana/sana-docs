@@ -1,0 +1,17 @@
+{
+  "unversionedId": "dapps-on-sana/develop-on-ant",
+  "id": "dapps-on-sana/develop-on-ant",
+  "isDocsHomePage": false,
+  "title": "Develop on Ant",
+  "description": "Ant is the first client to work with the Sana network.",
+  "source": "@site/docs/dapps-on-sana/develop-on-ant.md",
+  "sourceDirName": "dapps-on-sana",
+  "slug": "/dapps-on-sana/develop-on-ant",
+  "permalink": "/docs/dapps-on-sana/develop-on-ant",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/develop-on-ant.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Develop on Ant",
+    "id": "develop-on-ant"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "installation/manual",
+  "id": "installation/manual",
+  "isDocsHomePage": false,
+  "title": "Manual Installation",
+  "description": "While it is possible to run Sana without it, we recommend the use of Go Ethereum's Clef external signer. Instructions for installing and integrating this with Sana can be found here.",
+  "source": "@site/docs/installation/manual.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/manual",
+  "permalink": "/docs/installation/manual",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/manual.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Manual Installation",
+    "id": "manual"
+  },
+  "sidebar": "Balls",
+  "previous": {
+    "title": "Install Ant",
+    "permalink": "/docs/installation/install"
+  },
+  "next": {
+    "title": "Build from Source",
+    "permalink": "/docs/installation/build-from-source"
+  }
+}

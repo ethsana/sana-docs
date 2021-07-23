@@ -1,0 +1,17 @@
+{
+  "unversionedId": "working-with-ant/backups",
+  "id": "working-with-ant/backups",
+  "isDocsHomePage": false,
+  "title": "Backups",
+  "description": "In order to ensure you are able to redeploy your Bee node in the event of a disaster, the contents of several directories must be retained.",
+  "source": "@site/docs/working-with-ant/backups.md",
+  "sourceDirName": "working-with-ant",
+  "slug": "/working-with-ant/backups",
+  "permalink": "/docs/working-with-ant/backups",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/backups.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Backups",
+    "id": "backups"
+  }
+}

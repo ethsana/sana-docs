@@ -1,0 +1,26 @@
+{
+  "unversionedId": "installation/install",
+  "id": "installation/install",
+  "isDocsHomePage": false,
+  "title": "Install Ant",
+  "description": "The sana thrives on decentralisation, and Ant is designed so that it",
+  "source": "@site/docs/installation/install.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/install",
+  "permalink": "/docs/installation/install",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/install.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Install Ant",
+    "id": "install"
+  },
+  "sidebar": "Balls",
+  "previous": {
+    "title": "Quick Start",
+    "permalink": "/docs/installation/quick-start"
+  },
+  "next": {
+    "title": "Manual Installation",
+    "permalink": "/docs/installation/manual"
+  }
+}

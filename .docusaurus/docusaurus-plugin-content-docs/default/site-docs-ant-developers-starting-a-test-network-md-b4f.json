@@ -1,0 +1,17 @@
+{
+  "unversionedId": "ant-developers/starting-a-test-network",
+  "id": "ant-developers/starting-a-test-network",
+  "isDocsHomePage": false,
+  "title": "Starting a Test Network",
+  "description": "A test network can be used to test your applications in an isolated environment before you deploy to Sana mainnet. It can be started by overriding the default configuration values of your Sana node. Throughout this tutorial, we will make use of configuration files to configure the nodes but of course you can also do the same using flags or environment variables (see Start your node).",
+  "source": "@site/docs/ant-developers/starting-a-test-network.md",
+  "sourceDirName": "ant-developers",
+  "slug": "/ant-developers/starting-a-test-network",
+  "permalink": "/docs/ant-developers/starting-a-test-network",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/ant-developers/starting-a-test-network.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Starting a Test Network",
+    "id": "starting-a-test-network"
+  }
+}

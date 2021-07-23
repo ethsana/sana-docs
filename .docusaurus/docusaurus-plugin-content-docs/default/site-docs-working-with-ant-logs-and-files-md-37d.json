@@ -1,0 +1,17 @@
+{
+  "unversionedId": "working-with-ant/logs-and-files",
+  "id": "working-with-ant/logs-and-files",
+  "isDocsHomePage": false,
+  "title": "Logs and Files",
+  "description": "Linux",
+  "source": "@site/docs/working-with-ant/logs-and-files.md",
+  "sourceDirName": "working-with-ant",
+  "slug": "/working-with-ant/logs-and-files",
+  "permalink": "/docs/working-with-ant/logs-and-files",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/logs-and-files.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Logs and Files",
+    "id": "logs-and-files"
+  }
+}

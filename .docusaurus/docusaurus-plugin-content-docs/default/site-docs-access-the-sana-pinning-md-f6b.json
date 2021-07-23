@@ -1,0 +1,17 @@
+{
+  "unversionedId": "access-the-sana/pinning",
+  "id": "access-the-sana/pinning",
+  "isDocsHomePage": false,
+  "title": "Pinning",
+  "description": "Each Ant node is configured to reserve a certain amount of memory on your computer's hard drive to store and serve chunks within their neighbourhood of responsibility for other nodes in the Sana network. Once this alloted space has been filled, each Ant node deletes older chunks to make way for newer ones as they are uploaded by the network.",
+  "source": "@site/docs/access-the-sana/pinning.md",
+  "sourceDirName": "access-the-sana",
+  "slug": "/access-the-sana/pinning",
+  "permalink": "/docs/access-the-sana/pinning",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/pinning.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Pinning",
+    "id": "pinning"
+  }
+}

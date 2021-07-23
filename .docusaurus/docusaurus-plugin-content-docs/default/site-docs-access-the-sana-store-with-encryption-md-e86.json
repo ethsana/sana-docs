@@ -1,0 +1,17 @@
+{
+  "unversionedId": "access-the-sana/store-with-encryption",
+  "id": "access-the-sana/store-with-encryption",
+  "isDocsHomePage": false,
+  "title": "Store with Encryption",
+  "description": "In Sana, all data is public by default. To protect sensitive content, it must be encrypted so that only authorised users are able to decrypt and then view the plaintext content.",
+  "source": "@site/docs/access-the-sana/store-with-encryption.md",
+  "sourceDirName": "access-the-sana",
+  "slug": "/access-the-sana/store-with-encryption",
+  "permalink": "/docs/access-the-sana/store-with-encryption",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/store-with-encryption.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Store with Encryption",
+    "id": "store-with-encryption"
+  }
+}

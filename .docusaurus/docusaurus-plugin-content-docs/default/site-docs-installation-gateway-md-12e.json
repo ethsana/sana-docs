@@ -1,0 +1,17 @@
+{
+  "unversionedId": "installation/gateway",
+  "id": "installation/gateway",
+  "isDocsHomePage": false,
+  "title": "Gateway",
+  "description": "",
+  "source": "@site/docs/installation/gateway.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/gateway",
+  "permalink": "/docs/installation/gateway",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/gateway.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Gateway",
+    "id": "gateway"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "unversionedId": "architecture/architecture",
+  "id": "architecture/architecture",
+  "isDocsHomePage": false,
+  "title": "Architecture",
+  "description": "Developers who want to develop client implementations and others who want to understand the underlying concepts and design of Swarm are invited to read",
+  "source": "@site/docs/architecture/index.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/architecture",
+  "permalink": "/docs/architecture/architecture",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/architecture/index.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Architecture",
+    "id": "architecture"
+  }
+}

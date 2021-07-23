@@ -1,0 +1,26 @@
+{
+  "unversionedId": "installation/hive",
+  "id": "installation/hive",
+  "isDocsHomePage": false,
+  "title": "Hive",
+  "description": "We recommend even our most 1337 readers go through a single installation first to get a taste of Ant, and to understand the nuances of the implementations. 👾",
+  "source": "@site/docs/installation/hive.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/hive",
+  "permalink": "/docs/installation/hive",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/hive.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Hive",
+    "id": "hive"
+  },
+  "sidebar": "Balls",
+  "previous": {
+    "title": "Build from Source",
+    "permalink": "/docs/installation/build-from-source"
+  },
+  "next": {
+    "title": "Fund Your Node",
+    "permalink": "/docs/installation/fund-your-node"
+  }
+}

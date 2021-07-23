@@ -1,0 +1,17 @@
+{
+  "unversionedId": "installation/connectivity",
+  "id": "installation/connectivity",
+  "isDocsHomePage": false,
+  "title": "Connectivity",
+  "description": "To fully connect to the sana, your Sana node needs to be able to both",
+  "source": "@site/docs/installation/connectivity.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/connectivity",
+  "permalink": "/docs/installation/connectivity",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/connectivity.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Connectivity",
+    "id": "connectivity"
+  }
+}

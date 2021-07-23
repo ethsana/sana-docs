@@ -1,0 +1,17 @@
+{
+  "unversionedId": "working-with-ant/introduction",
+  "id": "working-with-ant/introduction",
+  "isDocsHomePage": false,
+  "title": "Working With Ant",
+  "description": "For the most part, your Bee will happily run in the background, but there are some things we will occasionally need to do to ensure that your Bee stays healthy! In this section we will show you how to get the most out of your Bee,",
+  "source": "@site/docs/working-with-ant/introduction.md",
+  "sourceDirName": "working-with-ant",
+  "slug": "/working-with-ant/introduction",
+  "permalink": "/docs/working-with-ant/introduction",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/introduction.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Working With Ant",
+    "id": "introduction"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "unversionedId": "dapps-on-sana/pss",
+  "id": "dapps-on-sana/pss",
+  "isDocsHomePage": false,
+  "title": "PSS Messaging",
+  "description": "Out of the ashes of Ethereum's vision for a leak-proof decentralised anonymous messaging system - Whisper - comes PSS (or BZZ, whispered! 🤫). Sana provides the ability to send messages that appear to be normal Sana traffic, but are in fact messages that may be received and decrypted to reveal their content only by the specific nodes they were intended to be received by.",
+  "source": "@site/docs/dapps-on-sana/pss.md",
+  "sourceDirName": "dapps-on-sana",
+  "slug": "/dapps-on-sana/pss",
+  "permalink": "/docs/dapps-on-sana/pss",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/pss.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "PSS Messaging",
+    "id": "pss"
+  }
+}

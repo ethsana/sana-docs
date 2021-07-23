@@ -1,0 +1,17 @@
+{
+  "unversionedId": "working-with-ant/uninstalling-ant",
+  "id": "working-with-ant/uninstalling-ant",
+  "isDocsHomePage": false,
+  "title": "Uninstalling Ant",
+  "description": "Uninstalling Bee",
+  "source": "@site/docs/working-with-ant/uninstalling-ant.md",
+  "sourceDirName": "working-with-ant",
+  "slug": "/working-with-ant/uninstalling-ant",
+  "permalink": "/docs/working-with-ant/uninstalling-ant",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/uninstalling-ant.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Uninstalling Ant",
+    "id": "uninstalling-ant"
+  }
+}

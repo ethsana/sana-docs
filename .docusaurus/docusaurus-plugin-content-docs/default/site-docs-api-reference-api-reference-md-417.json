@@ -1,0 +1,17 @@
+{
+  "unversionedId": "api-reference/api-reference",
+  "id": "api-reference/api-reference",
+  "isDocsHomePage": false,
+  "title": "API and Debug API",
+  "description": "The Ant node exposes two HTTP API endpoints, the API and the Debug API. These endpoints are the primary interfaces to a running Ant node. API-endpoints can be queried using familiar HTTP requests, and will respond with a semantically accurate HTTP status and error codes as well as data payloads in JSON format where appropriate.",
+  "source": "@site/docs/api-reference/api-reference.md",
+  "sourceDirName": "api-reference",
+  "slug": "/api-reference/api-reference",
+  "permalink": "/docs/api-reference/api-reference",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/api-reference/api-reference.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "API and Debug API",
+    "id": "api-reference"
+  }
+}

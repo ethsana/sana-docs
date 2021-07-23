@@ -1,0 +1,26 @@
+{
+  "unversionedId": "installation/quick-start",
+  "id": "installation/quick-start",
+  "isDocsHomePage": false,
+  "title": "Quick Start",
+  "description": "Ant is a versatile piece of software that caters for a diverse array of use cases.",
+  "source": "@site/docs/installation/quick-start.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/quick-start",
+  "permalink": "/docs/installation/quick-start",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/quick-start.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Quick Start",
+    "id": "quick-start"
+  },
+  "sidebar": "Balls",
+  "previous": {
+    "title": "Welcome!",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Install Ant",
+    "permalink": "/docs/installation/install"
+  }
+}

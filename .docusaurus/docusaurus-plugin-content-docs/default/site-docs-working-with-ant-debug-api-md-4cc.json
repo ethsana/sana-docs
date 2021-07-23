@@ -1,0 +1,17 @@
+{
+  "unversionedId": "working-with-ant/debug-api",
+  "id": "working-with-ant/debug-api",
+  "isDocsHomePage": false,
+  "title": "Debug API",
+  "description": "Now that you have created your Swarm wallet and your Bee node has",
+  "source": "@site/docs/working-with-ant/debug-api.md",
+  "sourceDirName": "working-with-ant",
+  "slug": "/working-with-ant/debug-api",
+  "permalink": "/docs/working-with-ant/debug-api",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/debug-api.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Debug API",
+    "id": "debug-api"
+  }
+}

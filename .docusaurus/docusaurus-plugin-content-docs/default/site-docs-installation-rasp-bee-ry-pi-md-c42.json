@@ -1,0 +1,26 @@
+{
+  "unversionedId": "installation/rasp-bee-ry-pi",
+  "id": "installation/rasp-bee-ry-pi",
+  "isDocsHomePage": false,
+  "title": "Rasp-bee-ry Pi",
+  "description": "You will need:",
+  "source": "@site/docs/installation/rasp-bee-ry-pi.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/rasp-bee-ry-pi",
+  "permalink": "/docs/installation/rasp-bee-ry-pi",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/rasp-bee-ry-pi.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Rasp-bee-ry Pi",
+    "id": "rasp-bee-ry-pi"
+  },
+  "sidebar": "Balls",
+  "previous": {
+    "title": "Build from Source",
+    "permalink": "/docs/installation/build-from-source"
+  },
+  "next": {
+    "title": "Hive",
+    "permalink": "/docs/installation/hive"
+  }
+}

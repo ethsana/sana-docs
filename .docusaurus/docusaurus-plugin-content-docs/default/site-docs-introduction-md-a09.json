@@ -1,0 +1,23 @@
+{
+  "unversionedId": "introduction",
+  "id": "introduction",
+  "isDocsHomePage": false,
+  "title": "Welcome!",
+  "description": "Hello and welcome to the sana! We are very happy to have you here with us!",
+  "source": "@site/docs/introduction.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/introduction.md",
+  "version": "current",
+  "frontMatter": {
+    "id": "introduction",
+    "title": "Welcome!",
+    "slug": "/"
+  },
+  "sidebar": "Balls",
+  "next": {
+    "title": "Quick Start",
+    "permalink": "/docs/installation/quick-start"
+  }
+}

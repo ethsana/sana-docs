@@ -1,0 +1,217 @@
+{
+  "docusaurus-lunr-search": {
+    "default": {
+      "fileNames": {
+        "searchDoc": "search-doc-1627052042851.json",
+        "lunrIndex": "lunr-index-1627052042851.json"
+      }
+    }
+  },
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "access-the-sana/browse-the-sana",
+              "path": "/docs/access-the-sana/browse-the-sana"
+            },
+            {
+              "id": "access-the-sana/host-your-website",
+              "path": "/docs/access-the-sana/host-your-website"
+            },
+            {
+              "id": "access-the-sana/introduction",
+              "path": "/docs/access-the-sana/introduction"
+            },
+            {
+              "id": "access-the-sana/keep-your-data-alive",
+              "path": "/docs/access-the-sana/keep-your-data-alive"
+            },
+            {
+              "id": "access-the-sana/light-nodes",
+              "path": "/docs/access-the-sana/light-nodes"
+            },
+            {
+              "id": "access-the-sana/pinning",
+              "path": "/docs/access-the-sana/pinning"
+            },
+            {
+              "id": "access-the-sana/store-with-encryption",
+              "path": "/docs/access-the-sana/store-with-encryption"
+            },
+            {
+              "id": "access-the-sana/syncing",
+              "path": "/docs/access-the-sana/syncing"
+            },
+            {
+              "id": "access-the-sana/upload-a-directory",
+              "path": "/docs/access-the-sana/upload-a-directory"
+            },
+            {
+              "id": "access-the-sana/upload-and-download",
+              "path": "/docs/access-the-sana/upload-and-download"
+            },
+            {
+              "id": "ant-developers/starting-a-test-network",
+              "path": "/docs/ant-developers/starting-a-test-network"
+            },
+            {
+              "id": "ant-developers/useful-dev-info",
+              "path": "/docs/ant-developers/useful-dev-info"
+            },
+            {
+              "id": "api-reference/api-reference",
+              "path": "/docs/api-reference/api-reference"
+            },
+            {
+              "id": "architecture/architecture",
+              "path": "/docs/architecture/architecture"
+            },
+            {
+              "id": "community/awesome-swarm",
+              "path": "/docs/community/awesome-swarm"
+            },
+            {
+              "id": "community/community",
+              "path": "/docs/community/community"
+            },
+            {
+              "id": "dapps-on-sana/bee-js",
+              "path": "/docs/dapps-on-sana/bee-js"
+            },
+            {
+              "id": "dapps-on-sana/chunk-types",
+              "path": "/docs/dapps-on-sana/chunk-types"
+            },
+            {
+              "id": "dapps-on-sana/develop-on-ant",
+              "path": "/docs/dapps-on-sana/develop-on-ant"
+            },
+            {
+              "id": "dapps-on-sana/develop-on-bee",
+              "path": "/docs/dapps-on-sana/develop-on-bee"
+            },
+            {
+              "id": "dapps-on-sana/feeds",
+              "path": "/docs/dapps-on-sana/feeds"
+            },
+            {
+              "id": "dapps-on-sana/introduction",
+              "path": "/docs/dapps-on-sana/introduction"
+            },
+            {
+              "id": "dapps-on-sana/pss",
+              "path": "/docs/dapps-on-sana/pss"
+            },
+            {
+              "id": "FAQ",
+              "path": "/docs/FAQ"
+            },
+            {
+              "id": "installation/bee-clef",
+              "path": "/docs/installation/bee-clef"
+            },
+            {
+              "id": "installation/build-from-source",
+              "path": "/docs/installation/build-from-source",
+              "sidebar": "Balls"
+            },
+            {
+              "id": "installation/connectivity",
+              "path": "/docs/installation/connectivity"
+            },
+            {
+              "id": "installation/docker",
+              "path": "/docs/installation/docker"
+            },
+            {
+              "id": "installation/fund-your-node",
+              "path": "/docs/installation/fund-your-node",
+              "sidebar": "Balls"
+            },
+            {
+              "id": "installation/gateway",
+              "path": "/docs/installation/gateway"
+            },
+            {
+              "id": "installation/hive",
+              "path": "/docs/installation/hive",
+              "sidebar": "Balls"
+            },
+            {
+              "id": "installation/install",
+              "path": "/docs/installation/install",
+              "sidebar": "Balls"
+            },
+            {
+              "id": "installation/manual",
+              "path": "/docs/installation/manual",
+              "sidebar": "Balls"
+            },
+            {
+              "id": "installation/quick-start",
+              "path": "/docs/installation/quick-start",
+              "sidebar": "Balls"
+            },
+            {
+              "id": "installation/verify",
+              "path": "/docs/installation/verify"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/",
+              "sidebar": "Balls"
+            },
+            {
+              "id": "working-with-ant/ant-tools",
+              "path": "/docs/working-with-ant/ant-tools"
+            },
+            {
+              "id": "working-with-ant/backups",
+              "path": "/docs/working-with-ant/backups"
+            },
+            {
+              "id": "working-with-ant/cashing-out",
+              "path": "/docs/working-with-ant/cashing-out"
+            },
+            {
+              "id": "working-with-ant/configuration",
+              "path": "/docs/working-with-ant/configuration"
+            },
+            {
+              "id": "working-with-ant/debug-api",
+              "path": "/docs/working-with-ant/debug-api"
+            },
+            {
+              "id": "working-with-ant/introduction",
+              "path": "/docs/working-with-ant/introduction"
+            },
+            {
+              "id": "working-with-ant/logs-and-files",
+              "path": "/docs/working-with-ant/logs-and-files"
+            },
+            {
+              "id": "working-with-ant/monitoring",
+              "path": "/docs/working-with-ant/monitoring"
+            },
+            {
+              "id": "working-with-ant/uninstalling-ant",
+              "path": "/docs/working-with-ant/uninstalling-ant"
+            },
+            {
+              "id": "working-with-ant/upgrade",
+              "path": "/docs/working-with-ant/upgrade"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

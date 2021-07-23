@@ -1,0 +1,1 @@
+(self.webpackChunkant_docs=self.webpackChunkant_docs||[]).push([[4195],{2841:function(e,t,n){"use strict";n.r(t);var c=n(7294),s=n(2263),u=n(5977);t.default=function(){return(0,s.Z)().siteConfig,c.createElement(u.l_,{to:"docs/"})}}}]);

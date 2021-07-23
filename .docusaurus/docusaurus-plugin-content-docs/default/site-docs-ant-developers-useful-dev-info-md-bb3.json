@@ -1,0 +1,17 @@
+{
+  "unversionedId": "ant-developers/useful-dev-info",
+  "id": "ant-developers/useful-dev-info",
+  "isDocsHomePage": false,
+  "title": "Useful Developer Info",
+  "description": "Welcome to the Dev area! We love PR's! 🐝",
+  "source": "@site/docs/ant-developers/useful-dev-info.md",
+  "sourceDirName": "ant-developers",
+  "slug": "/ant-developers/useful-dev-info",
+  "permalink": "/docs/ant-developers/useful-dev-info",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/ant-developers/useful-dev-info.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Useful Developer Info",
+    "id": "useful-dev-info"
+  }
+}

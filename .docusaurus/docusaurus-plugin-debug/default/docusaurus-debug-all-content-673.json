@@ -1,0 +1,927 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "versionEditUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs",
+          "versionEditUrlLocalized": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "E:\\sana\\sana-docs\\sidebars.js",
+          "contentPath": "E:\\sana\\sana-docs\\docs",
+          "contentPathLocalized": "E:\\sana\\sana-docs\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "mainDocId": "introduction",
+          "sidebars": {
+            "Balls": [
+              {
+                "type": "doc",
+                "id": "introduction"
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Installation",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "installation/quick-start"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/install"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/manual"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/build-from-source"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/hive"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/fund-your-node"
+                  }
+                ]
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/installation/build-from-source": "Balls",
+            "/docs/installation/fund-your-node": "Balls",
+            "/docs/installation/hive": "Balls",
+            "/docs/installation/install": "Balls",
+            "/docs/installation/manual": "Balls",
+            "/docs/installation/quick-start": "Balls",
+            "/docs/": "Balls"
+          },
+          "docs": [
+            {
+              "unversionedId": "access-the-sana/browse-the-sana",
+              "id": "access-the-sana/browse-the-sana",
+              "isDocsHomePage": false,
+              "title": "Browse the Sana",
+              "description": "One of Sana's most compelling features in the ability to host unstoppable websites.",
+              "source": "@site/docs/access-the-sana/browse-the-sana.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/browse-the-sana",
+              "permalink": "/docs/access-the-sana/browse-the-sana",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/browse-the-sana.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Browse the Sana",
+                "id": "browse-the-sana"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/host-your-website",
+              "id": "access-the-sana/host-your-website",
+              "isDocsHomePage": false,
+              "title": "Host Your Website on Sana",
+              "description": "Comfortable with nodeJS and JavaScript? Check out swarm-cli, a command line tool you can use to easily interact with your Ant node!",
+              "source": "@site/docs/access-the-sana/host-your-website.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/host-your-website",
+              "permalink": "/docs/access-the-sana/host-your-website",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/host-your-website.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Host Your Website on Sana",
+                "id": "host-your-website"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/introduction",
+              "id": "access-the-sana/introduction",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "As well as earning BZZ and supporting the network, Bee is our",
+              "source": "@site/docs/access-the-sana/introduction.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/introduction",
+              "permalink": "/docs/access-the-sana/introduction",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/introduction.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Introduction",
+                "id": "introduction"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/keep-your-data-alive",
+              "id": "access-the-sana/keep-your-data-alive",
+              "isDocsHomePage": false,
+              "title": "Keep Your Data Alive",
+              "description": "The sana comprises the sum total of all storage space provided by all of our nodes, called the DISC (Distributed Immutable Store of Chunks). The right to write data into this distributed store is determined by the postage stamps that have been attached.",
+              "source": "@site/docs/access-the-sana/keep-your-data-alive.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/keep-your-data-alive",
+              "permalink": "/docs/access-the-sana/keep-your-data-alive",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/keep-your-data-alive.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Keep Your Data Alive",
+                "id": "keep-your-data-alive"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/light-nodes",
+              "id": "access-the-sana/light-nodes",
+              "isDocsHomePage": false,
+              "title": "Light Nodes",
+              "description": "When a light node is requesting data from the network - it will not benefit from plausible deniability. This is because a light node does not forward on behalf of other nodes, and so it is always the originator of the request.",
+              "source": "@site/docs/access-the-sana/light-nodes.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/light-nodes",
+              "permalink": "/docs/access-the-sana/light-nodes",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/light-nodes.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Light Nodes",
+                "id": "light-nodes"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/pinning",
+              "id": "access-the-sana/pinning",
+              "isDocsHomePage": false,
+              "title": "Pinning",
+              "description": "Each Ant node is configured to reserve a certain amount of memory on your computer's hard drive to store and serve chunks within their neighbourhood of responsibility for other nodes in the Sana network. Once this alloted space has been filled, each Ant node deletes older chunks to make way for newer ones as they are uploaded by the network.",
+              "source": "@site/docs/access-the-sana/pinning.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/pinning",
+              "permalink": "/docs/access-the-sana/pinning",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/pinning.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Pinning",
+                "id": "pinning"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/store-with-encryption",
+              "id": "access-the-sana/store-with-encryption",
+              "isDocsHomePage": false,
+              "title": "Store with Encryption",
+              "description": "In Sana, all data is public by default. To protect sensitive content, it must be encrypted so that only authorised users are able to decrypt and then view the plaintext content.",
+              "source": "@site/docs/access-the-sana/store-with-encryption.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/store-with-encryption",
+              "permalink": "/docs/access-the-sana/store-with-encryption",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/store-with-encryption.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Store with Encryption",
+                "id": "store-with-encryption"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/syncing",
+              "id": "access-the-sana/syncing",
+              "isDocsHomePage": false,
+              "title": "Track Upload Status",
+              "description": "When you are uploading data to Sana, it can take some time until this is completed. In order to help you validate whether the upload is completed or to estimate how long it will take, you can use the tags feature.",
+              "source": "@site/docs/access-the-sana/syncing.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/syncing",
+              "permalink": "/docs/access-the-sana/syncing",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/syncing.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Track Upload Status",
+                "id": "syncing"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/upload-a-directory",
+              "id": "access-the-sana/upload-a-directory",
+              "isDocsHomePage": false,
+              "title": "Upload a Directory",
+              "description": "It is possible to use Ant to upload directories of files all at once.",
+              "source": "@site/docs/access-the-sana/upload-a-directory.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/upload-a-directory",
+              "permalink": "/docs/access-the-sana/upload-a-directory",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/upload-a-directory.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Upload a Directory",
+                "id": "upload-a-directory"
+              }
+            },
+            {
+              "unversionedId": "access-the-sana/upload-and-download",
+              "id": "access-the-sana/upload-and-download",
+              "isDocsHomePage": false,
+              "title": "Upload and Download Files",
+              "description": "When you upload your files to the swarm, they are split into 4kb",
+              "source": "@site/docs/access-the-sana/upload-and-download.md",
+              "sourceDirName": "access-the-sana",
+              "slug": "/access-the-sana/upload-and-download",
+              "permalink": "/docs/access-the-sana/upload-and-download",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/upload-and-download.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Upload and Download Files",
+                "id": "upload-and-download"
+              }
+            },
+            {
+              "unversionedId": "ant-developers/starting-a-test-network",
+              "id": "ant-developers/starting-a-test-network",
+              "isDocsHomePage": false,
+              "title": "Starting a Test Network",
+              "description": "A test network can be used to test your applications in an isolated environment before you deploy to Sana mainnet. It can be started by overriding the default configuration values of your Sana node. Throughout this tutorial, we will make use of configuration files to configure the nodes but of course you can also do the same using flags or environment variables (see Start your node).",
+              "source": "@site/docs/ant-developers/starting-a-test-network.md",
+              "sourceDirName": "ant-developers",
+              "slug": "/ant-developers/starting-a-test-network",
+              "permalink": "/docs/ant-developers/starting-a-test-network",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/ant-developers/starting-a-test-network.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Starting a Test Network",
+                "id": "starting-a-test-network"
+              }
+            },
+            {
+              "unversionedId": "ant-developers/useful-dev-info",
+              "id": "ant-developers/useful-dev-info",
+              "isDocsHomePage": false,
+              "title": "Useful Developer Info",
+              "description": "Welcome to the Dev area! We love PR's! 🐝",
+              "source": "@site/docs/ant-developers/useful-dev-info.md",
+              "sourceDirName": "ant-developers",
+              "slug": "/ant-developers/useful-dev-info",
+              "permalink": "/docs/ant-developers/useful-dev-info",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/ant-developers/useful-dev-info.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Useful Developer Info",
+                "id": "useful-dev-info"
+              }
+            },
+            {
+              "unversionedId": "api-reference/api-reference",
+              "id": "api-reference/api-reference",
+              "isDocsHomePage": false,
+              "title": "API and Debug API",
+              "description": "The Ant node exposes two HTTP API endpoints, the API and the Debug API. These endpoints are the primary interfaces to a running Ant node. API-endpoints can be queried using familiar HTTP requests, and will respond with a semantically accurate HTTP status and error codes as well as data payloads in JSON format where appropriate.",
+              "source": "@site/docs/api-reference/api-reference.md",
+              "sourceDirName": "api-reference",
+              "slug": "/api-reference/api-reference",
+              "permalink": "/docs/api-reference/api-reference",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/api-reference/api-reference.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "API and Debug API",
+                "id": "api-reference"
+              }
+            },
+            {
+              "unversionedId": "architecture/architecture",
+              "id": "architecture/architecture",
+              "isDocsHomePage": false,
+              "title": "Architecture",
+              "description": "Developers who want to develop client implementations and others who want to understand the underlying concepts and design of Swarm are invited to read",
+              "source": "@site/docs/architecture/index.md",
+              "sourceDirName": "architecture",
+              "slug": "/architecture/architecture",
+              "permalink": "/docs/architecture/architecture",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/architecture/index.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Architecture",
+                "id": "architecture"
+              }
+            },
+            {
+              "unversionedId": "community/awesome-swarm",
+              "id": "community/awesome-swarm",
+              "isDocsHomePage": false,
+              "title": "Awesome Swarm",
+              "description": "An awesome list on anything awesome related to the Swarm platform. 🐝  🐝  🐝",
+              "source": "@site/docs/community/awesome-swarm.md",
+              "sourceDirName": "community",
+              "slug": "/community/awesome-swarm",
+              "permalink": "/docs/community/awesome-swarm",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/community/awesome-swarm.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Awesome Swarm",
+                "id": "awesome-swarm"
+              }
+            },
+            {
+              "unversionedId": "community/community",
+              "id": "community/community",
+              "isDocsHomePage": false,
+              "title": "Community",
+              "description": "Swarm is all about community. We want to make sure you have the best",
+              "source": "@site/docs/community/community.md",
+              "sourceDirName": "community",
+              "slug": "/community/community",
+              "permalink": "/docs/community/community",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/community/community.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Community",
+                "id": "community"
+              }
+            },
+            {
+              "unversionedId": "dapps-on-sana/bee-js",
+              "id": "dapps-on-sana/bee-js",
+              "isDocsHomePage": false,
+              "title": "Bee JS",
+              "description": "Bee-js is Bee's complementary JavaScript library. It is the technology underpinning the swarm-cli and bee-dashboard tools and is a powerful tool for building completely decentralised apps.",
+              "source": "@site/docs/dapps-on-sana/bee-js.md",
+              "sourceDirName": "dapps-on-sana",
+              "slug": "/dapps-on-sana/bee-js",
+              "permalink": "/docs/dapps-on-sana/bee-js",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/bee-js.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Bee JS",
+                "id": "bee-js"
+              }
+            },
+            {
+              "unversionedId": "dapps-on-sana/chunk-types",
+              "id": "dapps-on-sana/chunk-types",
+              "isDocsHomePage": false,
+              "title": "Chunk Types",
+              "description": "Sana is home to many types of chunks, but these can be categoried",
+              "source": "@site/docs/dapps-on-sana/chunk-types.md",
+              "sourceDirName": "dapps-on-sana",
+              "slug": "/dapps-on-sana/chunk-types",
+              "permalink": "/docs/dapps-on-sana/chunk-types",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/chunk-types.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Chunk Types",
+                "id": "chunk-types"
+              }
+            },
+            {
+              "unversionedId": "dapps-on-sana/develop-on-ant",
+              "id": "dapps-on-sana/develop-on-ant",
+              "isDocsHomePage": false,
+              "title": "Develop on Ant",
+              "description": "Ant is the first client to work with the Sana network.",
+              "source": "@site/docs/dapps-on-sana/develop-on-ant.md",
+              "sourceDirName": "dapps-on-sana",
+              "slug": "/dapps-on-sana/develop-on-ant",
+              "permalink": "/docs/dapps-on-sana/develop-on-ant",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/develop-on-ant.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Develop on Ant",
+                "id": "develop-on-ant"
+              }
+            },
+            {
+              "unversionedId": "dapps-on-sana/develop-on-bee",
+              "id": "dapps-on-sana/develop-on-bee",
+              "isDocsHomePage": false,
+              "title": "Develop on Bee",
+              "description": "Bee is the first client to work with the Swarm network.",
+              "source": "@site/docs/dapps-on-sana/develop-on-bee.md",
+              "sourceDirName": "dapps-on-sana",
+              "slug": "/dapps-on-sana/develop-on-bee",
+              "permalink": "/docs/dapps-on-sana/develop-on-bee",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/develop-on-bee.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Develop on Bee",
+                "id": "develop-on-bee"
+              }
+            },
+            {
+              "unversionedId": "dapps-on-sana/feeds",
+              "id": "dapps-on-sana/feeds",
+              "isDocsHomePage": false,
+              "title": "Feeds",
+              "description": "Swarm feeds cleverly combine",
+              "source": "@site/docs/dapps-on-sana/feeds.md",
+              "sourceDirName": "dapps-on-sana",
+              "slug": "/dapps-on-sana/feeds",
+              "permalink": "/docs/dapps-on-sana/feeds",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/feeds.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Feeds",
+                "id": "feeds"
+              }
+            },
+            {
+              "unversionedId": "dapps-on-sana/introduction",
+              "id": "dapps-on-sana/introduction",
+              "isDocsHomePage": false,
+              "title": "Dapps On Swarm",
+              "description": "Swarm is designed with dapps in mind, and much time has been devoted to designing patterns and prototying ways to build 2nd layer dapps on top of the DISC that Bee provides! Read much more about how to structure your data and build unstoppable dapps in The Book of Swarm .",
+              "source": "@site/docs/dapps-on-sana/introduction.md",
+              "sourceDirName": "dapps-on-sana",
+              "slug": "/dapps-on-sana/introduction",
+              "permalink": "/docs/dapps-on-sana/introduction",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/introduction.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Dapps On Swarm",
+                "id": "introduction"
+              }
+            },
+            {
+              "unversionedId": "dapps-on-sana/pss",
+              "id": "dapps-on-sana/pss",
+              "isDocsHomePage": false,
+              "title": "PSS Messaging",
+              "description": "Out of the ashes of Ethereum's vision for a leak-proof decentralised anonymous messaging system - Whisper - comes PSS (or BZZ, whispered! 🤫). Sana provides the ability to send messages that appear to be normal Sana traffic, but are in fact messages that may be received and decrypted to reveal their content only by the specific nodes they were intended to be received by.",
+              "source": "@site/docs/dapps-on-sana/pss.md",
+              "sourceDirName": "dapps-on-sana",
+              "slug": "/dapps-on-sana/pss",
+              "permalink": "/docs/dapps-on-sana/pss",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/pss.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "PSS Messaging",
+                "id": "pss"
+              }
+            },
+            {
+              "unversionedId": "FAQ",
+              "id": "FAQ",
+              "isDocsHomePage": false,
+              "title": "FAQ",
+              "description": "Connectivity",
+              "source": "@site/docs/faq.md",
+              "sourceDirName": ".",
+              "slug": "/FAQ",
+              "permalink": "/docs/FAQ",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/faq.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "FAQ",
+                "id": "FAQ"
+              }
+            },
+            {
+              "unversionedId": "installation/bee-clef",
+              "id": "installation/bee-clef",
+              "isDocsHomePage": false,
+              "title": "Sana Clef",
+              "description": "Sana makes use of Go Ethereum's external signer, Clef.",
+              "source": "@site/docs/installation/bee-clef.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/bee-clef",
+              "permalink": "/docs/installation/bee-clef",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/bee-clef.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Sana Clef",
+                "id": "bee-clef"
+              }
+            },
+            {
+              "unversionedId": "installation/build-from-source",
+              "id": "installation/build-from-source",
+              "isDocsHomePage": false,
+              "title": "Build from Source",
+              "description": "Sana is written using the Go language.",
+              "source": "@site/docs/installation/build-from-source.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/build-from-source",
+              "permalink": "/docs/installation/build-from-source",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/build-from-source.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Build from Source",
+                "id": "build-from-source"
+              },
+              "sidebar": "Balls",
+              "previous": {
+                "title": "Manual Installation",
+                "permalink": "/docs/installation/manual"
+              },
+              "next": {
+                "title": "Hive",
+                "permalink": "/docs/installation/hive"
+              }
+            },
+            {
+              "unversionedId": "installation/connectivity",
+              "id": "installation/connectivity",
+              "isDocsHomePage": false,
+              "title": "Connectivity",
+              "description": "To fully connect to the sana, your Sana node needs to be able to both",
+              "source": "@site/docs/installation/connectivity.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/connectivity",
+              "permalink": "/docs/installation/connectivity",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/connectivity.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Connectivity",
+                "id": "connectivity"
+              }
+            },
+            {
+              "unversionedId": "installation/docker",
+              "id": "installation/docker",
+              "isDocsHomePage": false,
+              "title": "Sana Using Docker",
+              "description": "Docker containers for Sana are hosted at Docker Hub for your convenience.",
+              "source": "@site/docs/installation/docker.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/docker",
+              "permalink": "/docs/installation/docker",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/docker.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Sana Using Docker",
+                "id": "docker"
+              }
+            },
+            {
+              "unversionedId": "installation/fund-your-node",
+              "id": "installation/fund-your-node",
+              "isDocsHomePage": false,
+              "title": "Fund Your Node",
+              "description": "<!-- ## Mainnet",
+              "source": "@site/docs/installation/fund-your-node.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/fund-your-node",
+              "permalink": "/docs/installation/fund-your-node",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/fund-your-node.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Fund Your Node",
+                "id": "fund-your-node"
+              },
+              "sidebar": "Balls",
+              "previous": {
+                "title": "Hive",
+                "permalink": "/docs/installation/hive"
+              }
+            },
+            {
+              "unversionedId": "installation/gateway",
+              "id": "installation/gateway",
+              "isDocsHomePage": false,
+              "title": "Gateway",
+              "description": "",
+              "source": "@site/docs/installation/gateway.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/gateway",
+              "permalink": "/docs/installation/gateway",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/gateway.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Gateway",
+                "id": "gateway"
+              }
+            },
+            {
+              "unversionedId": "installation/hive",
+              "id": "installation/hive",
+              "isDocsHomePage": false,
+              "title": "Hive",
+              "description": "We recommend even our most 1337 readers go through a single installation first to get a taste of Ant, and to understand the nuances of the implementations. 👾",
+              "source": "@site/docs/installation/hive.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/hive",
+              "permalink": "/docs/installation/hive",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/hive.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Hive",
+                "id": "hive"
+              },
+              "sidebar": "Balls",
+              "previous": {
+                "title": "Build from Source",
+                "permalink": "/docs/installation/build-from-source"
+              },
+              "next": {
+                "title": "Fund Your Node",
+                "permalink": "/docs/installation/fund-your-node"
+              }
+            },
+            {
+              "unversionedId": "installation/install",
+              "id": "installation/install",
+              "isDocsHomePage": false,
+              "title": "Install Ant",
+              "description": "The sana thrives on decentralisation, and Ant is designed so that it",
+              "source": "@site/docs/installation/install.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/install",
+              "permalink": "/docs/installation/install",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/install.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Install Ant",
+                "id": "install"
+              },
+              "sidebar": "Balls",
+              "previous": {
+                "title": "Quick Start",
+                "permalink": "/docs/installation/quick-start"
+              },
+              "next": {
+                "title": "Manual Installation",
+                "permalink": "/docs/installation/manual"
+              }
+            },
+            {
+              "unversionedId": "installation/manual",
+              "id": "installation/manual",
+              "isDocsHomePage": false,
+              "title": "Manual Installation",
+              "description": "While it is possible to run Sana without it, we recommend the use of Go Ethereum's Clef external signer. Instructions for installing and integrating this with Sana can be found here.",
+              "source": "@site/docs/installation/manual.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/manual",
+              "permalink": "/docs/installation/manual",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/manual.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Manual Installation",
+                "id": "manual"
+              },
+              "sidebar": "Balls",
+              "previous": {
+                "title": "Install Ant",
+                "permalink": "/docs/installation/install"
+              },
+              "next": {
+                "title": "Build from Source",
+                "permalink": "/docs/installation/build-from-source"
+              }
+            },
+            {
+              "unversionedId": "installation/quick-start",
+              "id": "installation/quick-start",
+              "isDocsHomePage": false,
+              "title": "Quick Start",
+              "description": "Ant is a versatile piece of software that caters for a diverse array of use cases.",
+              "source": "@site/docs/installation/quick-start.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/quick-start",
+              "permalink": "/docs/installation/quick-start",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/quick-start.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Quick Start",
+                "id": "quick-start"
+              },
+              "sidebar": "Balls",
+              "previous": {
+                "title": "Welcome!",
+                "permalink": "/docs/"
+              },
+              "next": {
+                "title": "Install Ant",
+                "permalink": "/docs/installation/install"
+              }
+            },
+            {
+              "unversionedId": "installation/verify",
+              "id": "installation/verify",
+              "isDocsHomePage": false,
+              "title": "verify",
+              "description": "verify.md",
+              "source": "@site/docs/installation/verify.md",
+              "sourceDirName": "installation",
+              "slug": "/installation/verify",
+              "permalink": "/docs/installation/verify",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/verify.md",
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "introduction",
+              "id": "introduction",
+              "isDocsHomePage": false,
+              "title": "Welcome!",
+              "description": "Hello and welcome to the sana! We are very happy to have you here with us!",
+              "source": "@site/docs/introduction.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/docs/",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/introduction.md",
+              "version": "current",
+              "frontMatter": {
+                "id": "introduction",
+                "title": "Welcome!",
+                "slug": "/"
+              },
+              "sidebar": "Balls",
+              "next": {
+                "title": "Quick Start",
+                "permalink": "/docs/installation/quick-start"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/ant-tools",
+              "id": "working-with-ant/ant-tools",
+              "isDocsHomePage": false,
+              "title": "Ant Tools",
+              "description": "Bee Dashboard",
+              "source": "@site/docs/working-with-ant/ant-tools.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/ant-tools",
+              "permalink": "/docs/working-with-ant/ant-tools",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/ant-tools.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Ant Tools",
+                "id": "ant-tools"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/backups",
+              "id": "working-with-ant/backups",
+              "isDocsHomePage": false,
+              "title": "Backups",
+              "description": "In order to ensure you are able to redeploy your Bee node in the event of a disaster, the contents of several directories must be retained.",
+              "source": "@site/docs/working-with-ant/backups.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/backups",
+              "permalink": "/docs/working-with-ant/backups",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/backups.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Backups",
+                "id": "backups"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/cashing-out",
+              "id": "working-with-ant/cashing-out",
+              "isDocsHomePage": false,
+              "title": "Cashing Out",
+              "description": "As your Bee forwards and serves chunks to its peers, it is rewarded in",
+              "source": "@site/docs/working-with-ant/cashing-out.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/cashing-out",
+              "permalink": "/docs/working-with-ant/cashing-out",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/cashing-out.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Cashing Out",
+                "id": "cashing-out"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/configuration",
+              "id": "working-with-ant/configuration",
+              "isDocsHomePage": false,
+              "title": "Configuration",
+              "description": "Bee is a very flexible program, and can be configured in a variety of",
+              "source": "@site/docs/working-with-ant/configuration.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/configuration",
+              "permalink": "/docs/working-with-ant/configuration",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/configuration.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Configuration",
+                "id": "configuration"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/debug-api",
+              "id": "working-with-ant/debug-api",
+              "isDocsHomePage": false,
+              "title": "Debug API",
+              "description": "Now that you have created your Swarm wallet and your Bee node has",
+              "source": "@site/docs/working-with-ant/debug-api.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/debug-api",
+              "permalink": "/docs/working-with-ant/debug-api",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/debug-api.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Debug API",
+                "id": "debug-api"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/introduction",
+              "id": "working-with-ant/introduction",
+              "isDocsHomePage": false,
+              "title": "Working With Ant",
+              "description": "For the most part, your Bee will happily run in the background, but there are some things we will occasionally need to do to ensure that your Bee stays healthy! In this section we will show you how to get the most out of your Bee,",
+              "source": "@site/docs/working-with-ant/introduction.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/introduction",
+              "permalink": "/docs/working-with-ant/introduction",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/introduction.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Working With Ant",
+                "id": "introduction"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/logs-and-files",
+              "id": "working-with-ant/logs-and-files",
+              "isDocsHomePage": false,
+              "title": "Logs and Files",
+              "description": "Linux",
+              "source": "@site/docs/working-with-ant/logs-and-files.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/logs-and-files",
+              "permalink": "/docs/working-with-ant/logs-and-files",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/logs-and-files.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Logs and Files",
+                "id": "logs-and-files"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/monitoring",
+              "id": "working-with-ant/monitoring",
+              "isDocsHomePage": false,
+              "title": "Monitoring Your Node",
+              "description": "Your Bee node is equipped with tools to help you understand what your Bee has been up to!",
+              "source": "@site/docs/working-with-ant/monitoring.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/monitoring",
+              "permalink": "/docs/working-with-ant/monitoring",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/monitoring.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Monitoring Your Node",
+                "id": "monitoring"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/uninstalling-ant",
+              "id": "working-with-ant/uninstalling-ant",
+              "isDocsHomePage": false,
+              "title": "Uninstalling Ant",
+              "description": "Uninstalling Bee",
+              "source": "@site/docs/working-with-ant/uninstalling-ant.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/uninstalling-ant",
+              "permalink": "/docs/working-with-ant/uninstalling-ant",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/uninstalling-ant.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Uninstalling Ant",
+                "id": "uninstalling-ant"
+              }
+            },
+            {
+              "unversionedId": "working-with-ant/upgrade",
+              "id": "working-with-ant/upgrade",
+              "isDocsHomePage": false,
+              "title": "Upgrading Ant",
+              "description": "Keep a close eye on the",
+              "source": "@site/docs/working-with-ant/upgrade.md",
+              "sourceDirName": "working-with-ant",
+              "slug": "/working-with-ant/upgrade",
+              "permalink": "/docs/working-with-ant/upgrade",
+              "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/upgrade.md",
+              "version": "current",
+              "frontMatter": {
+                "title": "Upgrading Ant",
+                "id": "upgrade"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": null
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  },
+  "docusaurus-lunr-search": {
+    "default": null
+  }
+}

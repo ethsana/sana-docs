@@ -1,0 +1,17 @@
+{
+  "unversionedId": "access-the-sana/keep-your-data-alive",
+  "id": "access-the-sana/keep-your-data-alive",
+  "isDocsHomePage": false,
+  "title": "Keep Your Data Alive",
+  "description": "The sana comprises the sum total of all storage space provided by all of our nodes, called the DISC (Distributed Immutable Store of Chunks). The right to write data into this distributed store is determined by the postage stamps that have been attached.",
+  "source": "@site/docs/access-the-sana/keep-your-data-alive.md",
+  "sourceDirName": "access-the-sana",
+  "slug": "/access-the-sana/keep-your-data-alive",
+  "permalink": "/docs/access-the-sana/keep-your-data-alive",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/keep-your-data-alive.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Keep Your Data Alive",
+    "id": "keep-your-data-alive"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "unversionedId": "installation/bee-clef",
+  "id": "installation/bee-clef",
+  "isDocsHomePage": false,
+  "title": "Sana Clef",
+  "description": "Sana makes use of Go Ethereum's external signer, Clef.",
+  "source": "@site/docs/installation/bee-clef.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/bee-clef",
+  "permalink": "/docs/installation/bee-clef",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/bee-clef.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Sana Clef",
+    "id": "bee-clef"
+  }
+}

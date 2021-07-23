@@ -1,0 +1,17 @@
+{
+  "unversionedId": "access-the-sana/upload-and-download",
+  "id": "access-the-sana/upload-and-download",
+  "isDocsHomePage": false,
+  "title": "Upload and Download Files",
+  "description": "When you upload your files to the swarm, they are split into 4kb",
+  "source": "@site/docs/access-the-sana/upload-and-download.md",
+  "sourceDirName": "access-the-sana",
+  "slug": "/access-the-sana/upload-and-download",
+  "permalink": "/docs/access-the-sana/upload-and-download",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/upload-and-download.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Upload and Download Files",
+    "id": "upload-and-download"
+  }
+}

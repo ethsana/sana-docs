@@ -1,0 +1,17 @@
+{
+  "unversionedId": "access-the-sana/host-your-website",
+  "id": "access-the-sana/host-your-website",
+  "isDocsHomePage": false,
+  "title": "Host Your Website on Sana",
+  "description": "Comfortable with nodeJS and JavaScript? Check out swarm-cli, a command line tool you can use to easily interact with your Ant node!",
+  "source": "@site/docs/access-the-sana/host-your-website.md",
+  "sourceDirName": "access-the-sana",
+  "slug": "/access-the-sana/host-your-website",
+  "permalink": "/docs/access-the-sana/host-your-website",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/host-your-website.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Host Your Website on Sana",
+    "id": "host-your-website"
+  }
+}

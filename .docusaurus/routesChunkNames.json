@@ -1,0 +1,194 @@
+{
+  "/-deb": {
+    "component": "c4f5d8e4",
+    "config": "5e9f5e1a"
+  },
+  "/docs-9fe": {
+    "component": "1be78505",
+    "versionMetadata": "935f2afb"
+  },
+  "/docs/-2dd": {
+    "component": "17896441",
+    "content": "a09c2993"
+  },
+  "/docs/access-the-sana/browse-the-sana-dac": {
+    "component": "17896441",
+    "content": "69bc09f0"
+  },
+  "/docs/access-the-sana/host-your-website-74d": {
+    "component": "17896441",
+    "content": "403b7f15"
+  },
+  "/docs/access-the-sana/introduction-d4a": {
+    "component": "17896441",
+    "content": "65edfdce"
+  },
+  "/docs/access-the-sana/keep-your-data-alive-4be": {
+    "component": "17896441",
+    "content": "e26ea267"
+  },
+  "/docs/access-the-sana/light-nodes-4f7": {
+    "component": "17896441",
+    "content": "48f0d730"
+  },
+  "/docs/access-the-sana/pinning-40d": {
+    "component": "17896441",
+    "content": "f6b8d0ee"
+  },
+  "/docs/access-the-sana/store-with-encryption-327": {
+    "component": "17896441",
+    "content": "e8631455"
+  },
+  "/docs/access-the-sana/syncing-1ba": {
+    "component": "17896441",
+    "content": "5e249684"
+  },
+  "/docs/access-the-sana/upload-a-directory-b9a": {
+    "component": "17896441",
+    "content": "69b710e9"
+  },
+  "/docs/access-the-sana/upload-and-download-40e": {
+    "component": "17896441",
+    "content": "0b40114c"
+  },
+  "/docs/ant-developers/starting-a-test-network-938": {
+    "component": "17896441",
+    "content": "b4f3d6f2"
+  },
+  "/docs/ant-developers/useful-dev-info-bb6": {
+    "component": "17896441",
+    "content": "bb3c83b1"
+  },
+  "/docs/api-reference/api-reference-7bb": {
+    "component": "17896441",
+    "content": "4178ee1d"
+  },
+  "/docs/architecture/architecture-ab9": {
+    "component": "17896441",
+    "content": "dc7abf1f"
+  },
+  "/docs/community/awesome-swarm-390": {
+    "component": "17896441",
+    "content": "0266b9e5"
+  },
+  "/docs/community/community-e86": {
+    "component": "17896441",
+    "content": "323ae7ca"
+  },
+  "/docs/dapps-on-sana/bee-js-59a": {
+    "component": "17896441",
+    "content": "ba28bc02"
+  },
+  "/docs/dapps-on-sana/chunk-types-065": {
+    "component": "17896441",
+    "content": "d6035a42"
+  },
+  "/docs/dapps-on-sana/develop-on-ant-25c": {
+    "component": "17896441",
+    "content": "a396aeb9"
+  },
+  "/docs/dapps-on-sana/develop-on-bee-0cf": {
+    "component": "17896441",
+    "content": "c6d257c0"
+  },
+  "/docs/dapps-on-sana/feeds-ef8": {
+    "component": "17896441",
+    "content": "99718dbc"
+  },
+  "/docs/dapps-on-sana/introduction-78d": {
+    "component": "17896441",
+    "content": "527bde59"
+  },
+  "/docs/dapps-on-sana/pss-692": {
+    "component": "17896441",
+    "content": "ed3ef9c0"
+  },
+  "/docs/FAQ-cea": {
+    "component": "17896441",
+    "content": "0480b142"
+  },
+  "/docs/installation/bee-clef-379": {
+    "component": "17896441",
+    "content": "4fe233f4"
+  },
+  "/docs/installation/build-from-source-368": {
+    "component": "17896441",
+    "content": "fbb5daff"
+  },
+  "/docs/installation/connectivity-c6d": {
+    "component": "17896441",
+    "content": "f004836b"
+  },
+  "/docs/installation/docker-8d9": {
+    "component": "17896441",
+    "content": "ac07380c"
+  },
+  "/docs/installation/fund-your-node-d30": {
+    "component": "17896441",
+    "content": "186330b5"
+  },
+  "/docs/installation/gateway-54b": {
+    "component": "17896441",
+    "content": "12e2695a"
+  },
+  "/docs/installation/hive-380": {
+    "component": "17896441",
+    "content": "583378a2"
+  },
+  "/docs/installation/install-d66": {
+    "component": "17896441",
+    "content": "6f7a7997"
+  },
+  "/docs/installation/manual-c0b": {
+    "component": "17896441",
+    "content": "4899252d"
+  },
+  "/docs/installation/quick-start-367": {
+    "component": "17896441",
+    "content": "67cbd3a9"
+  },
+  "/docs/installation/verify-ad1": {
+    "component": "17896441",
+    "content": "651882f4"
+  },
+  "/docs/working-with-ant/ant-tools-069": {
+    "component": "17896441",
+    "content": "d3e956d4"
+  },
+  "/docs/working-with-ant/backups-fd5": {
+    "component": "17896441",
+    "content": "d3c6126d"
+  },
+  "/docs/working-with-ant/cashing-out-1bd": {
+    "component": "17896441",
+    "content": "ee53ab3c"
+  },
+  "/docs/working-with-ant/configuration-90e": {
+    "component": "17896441",
+    "content": "9d641a2a"
+  },
+  "/docs/working-with-ant/debug-api-992": {
+    "component": "17896441",
+    "content": "4ccab6ca"
+  },
+  "/docs/working-with-ant/introduction-330": {
+    "component": "17896441",
+    "content": "7ee11901"
+  },
+  "/docs/working-with-ant/logs-and-files-c35": {
+    "component": "17896441",
+    "content": "37d00cdb"
+  },
+  "/docs/working-with-ant/monitoring-d1c": {
+    "component": "17896441",
+    "content": "a13d50c5"
+  },
+  "/docs/working-with-ant/uninstalling-ant-886": {
+    "component": "17896441",
+    "content": "f1f0e5cb"
+  },
+  "/docs/working-with-ant/upgrade-181": {
+    "component": "17896441",
+    "content": "f4736394"
+  }
+}

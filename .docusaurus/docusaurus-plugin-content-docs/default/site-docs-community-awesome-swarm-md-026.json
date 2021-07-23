@@ -1,0 +1,17 @@
+{
+  "unversionedId": "community/awesome-swarm",
+  "id": "community/awesome-swarm",
+  "isDocsHomePage": false,
+  "title": "Awesome Swarm",
+  "description": "An awesome list on anything awesome related to the Swarm platform. 🐝  🐝  🐝",
+  "source": "@site/docs/community/awesome-swarm.md",
+  "sourceDirName": "community",
+  "slug": "/community/awesome-swarm",
+  "permalink": "/docs/community/awesome-swarm",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/community/awesome-swarm.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Awesome Swarm",
+    "id": "awesome-swarm"
+  }
+}

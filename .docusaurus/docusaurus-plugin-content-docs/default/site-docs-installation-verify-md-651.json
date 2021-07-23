@@ -1,0 +1,14 @@
+{
+  "unversionedId": "installation/verify",
+  "id": "installation/verify",
+  "isDocsHomePage": false,
+  "title": "verify",
+  "description": "verify.md",
+  "source": "@site/docs/installation/verify.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/verify",
+  "permalink": "/docs/installation/verify",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/verify.md",
+  "version": "current",
+  "frontMatter": {}
+}

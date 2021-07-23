@@ -1,0 +1,17 @@
+{
+  "unversionedId": "FAQ",
+  "id": "FAQ",
+  "isDocsHomePage": false,
+  "title": "FAQ",
+  "description": "Connectivity",
+  "source": "@site/docs/faq.md",
+  "sourceDirName": ".",
+  "slug": "/FAQ",
+  "permalink": "/docs/FAQ",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/faq.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "FAQ",
+    "id": "FAQ"
+  }
+}

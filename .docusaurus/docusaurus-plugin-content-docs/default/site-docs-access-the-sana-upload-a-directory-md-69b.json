@@ -1,0 +1,17 @@
+{
+  "unversionedId": "access-the-sana/upload-a-directory",
+  "id": "access-the-sana/upload-a-directory",
+  "isDocsHomePage": false,
+  "title": "Upload a Directory",
+  "description": "It is possible to use Ant to upload directories of files all at once.",
+  "source": "@site/docs/access-the-sana/upload-a-directory.md",
+  "sourceDirName": "access-the-sana",
+  "slug": "/access-the-sana/upload-a-directory",
+  "permalink": "/docs/access-the-sana/upload-a-directory",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/access-the-sana/upload-a-directory.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Upload a Directory",
+    "id": "upload-a-directory"
+  }
+}

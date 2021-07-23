@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.ethsana.org/blog</id>
+    <title>SANA Ant Client Blog</title>
+    <updated>2015-10-25T23:29:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.ethsana.org/blog"/>
+    <subtitle>SANA Ant Client Blog</subtitle>
+    <icon>https://docs.ethsana.org/img/favicon.ico</icon>
+</feed>

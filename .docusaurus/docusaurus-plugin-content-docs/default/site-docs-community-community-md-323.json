@@ -1,0 +1,17 @@
+{
+  "unversionedId": "community/community",
+  "id": "community/community",
+  "isDocsHomePage": false,
+  "title": "Community",
+  "description": "Swarm is all about community. We want to make sure you have the best",
+  "source": "@site/docs/community/community.md",
+  "sourceDirName": "community",
+  "slug": "/community/community",
+  "permalink": "/docs/community/community",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/community/community.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Community",
+    "id": "community"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "unversionedId": "dapps-on-sana/bee-js",
+  "id": "dapps-on-sana/bee-js",
+  "isDocsHomePage": false,
+  "title": "Bee JS",
+  "description": "Bee-js is Bee's complementary JavaScript library. It is the technology underpinning the swarm-cli and bee-dashboard tools and is a powerful tool for building completely decentralised apps.",
+  "source": "@site/docs/dapps-on-sana/bee-js.md",
+  "sourceDirName": "dapps-on-sana",
+  "slug": "/dapps-on-sana/bee-js",
+  "permalink": "/docs/dapps-on-sana/bee-js",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/bee-js.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Bee JS",
+    "id": "bee-js"
+  }
+}

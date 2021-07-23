@@ -1,0 +1,17 @@
+{
+  "unversionedId": "working-with-ant/configuration",
+  "id": "working-with-ant/configuration",
+  "isDocsHomePage": false,
+  "title": "Configuration",
+  "description": "Bee is a very flexible program, and can be configured in a variety of",
+  "source": "@site/docs/working-with-ant/configuration.md",
+  "sourceDirName": "working-with-ant",
+  "slug": "/working-with-ant/configuration",
+  "permalink": "/docs/working-with-ant/configuration",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/configuration.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Configuration",
+    "id": "configuration"
+  }
+}

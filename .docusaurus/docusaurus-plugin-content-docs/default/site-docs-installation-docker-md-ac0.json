@@ -1,0 +1,17 @@
+{
+  "unversionedId": "installation/docker",
+  "id": "installation/docker",
+  "isDocsHomePage": false,
+  "title": "Sana Using Docker",
+  "description": "Docker containers for Sana are hosted at Docker Hub for your convenience.",
+  "source": "@site/docs/installation/docker.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/docker",
+  "permalink": "/docs/installation/docker",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/docker.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Sana Using Docker",
+    "id": "docker"
+  }
+}

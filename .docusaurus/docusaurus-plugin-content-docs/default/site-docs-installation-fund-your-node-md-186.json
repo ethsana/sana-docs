@@ -1,0 +1,22 @@
+{
+  "unversionedId": "installation/fund-your-node",
+  "id": "installation/fund-your-node",
+  "isDocsHomePage": false,
+  "title": "Fund Your Node",
+  "description": "<!-- ## Mainnet",
+  "source": "@site/docs/installation/fund-your-node.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/fund-your-node",
+  "permalink": "/docs/installation/fund-your-node",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/installation/fund-your-node.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Fund Your Node",
+    "id": "fund-your-node"
+  },
+  "sidebar": "Balls",
+  "previous": {
+    "title": "Hive",
+    "permalink": "/docs/installation/hive"
+  }
+}

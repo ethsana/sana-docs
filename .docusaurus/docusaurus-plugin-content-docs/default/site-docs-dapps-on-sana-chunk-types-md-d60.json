@@ -1,0 +1,17 @@
+{
+  "unversionedId": "dapps-on-sana/chunk-types",
+  "id": "dapps-on-sana/chunk-types",
+  "isDocsHomePage": false,
+  "title": "Chunk Types",
+  "description": "Sana is home to many types of chunks, but these can be categoried",
+  "source": "@site/docs/dapps-on-sana/chunk-types.md",
+  "sourceDirName": "dapps-on-sana",
+  "slug": "/dapps-on-sana/chunk-types",
+  "permalink": "/docs/dapps-on-sana/chunk-types",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/chunk-types.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Chunk Types",
+    "id": "chunk-types"
+  }
+}

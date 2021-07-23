@@ -1,0 +1,17 @@
+{
+  "unversionedId": "working-with-ant/upgrade",
+  "id": "working-with-ant/upgrade",
+  "isDocsHomePage": false,
+  "title": "Upgrading Ant",
+  "description": "Keep a close eye on the",
+  "source": "@site/docs/working-with-ant/upgrade.md",
+  "sourceDirName": "working-with-ant",
+  "slug": "/working-with-ant/upgrade",
+  "permalink": "/docs/working-with-ant/upgrade",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/working-with-ant/upgrade.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Upgrading Ant",
+    "id": "upgrade"
+  }
+}

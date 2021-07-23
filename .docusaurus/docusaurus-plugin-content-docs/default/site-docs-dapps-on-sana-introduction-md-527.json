@@ -1,0 +1,17 @@
+{
+  "unversionedId": "dapps-on-sana/introduction",
+  "id": "dapps-on-sana/introduction",
+  "isDocsHomePage": false,
+  "title": "Dapps On Swarm",
+  "description": "Swarm is designed with dapps in mind, and much time has been devoted to designing patterns and prototying ways to build 2nd layer dapps on top of the DISC that Bee provides! Read much more about how to structure your data and build unstoppable dapps in The Book of Swarm .",
+  "source": "@site/docs/dapps-on-sana/introduction.md",
+  "sourceDirName": "dapps-on-sana",
+  "slug": "/dapps-on-sana/introduction",
+  "permalink": "/docs/dapps-on-sana/introduction",
+  "editUrl": "https://github.com/ethsana/sana-docs/blob/master/sidebars.js/docs/dapps-on-sana/introduction.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Dapps On Swarm",
+    "id": "introduction"
+  }
+}
