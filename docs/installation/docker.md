@@ -1,29 +1,29 @@
 ---
-title: Bee Using Docker
+title: Sana Using Docker
 id: docker
 ---
 
-Docker containers for Bee are hosted at [Docker Hub](https://hub.docker.com/r/ethersphere/bee) for your convenience. 
+Docker containers for Sana are hosted at [Docker Hub](https://hub.docker.com/r/ethsana/sana) for your convenience. 
 
-If running a Bee *full node*, it is recommended that you make use of
+If running a Sana *full node*, it is recommended that you make use of
 Ethereum's external signer, [Clef](/docs/installation/bee-clef). Skip
 ahead if you are comfortable with `docker` basics for instructions on
 how to use [docker-compose](/docs/installation/docker#docker-compose)
 to easily set up Bee with persistent storage and integration with the
-Bee Clef container.
+Sana Clef container.
 
 ### Quick Start
 
-Try Bee out by simply running the following command in your Terminal. 
+Try Sana out by simply running the following command in your Terminal. 
 
 ```bash
 docker run\
   -p 1635:1635 \
   -p 1634:1634 \
   -p 1633:1633\
-  --rm -it ethersphere/bee:stable\
+  --rm -it ethsana/sana:stable\
   start \
-    --welcome-message="Bzzzz bzzz bzz bzz. 🐝" \
+    --welcome-message="Hello Sana" \
     --swap-endpoint https://stake.getblock.io/mainnet/?api_key=copy-your-api-key-here \
     --debug-api-enable
 ```
@@ -35,64 +35,64 @@ If starting your node for the first time, you will need to deploy a chequebook c
 To persist files, mount a local directory as follows and enter the
 password used to encrypt your keyfiles. Note, `docker` insists on
 absolute paths when mounting volumes, so you must replace
-`/path/to/.bee-docker` with a valid path from your local filesystem.
+`/path/to/.sana-docker` with a valid path from your local filesystem.
 
 ```bash
 docker run\
-  -v /path/to/.bee-docker:/home/bee/.bee\
+  -v /path/to/.sana-docker:/home/sana/.sana\
   -p 1635:1635 \
   -p 1634:1634 \
   -p 1633:1633\
-  --rm -it ethersphere/bee:stable\
+  --rm -it ethsana/sana:stable\
   start \
-    --welcome-message="Bzzzz bzzz bzz bzz. 🐝" \
+    --welcome-message="Hello Sana" \
     --swap-endpoint https://stake.getblock.io/mainnet/?api_key=your-api-key \
 	  --debug-api-enable
 ```
 
-Once you have generated your keys, leave Bee to run in the background...
+Once you have generated your keys, leave Sana to run in the background...
 
 ```bash
 docker run\
   -d 
-  -v /path/to/.bee-docker:/home/bee/.bee\
+  -v /path/to/.sana-docker:/home/sana/.bee\
   -p 1635:1635 \
   -p 1634:1634 \
   -p 1633:1633\
-  --rm -it ethersphere/bee:stable\
+  --rm -it ethsana/sana:stable\
   start \
-    --welcome-message="Bzzzz bzzz bzz bzz. 🐝" \
+    --welcome-message="Hello Sana" \
     --swap-endpoint https://stake.getblock.io/mainnet/?api_key=your-api-key \
 	  --debug-api-enable
 ```
 
 ### Versions
 
-In order to avoid accidentally upgrading your Bee containers, or
+In order to avoid accidentally upgrading your Sana containers, or
 deadlocks resulting from Docker caching solutions, it is recommended
-to use best practices and pin the specific version of Bee that you
+to use best practices and pin the specific version of Sana that you
 want to run.
 
 #### Specific Versions
 
 ```bash
-docker pull ethersphere/bee:1.0.0
+docker pull ethsana/sana:0.0.3
 ```
 
 #### Using Tags
 
 ```bash
-docker pull ethersphere/bee:beta
+docker pull ethsana/sana:beta
 ```
 
 You may use the tags `beta`, `latest`, and `stable`, or find out more
-at the [Docker Hub repository](https://hub.docker.com/r/ethersphere/bee).
+at the [Docker Hub repository](https://hub.docker.com/r/ethsana/sana).
 
 ### Docker Compose
 
-Configuration files for Bee and Bee Clef are provided to enable quick
+Configuration files for Sana and Sana Clef are provided to enable quick
 and easy installation of both programs with persistent storage and
-secure secret management. To install Bee without Clef, simply omit the
+secure secret management. To install Sana without Clef, simply omit the
 relevant steps.
 
 #### Setup
@@ -100,22 +100,22 @@ relevant steps.
 First, retrieve the current `docker-compose.yaml` file.
 
 ```bash
-wget -q https://raw.githubusercontent.com/ethersphere/bee/v1.0.0/packaging/docker/docker-compose.yml
+wget -q https://raw.githubusercontent.com/ethsana/sana/v0.0.3/packaging/docker/docker-compose.yml
 ```
 
 Next, create a `.env` file using the example file provided. This file will be responsible for storing configuration and secrets for our Bee and Bee Clef applications.
 
 ```bash
-wget -q https://raw.githubusercontent.com/ethersphere/bee/v1.0.0/packaging/docker/env -O .env
+wget -q https://raw.githubusercontent.com/ethsana/sana/v0.0.3/packaging/docker/env -O .env
 ``` 
 
 There are some important configuration parameters which must be set in order for our projects to work. To affect configuration in the `.env` file, we first remove the `#` at the beginning of the line and then change the value after `=` to our desired config.
 
-For Bee, amend the following parameters:
+For Sana, amend the following parameters:
 
 ```
-BEE_SWAP_ENDPOINT=https://stake.getblock.io/mainnet/?api_key=your-api-key
-BEE_PASSWORD=my-password
+SANA_SWAP_ENDPOINT=https://stake.getblock.io/mainnet/?api_key=your-api-key
+SANA_PASSWORD=my-password
 ```
 
 To enable Clef support on mainnet, we must also change the following params: 
@@ -127,11 +127,11 @@ CLEF_CHAINID=100
 For testnet, use chain id `5`.
 
 ```
-BEE_CLEF_SIGNER_ENABLE=true
-BEE_CLEF_SIGNER_ENDPOINT=http://clef-1:8550
+SANA_CLEF_SIGNER_ENABLE=true
+SANA_CLEF_SIGNER_ENDPOINT=http://clef-1:8550
 ```
 
-With the configuration settings complete, you can start your Bee and
+With the configuration settings complete, you can start your Sana and
 Clef nodes by running:
 
 ```bash
@@ -139,48 +139,47 @@ docker-compose up -d
 ```
 
 :::tip
-By specifying the `-d` flag to `docker-compose` we run Bee and Bee Clef as a daemon.
+By specifying the `-d` flag to `docker-compose` we run Sana and Sana Clef as a daemon.
 :::
 
 :::warning
-Docker Compose will create a Docker Volume called `bee` containing important key material. Make sure to [backup](/docs/working-with-ant/backups) the contents of your Docker volume!
+Docker Compose will create a Docker Volume called `ant` containing important key material. Make sure to [backup](/docs/access-the-ant/backups) the contents of your Docker volume!
 :::
 
-To determine the Bee node's address to fund, we can check the logs for our Bee *container*:
+To determine the Sana node's address to fund, we can check the logs for our Sana *container*:
 
 ```bash
-docker-compose logs -f bee-1
+docker-compose logs -f sana-1
 ```
 
 ```
-bee_1 | time="2020-12-15T18:43:14Z" level=warning msg="cannot continue until there is sufficient ETH (for Gas) and at least 1 BZZ available on 7a977fa660e2e93e1eba40030c6b8da68d01971e"
-time="2020-12-15T18:43:14Z" level=warning msg="learn how to fund your node by visiting our docs at https://docs.ethswarm.org/docs/installation/fund-your-node"
+sana_1 | time="2020-12-15T18:43:14Z" level=warning msg="cannot continue until there is sufficient ETH (for Gas) and at least 1 SANA available on 7a977fa660e2e93e1eba40030c6b8da68d01971e"
 ```
 
 
-Once you have determined your Bee's Ethereum addresses,
+Once you have determined your Sana's Ethereum addresses,
 [fund your node](/docs/installation/fund-your-node).
 
 After your transaction has been completed, your node should recognise that your wallet has been funded, and begin to deploy and fund your Bee chequebook!
 
-Once Bee has completed this procedure, you may query the Bee [HTTP API](/docs/api-reference/api-reference) at `http://localhost:1633`.
+Once Sana has completed this procedure, you may query the Bee [HTTP API](/docs/api-reference/api-reference) at `http://localhost:1633`.
 
 ```bash
 curl localhost:1633
 ```
 
 ```
-Ethereum Swarm Bee
+Ethereum Sana
 ```
 
-Once you start seeing messages in the `docker-compose logs -f bee-1`
+Once you start seeing messages in the `docker-compose logs -f sana-1`
 like:
 
 ```
 successfully connected to peer 7fa40ce124d69ecf14d6f7806faaf9df5d639d339a9d343aa7004373f5c46b8f (outbound)
 ```
 
-You're connected to the Swarm. Let's do a quick check to find out how
+You're connected to the Sana. Let's do a quick check to find out how
 many peers we have using the `curl` command line utility:
 
 ```bash
@@ -193,4 +192,4 @@ curl localhost:1635/peers
 ```
 
 If you see peers listed here - congratulations! You have joined the
-swarm! Welcome! 🐝
+sana! Welcome!

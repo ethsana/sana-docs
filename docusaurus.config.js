@@ -1,32 +1,32 @@
 module.exports = {
-  title: 'Sana Ant Client',
-  tagline: 'Welcome to the Sana',
-  url: 'https://docs.ethsana.org',
+  title: "SANA Ant Client",
+  tagline: "Welcome to the Sana",
+  url: "https://docs.ethsana.org",
   // note! we use SED to change this during automated builds, see ./.github/workflows/gh-pages.yml
-  baseUrl: '/',
-  plugins: [require.resolve('docusaurus-lunr-search')],
-  onBrokenLinks: 'error',
-  onBrokenMarkdownLinks: 'error',
-  onDuplicateRoutes: 'error',
-  favicon: 'img/favicon.ico',
-  organizationName: 'Sana', // Usually your GitHub org/user name.
-  projectName: 'ant', // Usually your repo name.
+  baseUrl: "/",
+  plugins: [require.resolve("docusaurus-lunr-search")],
+  onBrokenLinks: "error",
+  onBrokenMarkdownLinks: "error",
+  onDuplicateRoutes: "error",
+  favicon: "img/favicon.ico",
+  organizationName: "Sana", // Usually your GitHub org/user name.
+  projectName: "ant", // Usually your repo name.
   themeConfig: {
     colourMode: {
-      defaultMode: 'dark'
+      defaultMode: "dark",
     },
     navbar: {
-      title: 'Sana Ant',
+      title: "Sana Ant",
       logo: {
-        alt: 'Sana Logo',
-        src: 'img/swarm-logo-2.svg',
+        alt: "Sana Logo",
+        src: "img/sana-logo.svg",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Get Started',
-          position: 'left',
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Get Started",
+          position: "left",
         },
         // {
         //   to: 'docs/installation/quick-start',
@@ -41,53 +41,70 @@ module.exports = {
         //   position: 'left',
         // },
         {
-          to: 'docs/api-reference/api-reference',
-          activeBasePath: 'docs',
-          label: 'API Reference',
-          position: 'left',
+          to: "docs/api-reference/api-reference",
+          activeBasePath: "docs",
+          label: "API Reference",
+          position: "left",
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/ethsana',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/ethsana/sana",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Sana',
+          title: "SNANA",
           items: [
             {
-              label: 'Sana',
-              to: 'https://ethsana.org',
-            }
+              label: "SNAN",
+              to: "https://www.ethsana.org/",
+            },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/c72mpR7Erf',
+              label: "Discord",
+              href: "https://discord.gg/c72mpR7Erf",
             },
             {
-              label: 'Telegram',
-              href: 'https://t.me/ethereumsana',
+              label: "Telegram",
+              href: "https://t.me/ethereumsana",
             },
             // {
-            //   label: 'Reddit',
-            //   href: 'https://www.reddit.com/r/ethswarm',
+            //   label: "Mattermost",
+            //   href: "https://beehive.ethswarm.org/",
+            // },
+            // {
+            //   label: "Reddit",
+            //   href: "https://www.reddit.com/r/ethswarm",
             // },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/ethereumsana',
+              label: "Twitter",
+              href: "https://twitter.com/ethereumsana",
             },
             {
-              label: 'Medium',
-              href: 'https://ethereumsana.medium.com/',
+              label: "Medium",
+              href: "https://ethswarm.medium.com/",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            // {
+            //   label: "Blog",
+            //   href: "https://medium.com/ethereum-swarm",
+            // },
+            {
+              label: "GitHub",
+              href: "https://github.com/ethsana",
             },
           ],
         },
@@ -117,23 +134,22 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ethersphere/docs.github.io/blob/master',
+            "https://github.com/ethsana/sana-docs/blob/master/sidebars.js",
         },
         blog: {
           showReadingTime: false,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/ethersphere/docs.github.io',
+          editUrl: "https://github.com/ethersphere/docs.github.io",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],

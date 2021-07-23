@@ -1,6 +1,6 @@
 ---
 title: Upgrading Ant
-id: upgrading-ant
+id: upgrade
 ---
 
 Keep a close eye on the

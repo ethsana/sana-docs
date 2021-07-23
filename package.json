@@ -1,49 +1,47 @@
 {
-  "name": "ant-docs",
-  "version": "0.0.0",
-  "private": true,
-  "config": {
-    "linkchecker": "blc -ro --filter-level 0 --exclude swarm.ethereum.org --exclude gateway.ethswarm.org --exclude discord.gg --exclude etherscan.io --exclude awesome.re --exclude swarm.eth --exclude localhost:1633 --exclude localhost:9090 --exclude localhost:1635 --exclude 192.168.0.1 --exclude 127.0.0.1"
-  },
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve",
-    "linkchecker": "start-server-and-test serve :3000 linkchecker:local",
-    "linkchecker:local": "$npm_package_config_linkchecker http://localhost:3000/docs",
-    "linkchecker:prod": "$npm_package_config_linkchecker https://docs.ethswarm.org/docs/"
-  },
-  "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.ff31de0ff",
-    "@docusaurus/preset-classic": "^2.0.0-beta.ff31de0ff",
-    "@mdx-js/react": "^1.6.22",
-    "clsx": "^1.1.1",
-    "docusaurus-lunr-search": "^2.1.14",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "swarm-cli": "^1.2.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
-  },
-  "devDependencies": {
-    "broken-link-checker": "^0.7.8",
-    "start-server-and-test": "^1.12.3"
-  }
+    "name": "ant-docs",
+    "version": "0.0.0",
+    "private": true,
+    "config": {
+        "linkchecker": "blc -ro --filter-level 0 --exclude swarm.ethereum.org --exclude gateway.ethswarm.org --exclude discord.gg --exclude etherscan.io --exclude awesome.re --exclude swarm.eth --exclude localhost:1633 --exclude localhost:9090 --exclude localhost:1635 --exclude 192.168.0.1 --exclude 127.0.0.1"
+    },
+    "scripts": {
+        "docusaurus": "docusaurus",
+        "start": "docusaurus start",
+        "build": "docusaurus build",
+        "swizzle": "docusaurus swizzle",
+        "deploy": "docusaurus deploy",
+        "serve": "docusaurus serve",
+        "linkchecker": "start-server-and-test serve :3000 linkchecker:local"
+    },
+    "dependencies": {
+        "@docusaurus/core": "^2.0.0-beta.ff31de0ff",
+        "@docusaurus/preset-classic": "^2.0.0-beta.ff31de0ff",
+        "@mdx-js/react": "^1.6.22",
+        "clsx": "^1.1.1",
+        "docusaurus-lunr-search": "^2.1.14",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "swarm-cli": "^1.2.2"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=6.0.0"
+    },
+    "devDependencies": {
+        "broken-link-checker": "^0.7.8",
+        "start-server-and-test": "^1.12.3"
+    }
 }

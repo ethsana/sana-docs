@@ -141,7 +141,7 @@ Yes, but their free plan has limit 40k requests per day.
 
 ### Where can I find documents about the cashout commands?
 
-https://docs.ethswarm.org/docs/working-with-bee/cashing-out
+https://docs.ethswarm.org/docs/working-with-ant/cashing-out
 
 
 ### When I run http://localhost:1635/chequebook/balance I get "totalBalance" and "availableBalance" what is the difference?

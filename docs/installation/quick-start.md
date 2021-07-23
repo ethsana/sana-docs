@@ -6,29 +6,29 @@ id: quick-start
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Bee is a versatile piece of software that caters for a diverse array of use cases. 
+Ant is a versatile piece of software that caters for a diverse array of use cases. 
 
 ### Access the Network
 
-If you want to interact with the Bee ecosystem in a decentralised way,
-but not earn BZZ by storing or forwarding chunks, simply run a Bee
+If you want to interact with the Ant ecosystem in a decentralised way,
+but not earn SANA by storing or forwarding chunks, simply run a Ant
 [light node](/docs/access-the-sana/light-nodes) in the background on
 your laptop or desktop computer. This will enable direct access to the
-swarm from your web browser and other applications.
+sana from your web browser and other applications.
 
-[Install Bee](/docs/installation/install)
+[Install Ant](/docs/installation/install)
 
-### Support the Network and Earn BZZ by Running a Full Node
+### Support the Network and Earn SANA by Running a Full Node
 
-Earn [BZZ](/docs/working-with-ant/cashing-out) and help keep the swarm
+Earn [SANA](/docs/working-with-ant/cashing-out) and help keep the sana
 strong by running your own **full node**. It's easy to set up your own
-Bee on a [Raspberry Pi](/docs/installation/rasp-bee-ry-pi), cloud
+Ant on a [Raspberry Pi](/docs/installation/rasp-bee-ry-pi), cloud
 host, or any home computer that's connected to the internet.
 
-[Install Bee](/docs/installation/install)
+[Install Ant](/docs/installation/install)
 
 ### Run Your Own Hive of Nodes
 
-Take it to the next level by keeping a whole hive of Bees! We provide
+Take it to the next level by keeping a whole hive of Ants! We provide
 tooling and monitoring to help you manage large deployments of
-multiple Bee nodes: [Bee Hives](/docs/installation/hive).
+multiple Ant nodes: [Ant Hives](/docs/installation/hive).

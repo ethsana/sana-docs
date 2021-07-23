@@ -1,22 +1,22 @@
 ---
-title: Bee Clef
+title: Sana Clef
 id: bee-clef
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Bee makes use of Go Ethereum's external signer, [Clef](https://geth.ethereum.org/docs/clef/tutorial).
+Sana makes use of Go Ethereum's external signer, [Clef](https://geth.ethereum.org/docs/clef/tutorial).
 
-Because Bee must sign a lot of transactions automatically and quickly, a [Bee specific version of Clef, Bee Clef](https://github.com/ethersphere/bee-clef) has been packaged which includes all the relevant configuration needed to make Clef work with Bee.
+Because Sana must sign a lot of transactions automatically and quickly, a [Sana specific version of Clef, Sana Clef](https://github.com/ethsana/sana-clef) has been packaged which includes all the relevant configuration needed to make Clef work with Sana.
 
 :::caution
-Bee Clef will create a new Ethereum key pair for you during installation. Make sure you keep a [backup](/docs/working-with-ant/backups) of your key pair somewhere safe and secure!
+Sana Clef will create a new Ethereum key pair for you during installation. Make sure you keep a [backup](/docs/access-the-ant/backups) of your key pair somewhere safe and secure!
 :::
 
 ## Packages
 
-Bee Clef can be installed automatically using your system's package manager.
+Sana Clef can be installed automatically using your system's package manager.
 
 
 
@@ -24,81 +24,23 @@ Bee Clef can be installed automatically using your system's package manager.
 <Tabs
   defaultValue="debian"
   values={[
-    {label: 'Ubuntu / Debian / Raspbian', value: 'debian'},
-    {label: 'CentOS', value: 'centos'},
-    {label: 'MacOS', value: 'macos'},
+    {label: 'Ubuntu', value: 'debian'},
   ]}>
 <TabItem value="debian">
 
 #### AMD64
 
 ```bash
-wget https://github.com/ethersphere/bee-clef/releases/download/v0.5.0/bee-clef_0.5.0_amd64.deb
-sudo dpkg -i bee-clef_0.5.0_amd64.deb
-```
-
-#### ARM (Raspberry Pi)
-
-##### ARMv7
-
-```bash
-wget https://github.com/ethersphere/bee-clef/releases/download/v0.5.0/bee-clef_0.5.0_armv7.deb
-sudo dpkg -i bee-clef_0.5.0_armv7.deb
-```
-
-##### ARM64
-
-```bash
-wget https://github.com/ethersphere/bee-clef/releases/download/v0.5.0/bee-clef_0.5.0_arm64.deb
-sudo dpkg -i bee-clef_0.5.0_arm64.deb
-```
-
-</TabItem>
-<TabItem value="centos">
-
-#### AMD64
-
-```bash
-wget https://github.com/ethersphere/bee-clef/releases/download/v0.5.0/bee-clef_0.5.0_amd64.rpm
-sudo rpm -i bee-clef_0.5.0_amd64.rpm
-```
-
-#### ARM (Raspberry Pi)
-
-##### ARMv7
-
-```bash
-wget https://github.com/ethersphere/bee-clef/releases/download/v0.5.0/bee-clef_0.5.0_armv7.rpm
-sudo rpm -i bee-clef_0.5.0_armv7.rpm
-```
-
-##### ARM64
-
-```bash
-wget https://github.com/ethersphere/bee-clef/releases/download/v0.5.0/bee-clef_0.5.0_arm64.rpm
-sudo rpm -i bee-clef_0.5.0_arm64.rpm
-```
-
-</TabItem>
-<TabItem value="macos">
-
-```bash
-brew tap ethersphere/tap
-brew install swarm-clef
-```
-
-To run Bee Clef as a service now and on startup, run:
-
-```bash
-brew services start swarm-clef
+wget https://github.com/ethsana/sana-clef/releases/download/v0.5.0/sana-clef_0.5.0_amd64.deb
+sudo dpkg -i sana-clef_0.5.0_amd64.deb
 ```
 
 </TabItem>
 </Tabs>
 
 
-### Configuring Bee Clef
-Configuration files are stored in `/etc/default/bee-clef/` on Linux and `/usr/local/etc/swarm-clef/default` on MacOS.
+### Configuring Sana Clef
+Configuration files are stored in `/etc/default/sana-clef/` on Linux and `/usr/local/etc/swarm-clef/default` on MacOS.
 
 To install clef for Swarm mainnet, change `BEE_CLEF_CHAIN_ID` to be `100` in order to interact with the XDAI network. For testnet, use chain id `5`.
 
@@ -198,4 +140,4 @@ Additionally, Clef requires transaction signatures for the Bee's chequebook inte
 
 A shell script automating the post-initialisation permission changing and including the Clef config, `clef-service`, as well as the `4byte.json` transaction signature file and `rules.js` file can all be found in the [bee-clef repository](https://github.com/ethersphere/bee-clef/tree/master/packaging).
 
-Finally, once Clef is running, simply [configure your Bee node](/docs/working-with-ant/configuration) to enable Clef using `--clef-signer-enable` and point Bee to the correct ipc socket using `--clef-signer-endpoint`.
+Finally, once Clef is running, simply [configure your Bee node](/docs/access-the-ant/configuration) to enable Clef using `--clef-signer-enable` and point Bee to the correct ipc socket using `--clef-signer-endpoint`.
