@@ -19,7 +19,7 @@ To upload data to the swarm, you must perform the following steps:
 1. Fund your node's wallet with BZZ.
 2. Purchase a *batch* of stamps and burn your BZZ.
 3. Wait for the batch to propagate into the network.
-4. Upload your content, specifying the *Batch ID* so that Bee can attach stamps to your chunks.
+4. Upload your content, specifying the *Batch ID* so that Ant can attach stamps to your chunks.
 5. Download your content using your content's hash.
 
 ## Purchasing Your Batch of Stamps
@@ -28,11 +28,11 @@ In order to upload your data to swarm, you must agree to burn some of
 your BZZ to signify to storer and fowarder nodes that the content is
 important. Before you progress to the next step, you must buy stamps!
 See this guide on how to [purchase an appropriate batch of
-stamps](/docs/access-the-swarm/keep-your-data-alive).
+stamps](/docs/access-the-sana/keep-your-data-alive).
 
 ### Upload
 
-Once your Bee node is running, a HTTP API is enabled for you to interact with. The command line utility [curl](https://ec.haxx.se/http/http-multipart) is a great way to interact with a Bee node's API.
+Once your Ant node is running, a HTTP API is enabled for you to interact with. The command line utility [curl](https://ec.haxx.se/http/http-multipart) is a great way to interact with a Ant node's API.
 
 First, let's check to see if the API is running as expected...
 
@@ -41,10 +41,10 @@ curl http://localhost:1633
 ```
 
 ```
-Ethereum Swarm Bee
+Ethereum Swarm Ant
 ```
 
-Once running, a file can be uploaded by making an HTTP POST request to the `files` endpoint of the Bee API.
+Once running, a file can be uploaded by making an HTTP POST request to the `files` endpoint of the Ant API.
 
 Here, you must specify your *Batch ID* in the `Swarm-Postage-Batch-Id` header as follows.
 
@@ -60,7 +60,7 @@ curl --data-binary @bee.jpg  -H "Swarm-Postage-Batch-Id: 78a26be9b42317fe6f0cbea
 
 :::danger
 Data uploaded to the swarm is always public. In Swarm, sensitive files
-must be [encrypted](/docs/access-the-swarm/store-with-encryption)
+must be [encrypted](/docs/access-the-sana/store-with-encryption)
 before uploading to ensure their contents always remains private.
 :::
 
@@ -76,7 +76,7 @@ Keep this *address* safe, as we'll use it to retrieve our content later on.
 In Swarm, every piece of data has a unique *address* which is a unique and reproducible cryptographic hash digest. If you upload the same file twice, you will always receive the same hash. This makes working with data in Swarm super secure!
 
 :::info
-If you are uploading a large file it is useful to track the status of your upload as it is processed into the network. To improve the user experience, learn how to [follow the status of your upload](/docs/access-the-swarm/syncing). 
+If you are uploading a large file it is useful to track the status of your upload as it is processed into the network. To improve the user experience, learn how to [follow the status of your upload](/docs/access-the-sana/syncing). 
 
 Once your file has been **completely synced with the network**, you will be able to turn off your computer and other nodes will take over to serve the data for you!
 :::
@@ -99,8 +99,8 @@ You may even simply navigate to the URL in your browser:
 
 ## Public Gateways
 
-To share files with someone who isn't running a Bee node yet, simply change the host in the link to be one of our public gateways. Send the link to your friends, and they will be able to download the file too!
+To share files with someone who isn't running a Ant node yet, simply change the host in the link to be one of our public gateways. Send the link to your friends, and they will be able to download the file too!
 
 [https://download.gateway.ethswarm.org/bzz/22cb...aa00/](https://download.gateway.ethswarm.org/bzz/22cbb9cedca08ca8d50b0319a32016174ceb8fbaa452ca5f0a77b804109baa00/)
 
-<!-- If you are unable to download your file from a different Bee node, you may be experiencing connection issues, see [troubleshooting connectivity](/docs/troubleshooting/connectivitiy) for assistance. -->
+<!-- If you are unable to download your file from a different Ant node, you may be experiencing connection issues, see [troubleshooting connectivity](/docs/troubleshooting/connectivitiy) for assistance. -->

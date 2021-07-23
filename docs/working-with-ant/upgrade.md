@@ -1,6 +1,6 @@
 ---
-title: Upgrading Bee
-id: upgrading-bee
+title: Upgrading Ant
+id: upgrading-ant
 ---
 
 Keep a close eye on the
@@ -11,7 +11,7 @@ date to benefit from security updates and ensure you are able to
 properly interact with the Swarm.
 
 :::warning
-Bee sure to [backup](/docs/working-with-bee/backups) your clef key material and [cashout your cheques](/docs/working-with-bee/cashing-out) to make sure your BZZs are safe before applying updates.
+Bee sure to [backup](/docs/working-with-ant/backups) your clef key material and [cashout your cheques](/docs/working-with-ant/cashing-out) to make sure your BZZs are safe before applying updates.
 :::
 
 ### Upgrading to mainnet
@@ -22,7 +22,7 @@ Mainnet is a totally new network - you can not upgrade a testnet node to a mainn
 
 Bee v1.0 contains a few breaking changes which means that database
 migration must take place. We also introduced [postage
-stamps](/docs/access-the-swarm/keep-your-data-alive) which must be
+stamps](/docs/access-the-sana/keep-your-data-alive) which must be
 attached to chunks of data so that it will be retained in the Swarm
 network.
 
@@ -53,22 +53,22 @@ Procedure](#manual-migration-procedure).
 
 To update **without pinned content:**
 
-1. Optionally, [cashout your node's cheques](/docs/working-with-bee/cashing-out) to make sure your BZZs are safe. If you have cashed out recently, you can skip this step.
-2. [Backup your Bee](/docs/working-with-bee/backups) data, especially your keys folder!
+1. Optionally, [cashout your node's cheques](/docs/working-with-ant/cashing-out) to make sure your BZZs are safe. If you have cashed out recently, you can skip this step.
+2. [Backup your Bee](/docs/working-with-ant/backups) data, especially your keys folder!
 3. Upgrade your node, as you normally would (see below).
-4. Adjust your networkID in the configuration from `1` to `10` (the new networkID for the testnet). Check out the [configuration](/docs/working-with-bee/configuration) guide for more info on how to update your configuration.
+4. Adjust your networkID in the configuration from `1` to `10` (the new networkID for the testnet). Check out the [configuration](/docs/working-with-ant/configuration) guide for more info on how to update your configuration.
 5. Restart your node.
 
 Your Bee should start up as normal, and begin to connect to other Bees that are running Bee 1.0 or later.
 
 #### Manual Migration Procedure
 
-1. [Cashout your node](/docs/working-with-bee/cashing-out) to make sure your BZZs are safe. If you have cashed out recently, you can skip this step.
-2. [Backup your Bee](/docs/working-with-bee/backups) data, especially your keys folder!
-3. If you have pinned data, Download all your pinned data. Please use these to download all your data ready for re-upload with [postage stamps](/docs/access-the-swarm/keep-your-data-alive).
+1. [Cashout your node](/docs/working-with-ant/cashing-out) to make sure your BZZs are safe. If you have cashed out recently, you can skip this step.
+2. [Backup your Bee](/docs/working-with-ant/backups) data, especially your keys folder!
+3. If you have pinned data, Download all your pinned data. Please use these to download all your data ready for re-upload with [postage stamps](/docs/access-the-sana/keep-your-data-alive).
 4. Carefully, delete your `localstorage` folder **only**. *DO NOT DELETE* your `keys` or `statestore` folder. Your `localstorage` folder can be located by consulting your Bee's `data-dir` configuration parameter. If you are using Docker, please delete just the contents of the folder.
 5. Upgrade your node, as you normally would (see below).
-6. Adjust your networkID in the configuration from `1` to `10` (the new networkID for the testnet). Check out the [configuration](/docs/working-with-bee/configuration) guide for more info on how to update your configuration.
+6. Adjust your networkID in the configuration from `1` to `10` (the new networkID for the testnet). Check out the [configuration](/docs/working-with-ant/configuration) guide for more info on how to update your configuration.
 7. Restart your node.
 
 Your Bee should start up as normal, and begin to connect to other Bees that are running Bee 1.0.0 or later.

@@ -20,46 +20,46 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Working With Bee',
+      label: 'Working With Ant',
       items: [
-        'working-with-bee/configuration',
-        'working-with-bee/debug-api',
-        'working-with-bee/logs-and-files',
-        'working-with-bee/bee-tools',
-        'working-with-bee/cashing-out',
-        'working-with-bee/monitoring',
-        'working-with-bee/backups',
-        'working-with-bee/upgrading-bee',
-        'working-with-bee/uninstalling-bee'
+        'working-with-ant/configuration',
+        'working-with-ant/debug-api',
+        'working-with-ant/logs-and-files',
+        'working-with-ant/ant-tools',
+        'working-with-ant/cashing-out',
+        'working-with-ant/monitoring',
+        'working-with-ant/backups',
+        'working-with-ant/upgrading-ant',
+        'working-with-ant/uninstalling-ant'
       ],
       collapsed: true
     },
     {
       type: 'category',
-      label: 'Access the Swarm',
+      label: 'Access the Sana',
       items: [
-        'access-the-swarm/introduction',
-        'access-the-swarm/upload-and-download',
-        'access-the-swarm/upload-a-directory',
-        'access-the-swarm/store-with-encryption',
-        'access-the-swarm/host-your-website',
-        'access-the-swarm/syncing',
-        'access-the-swarm/keep-your-data-alive',
-        'access-the-swarm/pinning',
-        'access-the-swarm/light-nodes'
+        'access-the-sana/introduction',
+        'access-the-sana/upload-and-download',
+        'access-the-sana/upload-a-directory',
+        'access-the-sana/store-with-encryption',
+        'access-the-sana/host-your-website',
+        'access-the-sana/syncing',
+        'access-the-sana/keep-your-data-alive',
+        'access-the-sana/pinning',
+        'access-the-sana/light-nodes'
       ],
       collapsed: true
     },
     {
       type: 'category',
-      label: 'Dapps on Swarm',
+      label: 'Dapps on Sana',
       items: [
-        'dapps-on-swarm/introduction',
-        'dapps-on-swarm/develop-on-bee',
-        'dapps-on-swarm/bee-js',
-        'dapps-on-swarm/chunk-types',
-        'dapps-on-swarm/feeds',
-        'dapps-on-swarm/pss'
+        'dapps-on-sana/introduction',
+        'dapps-on-sana/develop-on-ant',
+        'dapps-on-sana/bee-js',
+        'dapps-on-sana/chunk-types',
+        'dapps-on-sana/feeds',
+        'dapps-on-sana/pss'
       ],
     },
     {
@@ -71,9 +71,9 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Bee Developers',
+      label: 'Ant Developers',
       items: [
-        'bee-developers/useful-dev-info'
+        'ant-developers/useful-dev-info'
       ],
     },
     {

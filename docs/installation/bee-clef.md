@@ -11,7 +11,7 @@ Bee makes use of Go Ethereum's external signer, [Clef](https://geth.ethereum.org
 Because Bee must sign a lot of transactions automatically and quickly, a [Bee specific version of Clef, Bee Clef](https://github.com/ethersphere/bee-clef) has been packaged which includes all the relevant configuration needed to make Clef work with Bee.
 
 :::caution
-Bee Clef will create a new Ethereum key pair for you during installation. Make sure you keep a [backup](/docs/working-with-bee/backups) of your key pair somewhere safe and secure!
+Bee Clef will create a new Ethereum key pair for you during installation. Make sure you keep a [backup](/docs/working-with-ant/backups) of your key pair somewhere safe and secure!
 :::
 
 ## Packages
@@ -198,4 +198,4 @@ Additionally, Clef requires transaction signatures for the Bee's chequebook inte
 
 A shell script automating the post-initialisation permission changing and including the Clef config, `clef-service`, as well as the `4byte.json` transaction signature file and `rules.js` file can all be found in the [bee-clef repository](https://github.com/ethersphere/bee-clef/tree/master/packaging).
 
-Finally, once Clef is running, simply [configure your Bee node](/docs/working-with-bee/configuration) to enable Clef using `--clef-signer-enable` and point Bee to the correct ipc socket using `--clef-signer-endpoint`.
+Finally, once Clef is running, simply [configure your Bee node](/docs/working-with-ant/configuration) to enable Clef using `--clef-signer-enable` and point Bee to the correct ipc socket using `--clef-signer-endpoint`.

@@ -143,7 +143,7 @@ By specifying the `-d` flag to `docker-compose` we run Bee and Bee Clef as a dae
 :::
 
 :::warning
-Docker Compose will create a Docker Volume called `bee` containing important key material. Make sure to [backup](/docs/working-with-bee/backups) the contents of your Docker volume!
+Docker Compose will create a Docker Volume called `bee` containing important key material. Make sure to [backup](/docs/working-with-ant/backups) the contents of your Docker volume!
 :::
 
 To determine the Bee node's address to fund, we can check the logs for our Bee *container*:

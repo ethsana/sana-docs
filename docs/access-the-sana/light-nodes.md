@@ -9,7 +9,7 @@ When a light node is requesting data from the network - it will not benefit from
 
 #### Configuration
 
-In order to configure light node mode, do not disable light mode in your Bee configuration.
+In order to configure light node mode, do not disable light mode in your Ant configuration.
 
 #### Mode of Operation
 
@@ -17,7 +17,7 @@ At present, light mode represents a pragmatic and elegant approach to improving 
 
 In general, *light mode* may be thought of as simply not participating
 in the activity of forwarding or storing chunks for other members of
-the swarm, these nodes are strictly consumers, who will pay BZZ in
+the sana, these nodes are strictly consumers, who will pay BZZ in
 return for services rendered by *full nodes* - those contributing
 towards moving data around the network.
 

@@ -258,10 +258,10 @@ network-id: 1
 
 Since Bee can take a lot of resources when providing services to the
 network in exchange for BZZ, Bee nodes default automatically to
-running as a [*light node*](/docs/access-the-swarm/light-nodes). To
+running as a [*light node*](/docs/access-the-sana/light-nodes). To
 allow your Bee to use your network bandwidth and computing resources
 to serve the network and start [cashing
-out](/docs/working-with-bee/cashing-out) cheques, set the
+out](/docs/working-with-ant/cashing-out) cheques, set the
 `--full-node` flag to `true`.
 
 ```yaml
@@ -325,7 +325,7 @@ nat-addr: "123.123.123.123:1634"
 For a new installation of Bee, the Debug API endpoint is *not* exposed
 by default for security reasons. To enable the Debug API endpoints,
 set the `--debug-api-enable` flag to `true` in your [configuration
-file](/docs/working-with-bee/configuration) and [restart your Bee's
+file](/docs/working-with-ant/configuration) and [restart your Bee's
 service](#edit-config-file).
 
 ```yaml
@@ -342,7 +342,7 @@ the public Internet.
 :::
 
 :::info
-See the [configuration](/docs/working-with-bee/configuration) section for more information on how to fine tune your Bee.
+See the [configuration](/docs/working-with-ant/configuration) section for more information on how to fine tune your Bee.
 :::
 
 ### Edit Config File
@@ -447,7 +447,7 @@ check chunks for validity when storing or forwarding them. This can
 take a while, so please be patient! Once this is complete, you will
 see Bee starting to add peers and connect to the network.
 
-While you are waiting for Bee to initalise, this is a great time to [back up your keys](/docs/working-with-bee/backups) so you can keep the tokens you earn safe.
+While you are waiting for Bee to initalise, this is a great time to [back up your keys](/docs/working-with-ant/backups) so you can keep the tokens you earn safe.
 
 ## Check Bee Is Working
 
@@ -468,7 +468,7 @@ Ethereum Swarm Bee
 Great! Our API is listening!
 
 Next, let's see if we have connected with any peers by querying our
-[Debug API](/docs/working-with-bee/debug-api).
+[Debug API](/docs/working-with-ant/debug-api).
 
 :::info
 Here we are using the `jq` utility to parse our javascript. Use your package manager to install `jq`, or simply remove everything after and including the first `|` to view the raw json without it.
@@ -485,10 +485,10 @@ curl -s localhost:1635/peers | jq ".peers | length"
 
 Perfect! We are accumulating peers, this means you are connected to
 the network, and ready to start [using
-Bee](/docs/access-the-swarm/introduction) to [upload and
-download](/docs/access-the-swarm/upload-and-download) content or host
-and browse [websites](/docs/access-the-swarm/host-your-website) hosted
+Bee](/docs/access-the-sana/introduction) to [upload and
+download](/docs/access-the-sana/upload-and-download) content or host
+and browse [websites](/docs/access-the-sana/host-your-website) hosted
 on the Swarm network - and accumulating cheques tht you can [cashout
-to get your BZZ](/docs/working-with-bee/cashing-out).
+to get your BZZ](/docs/working-with-ant/cashing-out).
 
 Welcome to the swarm! 🐝 🐝 🐝 🐝 🐝

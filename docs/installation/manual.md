@@ -54,7 +54,7 @@ It is strongly advised to use a service manager such as `systemctl` to run Bee i
 When you first run Bee, you will be asked to input a user password. It is important to choose a strong unique password, as this will protect your valuable **private key** which is generated during startup. 
 
 This secret key is stored encrypted in your [Bee data
-directory](/docs/working-with-bee/configuration#--data-dir) (default
+directory](/docs/working-with-ant/configuration#--data-dir) (default
 `~/.bee`). It represents your Swarm Address - your anonymous identity
 in Swarm.
 
@@ -120,10 +120,10 @@ respond to requests for these chunks from other peers, for which you
 will soon be rewarded in BZZ.
 
 :::tip Incentivisation
-In Swarm, storing chunks of data, serving and forwarding them to other nodes earns you rewards! Follow this guide to learn how to regularly [cashout](/docs/working-with-bee/cashing-out) cheques other nodes send you in return for your services, so that you can get your BZZ!
+In Swarm, storing chunks of data, serving and forwarding them to other nodes earns you rewards! Follow this guide to learn how to regularly [cashout](/docs/working-with-ant/cashing-out) cheques other nodes send you in return for your services, so that you can get your BZZ!
 :::
 
-Your Bee client has now generated an elliptic curve keypair similar to an Ethereum wallet. These are stored in your [data directory](/docs/working-with-bee/configuration), in the `keys` folder.
+Your Bee client has now generated an elliptic curve keypair similar to an Ethereum wallet. These are stored in your [data directory](/docs/working-with-ant/configuration), in the `keys` folder.
 
 :::danger Keep Your Keys and Password Safe!
 Your keys and password are very important, backup these files and
@@ -131,13 +131,13 @@ store them in a secure place that only you have access to. With great
 privacy comes great responsibility - while no-one will ever be able to
 guess your key - you will not be able to recover them if you lose them
 either, so be sure to look after them well and [keep secure
-backups](/docs/working-with-bee/backups).
+backups](/docs/working-with-ant/backups).
 :::
 
 ## Getting help
 The CLI has documentation built-in. Running `bee` gives you an entry point to the documentation. Running `bee start -h` or `bee start --help` will tell you how you can configure your Bee node via the command line arguments.
 
-You may also check out the [configuration guide](/docs/working-with-bee/configuration), or simply run your Bee terminal command with the `--help` flag, eg. `bee start --help` or `bee --help`.
+You may also check out the [configuration guide](/docs/working-with-ant/configuration), or simply run your Bee terminal command with the `--help` flag, eg. `bee start --help` or `bee --help`.
 
 
 

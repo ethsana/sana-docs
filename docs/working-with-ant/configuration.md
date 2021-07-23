@@ -18,7 +18,7 @@ settings!
 ### Full Node
 
 By default, Bee runs as a [light
-node](/docs/access-the-swarm/light-nodes). To fully participate in
+node](/docs/access-the-sana/light-nodes). To fully participate in
 the swarm, you must set the `--full-node` option to `true`.
 
 ### Swap Endpoint
@@ -65,7 +65,7 @@ more automated in the future!
 
 ### ENS Endpoint
 
-The ENS domain resolution system is used to host websites on Bee, and in order to use this your Bee must be connected to an Ethereum blockchain node on the main network. If you would like to [browse the swarm](/docs/access-the-swarm/browse-the-swarm) We recommend you sign up to [Infura's](https://infura.io) API service and set your `--resolver-options=https://mainnet.infura.io/v3/your-api-key`.
+The ENS domain resolution system is used to host websites on Bee, and in order to use this your Bee must be connected to an Ethereum blockchain node on the main network. If you would like to [browse the swarm](/docs/access-the-sana/browse-the-swarm) We recommend you sign up to [Infura's](https://infura.io) API service and set your `--resolver-options=https://mainnet.infura.io/v3/your-api-key`.
 
 ## Specifying Configuration
 

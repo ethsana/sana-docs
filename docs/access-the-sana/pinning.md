@@ -3,28 +3,28 @@ title: Pinning
 id: pinning
 ---
 
-Each Bee node is configured to reserve a certain amount of memory on your computer's hard drive to store and serve chunks within their *neighbourhood of responsibility* for other nodes in the Swarm network. Once this alloted space has been filled, each Bee node deletes older chunks to make way for newer ones as they are uploaded by the network.
+Each Ant node is configured to reserve a certain amount of memory on your computer's hard drive to store and serve chunks within their *neighbourhood of responsibility* for other nodes in the Sana network. Once this alloted space has been filled, each Ant node deletes older chunks to make way for newer ones as they are uploaded by the network.
 
 Each time a chunk is accessed, it is moved back to the end of the deletion queue, so that regularly accessed content stays alive in the network and is not deleted by a node's garbage collection routine.
 
-This, however, presents a problem for content which is important, but accessed seldom requested. In order to keep this content alive, Bee nodes provide a facility to **pin** important content so that it is not deleted.
+This, however, presents a problem for content which is important, but accessed seldom requested. In order to keep this content alive, Ant nodes provide a facility to **pin** important content so that it is not deleted.
 
 There are two flavours of pinning, *local* and *global*.
 
 ## Local Pinning
 
-If a node operator wants to keep content so that it can be accessed only by local users of that node, via the [APIs](/docs/api-reference/api-reference) or Gateway, chunks can be *pinned* either during upload, or retrospectively using the Swarm reference.
+If a node operator wants to keep content so that it can be accessed only by local users of that node, via the [APIs](/docs/api-reference/api-reference) or Gateway, chunks can be *pinned* either during upload, or retrospectively using the Sana reference.
 
 :::caution
-Files pinned using local pinning will still not necessarily be available to the rest of the network. Read [global pinning](/docs/access-the-swarm/pinning#global-pinning) to find out how to keep your files available to the whole of the swarm.
+Files pinned using local pinning will still not necessarily be available to the rest of the network. Read [global pinning](/docs/access-the-sana/pinning#global-pinning) to find out how to keep your files available to the whole of the sana.
 :::
 
 ### Pin During Upload
 
-To store content so that it will persist even when Bee's garbage collection routine is deleting old chunks, we simply pass the `Swarm-Pin` header set to `true` when uploading.
+To store content so that it will persist even when Ant's garbage collection routine is deleting old chunks, we simply pass the `Sana-Pin` header set to `true` when uploading.
 
 ```bash
-curl -H "Swarm-Pin: true" -H "Swarm-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264"  --data-binary @bee.mp4 localhost:1633/bzz\?bee.mp4
+curl -H "Sana-Pin: true" -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264"  --data-binary @bee.mp4 localhost:1633/bzz\?bee.mp4
 ```
 
 ```json
@@ -33,7 +33,7 @@ curl -H "Swarm-Pin: true" -H "Swarm-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e4
 
 ### Administer Pinned Content
 
-To check what content is currently pinned on your node, query the `pins` endpoint of your Bee API:
+To check what content is currently pinned on your node, query the `pins` endpoint of your Ant API:
 
 ```bash
 curl localhost:1633/pins
@@ -78,9 +78,9 @@ Pinning and unpinning is possible for files (as in the example) and also the chu
 :::
 
 #### Pinning Already Uploaded Content
-The previous example showed how we can pin content upon upload. It is also possible to pin content that is already uploaded and present in the swarm.
+The previous example showed how we can pin content upon upload. It is also possible to pin content that is already uploaded and present in the sana.
 
-To do so, we can send a `POST` request including the swarm reference to the files pinning endpoint.
+To do so, we can send a `POST` request including the sana reference to the files pinning endpoint.
 
 ```bash
 curl -XPOST http://localhost:1633/pin/7b344ea68c699b0eca8bb4cfb3a77eb24f5e4e8ab50d38165e0fb48368350e8f
@@ -108,15 +108,15 @@ While the pin operation will attempt to fetch content from the network if it is 
 
 ## Global Pinning
 
-[Local pinning](/docs/access-the-swarm/pinning#local-pinning) ensures that your own node does not delete uploaded files. But other nodes that store your
+[Local pinning](/docs/access-the-sana/pinning#local-pinning) ensures that your own node does not delete uploaded files. But other nodes that store your
 chunks (because they fall within their *neighbourhood of responsibility*) may have deleted content that has not been accessed recently to make room for new chunks.
 
 :::info
 For more info on how chunks are distributed, persisted and stored within the network, read
-<a href="/the-book-of-swarm.pdf" target="_blank" rel="noopener noreferrer">The Book of Swarm</a> .
+<a href="/the-book-of-sana.pdf" target="_blank" rel="noopener noreferrer">The Book of Sana</a> .
 :::
 
-To keep this content alive, your Bee node can be configured to refresh this content when it is requested by other nodes in the network, using **global pinning**.
+To keep this content alive, your Ant node can be configured to refresh this content when it is requested by other nodes in the network, using **global pinning**.
 
 First, we must start up our node with the `global-pinning-enable` flag set.
 
@@ -131,7 +131,7 @@ bee start\
 Next, we pin our file locally, as shown above.
 
 ```bash
-curl -H "Swarm-Pin: true" --data-binary @bee.mp4 localhost:1633/bzz\?bee.mp4
+curl -H "Sana-Pin: true" --data-binary @bee.mp4 localhost:1633/bzz\?bee.mp4
 ```
 
 ```json
@@ -142,7 +142,7 @@ Now, when we distribute links to our files, we must also specify the
 first two bytes of our overlay address as the *target*. If a chunk
 that has already been garbage collected by its storer nodes is
 requested, the storer node will send a message using
-[PSS](/docs/dapps-on-sana/pss) to the swarm neighbourhood defined by
+[PSS](/docs/dapps-on-sana/pss) to the sana neighbourhood defined by
 this prefix, of which our node is a member.
 
 Let's use the addresses API endpoint to find out our target prefix:
@@ -162,5 +162,5 @@ curl http://localhost:1633/bzz/7b344ea68c699b0eca8bb4cfb3a77eb24f5e4e8ab50d38165
 ```
 
 Now, even if our chunks are deleted, they will be repaired in the
-network by our local Bee node and will always be available to the
-whole swarm!
+network by our local Ant node and will always be available to the
+whole sana!

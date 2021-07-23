@@ -12,7 +12,7 @@ Bee is a versatile piece of software that caters for a diverse array of use case
 
 If you want to interact with the Bee ecosystem in a decentralised way,
 but not earn BZZ by storing or forwarding chunks, simply run a Bee
-[light node](/docs/access-the-swarm/light-nodes) in the background on
+[light node](/docs/access-the-sana/light-nodes) in the background on
 your laptop or desktop computer. This will enable direct access to the
 swarm from your web browser and other applications.
 
@@ -20,7 +20,7 @@ swarm from your web browser and other applications.
 
 ### Support the Network and Earn BZZ by Running a Full Node
 
-Earn [BZZ](/docs/working-with-bee/cashing-out) and help keep the swarm
+Earn [BZZ](/docs/working-with-ant/cashing-out) and help keep the swarm
 strong by running your own **full node**. It's easy to set up your own
 Bee on a [Raspberry Pi](/docs/installation/rasp-bee-ry-pi), cloud
 host, or any home computer that's connected to the internet.

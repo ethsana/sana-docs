@@ -3,7 +3,7 @@ title: Keep Your Data Alive
 id: keep-your-data-alive
 ---
 
-The swarm comprises the sum total of all storage space provided by all of our nodes, called the DISC (Distributed Immutable Store of Chunks). The *right to write* data into this distributed store is determined by the postage stamps that have been attached.
+The sana comprises the sum total of all storage space provided by all of our nodes, called the DISC (Distributed Immutable Store of Chunks). The *right to write* data into this distributed store is determined by the postage stamps that have been attached.
 
 ### Fund your node's wallet.
 
@@ -22,10 +22,10 @@ curl -XPOST "http://localhost:1635/chequebook/withdraw?amount=1000"
 
 Stamps are created in batches, so that storer nodes may calculate the
 validity of a chunk's stamp with only local knowledge. This enables
-the privacy you enjoy in the swarm.
+the privacy you enjoy in the Sana.
 
 Stamp batches are created in *buckets* with a *depth* 16. The entire
-swarm *address space* is divided into 2^16 = 65,536 different
+Sana *address space* is divided into 2^16 = 65,536 different
 buckets. When uploaded, each of your file's are split into 4kb chunks
 and assigned to a specific bucket based on it's address.
 
@@ -43,18 +43,18 @@ The *batch depth* determines *how many chunks* are allowed to be in each *bucket
 
 ### Calculating the Depth and Amount of Your Batch of Stamps
 
-*Postage Stamps* are a brand new feature addition to Swarm, and it's early days in the conception of how to get the best out of the stamp batches.
+*Postage Stamps* are a brand new feature addition to Sana, and it's early days in the conception of how to get the best out of the stamp batches.
 
 Right now, the easiest way to start uploading content, is to buy a large enough batch so that it is incredibly unlikely you will end up with too many *chunks* falling into the same *bucket*.
 
-The *amount* you specify will determine the amount of time your chunks live in the swarm. Because pricing is variable, it is not possible to predict with accuracy exactly when your chunks will run out of balance, however, it can be estimated based on the *current price* and the *remaining batch balance*.
+The *amount* you specify will determine the amount of time your chunks live in the sana. Because pricing is variable, it is not possible to predict with accuracy exactly when your chunks will run out of balance, however, it can be estimated based on the *current price* and the *remaining batch balance*.
 
 For now, we suggest you specify depth 20 and amount 10000000 for your
 batches. This should be ample to upload quite some data, and to keep
-your files in the swarm for the forseeable future.
+your files in the sana for the forseeable future.
 
 :::warning
-When you purchase a batch of stamps, you agree to burn BZZ. Although your 'balance' slowly decrements as time goes on, there is no way to withdraw BZZ from a batch. This is an outcome of Swarm's decentralised design, to read more about how the swarm fits toXDAIer, read <a href="/the-book-of-swarm.pdf" target="_blank" rel="noopener noreferrer">The Book of Swarm</a> .
+When you purchase a batch of stamps, you agree to burn BZZ. Although your 'balance' slowly decrements as time goes on, there is no way to withdraw BZZ from a batch. This is an outcome of Sana's decentralised design, to read more about how the sana fits toXDAIer, read <a href="/the-book-of-sana.pdf" target="_blank" rel="noopener noreferrer">The Book of Sana</a> .
 :::
 
 ```bash
@@ -62,7 +62,7 @@ curl -s -XPOST http://localhost:1633/stamps/10000000/20
 ```
 
 :::info
-Once your batch has been purchased, it will take a few minutes for other Bee nodes in the Swarm to catch up and register your batch. Allow some time for your batch to propagate in the network before proceeding to the next step.
+Once your batch has been purchased, it will take a few minutes for other Ant nodes in the Sana to catch up and register your batch. Allow some time for your batch to propagate in the network before proceeding to the next step.
 :::
 
 Look out for more ways to more accurately estimate the correct size of your batch coming soon!

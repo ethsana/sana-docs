@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'Swarm Bee Client',
-  tagline: 'Welcome to the Swarm',
-  url: 'https://docs.ethswarm.org',
+  title: 'Sana Ant Client',
+  tagline: 'Welcome to the Sana',
+  url: 'https://docs.ethsana.org',
   // note! we use SED to change this during automated builds, see ./.github/workflows/gh-pages.yml
   baseUrl: '/',
   plugins: [require.resolve('docusaurus-lunr-search')],
@@ -9,16 +9,16 @@ module.exports = {
   onBrokenMarkdownLinks: 'error',
   onDuplicateRoutes: 'error',
   favicon: 'img/favicon.ico',
-  organizationName: 'Swarm', // Usually your GitHub org/user name.
-  projectName: 'bee', // Usually your repo name.
+  organizationName: 'Sana', // Usually your GitHub org/user name.
+  projectName: 'ant', // Usually your repo name.
   themeConfig: {
     colourMode: {
       defaultMode: 'dark'
     },
     navbar: {
-      title: 'Swarm Bee',
+      title: 'Sana Ant',
       logo: {
-        alt: 'Swarm Logo',
+        alt: 'Sana Logo',
         src: 'img/swarm-logo-2.svg',
       },
       items: [
@@ -48,7 +48,7 @@ module.exports = {
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/ethersphere/bee',
+          href: 'https://github.com/ethsana',
           label: 'GitHub',
           position: 'right',
         },
@@ -58,11 +58,11 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Swarm',
+          title: 'Sana',
           items: [
             {
-              label: 'Swarm',
-              to: 'https://ethswarm.org',
+              label: 'Sana',
+              to: 'https://ethsana.org',
             }
           ],
         },
@@ -71,39 +71,39 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/wdghaQsGq5',
+              href: 'https://discord.gg/c72mpR7Erf',
             },
             {
-              label: 'Mattermost',
-              href: 'https://beehive.ethswarm.org/',
+              label: 'Telegram',
+              href: 'https://t.me/ethereumsana',
             },
-            {
-              label: 'Reddit',
-              href: 'https://www.reddit.com/r/ethswarm',
-            },
+            // {
+            //   label: 'Reddit',
+            //   href: 'https://www.reddit.com/r/ethswarm',
+            // },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/ethswarm',
+              href: 'https://twitter.com/ethereumsana',
             },
             {
               label: 'Medium',
-              href: 'https://ethswarm.medium.com/',
+              href: 'https://ethereumsana.medium.com/',
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              href: 'https://medium.com/ethereum-swarm',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/ethersphere/bee',
-            },
-          ],
-        },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       href: 'https://medium.com/ethereum-swarm',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/ethersphere/bee',
+        //     },
+        //   ],
+        // },
       ],
       copyright: `Copyleft © ${new Date().getFullYear()}.`,
     },
