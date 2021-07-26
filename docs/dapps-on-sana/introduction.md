@@ -5,9 +5,9 @@ id: introduction
 
 Swarm is designed with dapps in mind, and much time has been devoted to designing patterns and prototying ways to build 2nd layer dapps on top of the DISC that Bee provides! Read much more about how to structure your data and build unstoppable dapps in <a href="/the-book-of-swarm.pdf" target="_blank" rel="noopener noreferrer">The Book of Swarm</a> .
 
-## Developing on Bee
+## Developing on Ant
 
-Bee isn't just for mining BZZ - learn how to [use Bee for all your dapp development, production infrastructure and deployment needs](/docs/access-the-sana/develop-on-bee)!
+Ant isn't just for mining BZZ - learn how to [use Ant for all your dapp development, production infrastructure and deployment needs](/docs/access-the-sana/develop-on-ant)!
 
 ## Bee JS
 
@@ -30,7 +30,7 @@ can use to build amazing applications.
 
 ## PSS
 
-Hey there! Pss! 🤫 Swarm's trojan chunks are implemented in Bee to
+Hey there! Pss! 🤫 Swarm's trojan chunks are implemented in Ant to
 deliver [Postal Service on Swarm](/docs/access-the-sana/pss) - a
 pub-sub system that provides a totally leak-proof messaging system
 over the swarm.

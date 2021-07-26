@@ -3,9 +3,9 @@ title: Cashing Out
 id: cashing-out
 ---
 
-As your Bee forwards and serves chunks to its peers, it is rewarded in
+As your Ant forwards and serves chunks to its peers, it is rewarded in
 BZZ in the form of cheques. Once these cheques accumulate sufficient
-value, you may *cash them out* using Bee's API. This process transfers
+value, you may *cash them out* using Ant's API. This process transfers
 money from your peer's chequebooks into your own, which you can then
 withdrawal to your wallet to do with as you please!
 
@@ -17,10 +17,10 @@ relieves unneccesary congestion on the blockchain. 💩
 
 :::info
 Learn more about how SWAP and other accounting protocols work by reading
-<a href="/the-book-of-swarm.pdf" target="_blank" rel="noopener noreferrer">The Book of Swarm</a> .
+<a href="/the-book-of-sana.pdf" target="_blank" rel="noopener noreferrer">The Book of Sana</a> .
 :::
 
-Bee contains a rich set of features to enable you to query the current accounting state of your node. First, let's query our node's current balance by sending a POST request to the balances endpoint.
+Ant contains a rich set of features to enable you to query the current accounting state of your node. First, let's query our node's current balance by sending a POST request to the balances endpoint.
 
 ```bash
 curl localhost:1635/chequebook/balance | jq
@@ -56,7 +56,7 @@ curl localhost:1635/balances | jq
 }
 ```
 
-In Swarm, these per-peer balances represent trustful agreements between nodes. Tokens only actually change hands when a node settles a cheque. This can either be triggered manually or when a certain threshold is reached with a peer. In this case, a settlement takes place. You may view these using the settlements endpoint.
+In Sana, these per-peer balances represent trustful agreements between nodes. Tokens only actually change hands when a node settles a cheque. This can either be triggered manually or when a certain threshold is reached with a peer. In this case, a settlement takes place. You may view these using the settlements endpoint.
 
 More info can be found by using the chequebook API.
 
@@ -139,18 +139,18 @@ track your transaction and make sure it completed successfully.
 
 # Managing uncashed cheques
 
-For the Bee process, the final step of earning BZZ is cashing a
+For the Ant process, the final step of earning BZZ is cashing a
 cheque. It is worth noting that a cheque is not yet actual BZZs. In
-Bee, a cheque, just like a real cheque, is a promise to hand over
+Ant, a cheque, just like a real cheque, is a promise to hand over
 money upon request. In real life, you would present the cheque to a
-bank. In swarm life, we present the cheque to a smart-contract.
+bank. In sana life, we present the cheque to a smart-contract.
 
 Holding on to a swap-cheque is risky; it is possible that the owner of
 the chequebook has issued cheques worth more BZZ than is contained in
 their chequebook contract. For this reason, it is important to cash
 out your cheques every so often.
 
-With the set of API endpoints, as offered by Bee, it is possible to
+With the set of API endpoints, as offered by Ant, it is possible to
 develop a script that fully manages the uncashed cheques for you. As
 an example, we offer you a [very basic
 script](https://gist.github.com/ralph-pichler/3b5ccd7a5c5cd0500e6428752b37e975#file-cashout-sh),
@@ -194,7 +194,7 @@ missing a simple cashout script for Windows. Please see the
 :::
 
 :::info
-You can find the officially deployed smart-contract by the Swarm team
+You can find the officially deployed smart-contract by the Sana team
 in the [swap-swear-and-swindle
 repository](https://github.com/ethersphere/swap-swear-and-swindle).
 :::

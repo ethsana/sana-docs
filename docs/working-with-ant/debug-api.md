@@ -3,21 +3,21 @@ title: Debug API
 id: debug-api
 ---
 
-Now that you have created your Swarm wallet and your Bee node has
-begun to participate in the global Swarm network, we can use the Debug
+Now that you have created your Sana wallet and your Ant node has
+begun to participate in the global Sana network, we can use the Debug
 API to take a closer look at what's happening with your node.
 
-The [Debug API](/docs/api-reference/api-reference) provides a privileged environment where you are able to interact with your Bee node to get more information about the status of your node.
+The [Debug API](/docs/api-reference/api-reference) provides a privileged environment where you are able to interact with your Ant node to get more information about the status of your node.
 
 :::danger
 Never expose your Debug API to the public Internet, make sure to use a
 firewall or bind to *localhost*, as we have in the example below.
 :::
 
-To use the Debug API we must first configure Bee to enable it, as it is disabled by default.
+To use the Debug API we must first configure Ant to enable it, as it is disabled by default.
 
 ```bash
-bee start --debug-api-enable --debug-api-addr=localhost:1635
+ant start --debug-api-enable --debug-api-addr=localhost:1635
 ```
 
 #### Checking Connectivity
@@ -40,7 +40,7 @@ Here we are using the `jq` command line utility to count the amount of objects i
 
 #### Inspect Network Topology
 
-We can gain even more insight into how your Bee is becoming a part of
+We can gain even more insight into how your Ant is becoming a part of
 the global network using the `topology` endpoint.
 
 ```bash
@@ -49,8 +49,8 @@ curl -X GET http://localhost:1635/topology | jq
 
 In this example, our node is beginning to form a healthy network. We hope to see our node adding and
 connecting to nodes in as many bins as possible. Learn more about promiximity order bins and how your
-Bee node becomes part of the ordered p2p network in
-<a href="/the-book-of-swarm.pdf" target="_blank" rel="noopener noreferrer">The Book of Swarm</a> .
+Ant node becomes part of the ordered p2p network in
+<a href="/the-book-of-sana.pdf" target="_blank" rel="noopener noreferrer">The Book of Sana</a> .
 
 ```json
 {

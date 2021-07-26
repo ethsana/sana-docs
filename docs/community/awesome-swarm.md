@@ -34,9 +34,9 @@ https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/
 
 ### Tools
 
-https://github.com/ethersphere/bee-factory
-https://github.com/ethersphere/bee-dashboard
-https://github.com/ethersphere/swarm-cli
+https://github.com/ethesana/ant-factory
+https://github.com/ethesana/ant-dashboard
+https://github.com/ethesana/sana
 
 ### Misc
 

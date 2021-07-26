@@ -3,7 +3,7 @@ title: Backups
 id: backups
 ---
 
-In order to ensure you are able to redeploy your Bee node in the event of a disaster, the contents of several directories must be retained.
+In order to ensure you are able to redeploy your Ant node in the event of a disaster, the contents of several directories must be retained.
 
 :::danger
 Your keys represent your ability to access your BZZ. Make sure to back up your keys directory in multiple places, so you can keep your BZZs safe! See below to discover the location of your keys.
@@ -13,24 +13,24 @@ Your keys represent your ability to access your BZZ. Make sure to back up your k
 Don't forget - it's not a backup until you have restored it! Make sure to test your backups out so that you can be sure of recovery incase of data loss or data corruption.
 :::
 
-## Bee
+## Ant
 
-To restore a Bee node you must have the following directories, all backed up in an atomic moment so that they are syncronised.
+To restore a Ant node you must have the following directories, all backed up in an atomic moment so that they are syncronised.
 
-All of this data is contained within the *data directory* specified in your Bee configuration. 
+All of this data is contained within the *data directory* specified in your Ant configuration. 
 
 ### Ubuntu / Debian / Raspbian / CentOS Package Managers
 
 For Linux installations from package managers *yum* or *apt*, your data directory is located at:
 
 ```bash
-/var/lib/bee
+/var/lib/ant
 ```
 
 It may be also useful for you to retain your configuration files, which are held at:
 
 ```bash
-/etc/bee
+/etc/ant
 ```
 
 ### Manual
@@ -38,30 +38,30 @@ It may be also useful for you to retain your configuration files, which are held
 For a [manual installation](/docs/installation/manual) your data directory is normally located at:
 
 ```bash
-~/.bee
+~/.ant
 ```
 
 ### Docker Compose
 
-When using our [Docker Compose](/docs/installation/docker) configuration files to run your node, Docker will create a volume for Bee and a volume for Bee Clef.
+When using our [Docker Compose](/docs/installation/docker) configuration files to run your node, Docker will create a volume for Ant and a volume for Ant Clef.
 
 You may use `docker cp` to retrieve the contents of these folders.
 
 ```bash
-docker cp bee_bee_1:/home/bee/.bee/ bee
-docker cp bee_clef_1:/app clef
+docker cp ant_ant_1:/home/ant/.ant/ ant
+docker cp ant_clef_1:/app clef
 ```
 
 ## Data Types
 
-Your Bee data directory contains three stores.
+Your Ant data directory contains three stores.
 
 ```
 /Users/sig/.bee
 ├── keys
 │   ├── libp2p.key
 │   ├── pss.key
-│   └── swarm.key
+│   └── sana.key
 ├── localstore
 │   └── ...
 └── statestore
@@ -71,13 +71,13 @@ Your Bee data directory contains three stores.
 ### Keys
 
 The `keys` directory contains your important key material. This is the
-most important data by far, and is produced and retained from Bee's
-initialisation procedure. If you have used **bee-clef** to manage your
+most important data by far, and is produced and retained from Ant's
+initialisation procedure. If you have used **ant-clef** to manage your
 key material and signing procedures, see below for information on how
 to keep backups of your keys.
 
 :::info
-If you are using Bee to manage your keys (not recommended - please use [Bee Clef](/docs/installation/bee-clef)!). You must convert your keys in order to import into Metamask and other Ethereum wallets. You may use [exportSwarmKeys](https://github.com/ethersphere/exportSwarmKey) to make the conversion.
+If you are using Ant to manage your keys (not recommended - please use [Ant Clef](/docs/installation/ant-clef)!). You must convert your keys in order to import into Metamask and other Ethereum wallets. You may use [exportSwarmKeys](https://github.com/ethersphere/exportSwarmKey) to make the conversion.
 :::
 
 ### Statestore
@@ -96,9 +96,9 @@ locally, either because they are frequently requested, or they are
 pinned in your node, or they are in your neighbourhood of
 responsibility.
 
-## Bee Clef
+## Ant Clef
 
-It is also important to back up Bee Clef's stored data. This includes your sensitive key material, so make sure to keep this private and safe!
+It is also important to back up Ant Clef's stored data. This includes your sensitive key material, so make sure to keep this private and safe!
 
 ### Ubuntu / Debian / Raspbian / CentOS Package Managers
 
@@ -107,16 +107,16 @@ Your keys represent your ability to access your BZZ. Make sure to back up your k
 :::
 
 For Linux installations by the package managers *yum* or *apt*, your
-`bee-clef` data directory is located at:
+`ant-clef` data directory is located at:
 
 ```bash
-/var/lib/bee-clef/
+/var/lib/ant-clef/
 ```
 
 Configuration files are stored in:
 
 ```bash
-/etc/bee-clef/
+/etc/ant-clef/
 ```
 
 ### Manual

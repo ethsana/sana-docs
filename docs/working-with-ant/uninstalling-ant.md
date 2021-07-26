@@ -3,43 +3,43 @@ title: Uninstalling Ant
 id: uninstalling-ant
 ---
 
-## Uninstalling Bee
+## Uninstalling Ant
 
-If you need to remove Bee, you may simply run the below commands.
+If you need to remove Ant, you may simply run the below commands.
 
 ### Ubuntu / Debian / Raspbian
 
 :::danger
-Uninstalling Bee will also delete Bee and Bee-clef data! Make sure you [make backups](/docs/working-with-ant/backups) so you don't lose your keys and data.
+Uninstalling Ant will also delete Ant and Ant-clef data! Make sure you [make backups](/docs/working-with-ant/backups) so you don't lose your keys and data.
 :::
 
 ```bash
-sudo apt-get remove bee
-sudo apt-get remove bee-clef
+sudo apt-get remove ant
+sudo apt-get remove ant-clef
 ```
 
 ### Centos
 
 :::danger
-Uninstalling Bee will also delete Bee and Bee-clef data! Make sure you [make backups](/docs/working-with-ant/backups) so you don't lose your keys and data.
+Uninstalling Ant will also delete Ant and Ant-clef data! Make sure you [make backups](/docs/working-with-ant/backups) so you don't lose your keys and data.
 :::
 
 ```bash
-sudo yum remove bee
-sudo yum remove bee-clef
+sudo yum remove ant
+sudo yum remove ant-clef
 ```
 
 
 ## Data Locations
 
-### Bee-clef
+### Ant-clef
 
-Configuration files are stored in `/etc/bee-clef/`
+Configuration files are stored in `/etc/ant-clef/`
 
-Key material and other data is stored in `/var/lib/bee-clef/`
+Key material and other data is stored in `/var/lib/ant-clef/`
 
-### Bee
+### Ant
 
-Configuration files are stored in `/etc/bee/`
+Configuration files are stored in `/etc/ant/`
 
-State, chunks and other data is stored in `/var/lib/bee/`
+State, chunks and other data is stored in `/var/lib/ant/`

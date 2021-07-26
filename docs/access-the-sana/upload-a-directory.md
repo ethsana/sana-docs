@@ -6,7 +6,7 @@ id: upload-a-directory
 It is possible to use Ant to upload directories of files all at once. 
 
 :::tip
-Comfortable with nodeJS and JavaScript? Check out [swarm-cli](https://github.com/ethersphere/swarm-cli), a command line tool you can use to easily interact with your Ant node!
+Comfortable with nodeJS and JavaScript? Check out [sana-cli](https://github.com/ethesana/sana), a command line tool you can use to easily interact with your Ant node!
 :::
 
 :::info

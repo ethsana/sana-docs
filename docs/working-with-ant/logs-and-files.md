@@ -5,26 +5,26 @@ id: logs-and-files
 
 ### Linux
 
-If you have installed Bee on Linux using a package manager you will now be able to the manage your Bee service using `systemctl`.
+If you have installed Ant on Linux using a package manager you will now be able to the manage your Ant service using `systemctl`.
 
 ```bash
-systemctl status bee
+systemctl status ant
 ```
 
 ```
-● bee.service - Bee - Ethereum Swarm node
-     Loaded: loaded (/lib/systemd/system/bee.service; enabled; vendor preset: enabled)
+● ant.service - Ant - Ethereum Sana node
+     Loaded: loaded (/lib/systemd/system/ant.service; enabled; vendor preset: enabled)
      Active: active (running) since Fri 2020-11-20 23:50:15 GMT; 6s ago
 ```
 
 Logs are available using the `journalctl` command:
 
 ```bash
-journalctl --lines=100 --follow --unit bee
+journalctl --lines=100 --follow --unit ant
 ```
 
 ```text
-INFO[2021-02-09T18:55:11Z] swarm public key 03379f7aa673b7f03737064fd23ba1453619924a4602e70bbccc133ba67d0968bd
+INFO[2021-02-09T18:55:11Z] sana public key 03379f7aa673b7f03737064fd23ba1453619924a4602e70bbccc133ba67d0968bd
 DEBU[2021-02-09T18:55:11Z] using existing libp2p key
 DEBU[2021-02-09T18:55:11Z] using existing pss key
 INFO[2021-02-09T18:55:11Z] pss public key 03bae655ce94431e1f2c2de8d017f88c8c5c293ef0057379223084aba9e318596e
@@ -39,26 +39,26 @@ WARN[2021-02-09T18:55:15Z] cannot continue until there is sufficient ETH (for Ga
 Services are managed using Homebrew services.
 
 ```bash
-brew services restart swarm-bee
+brew services restart sana-ant
 ```
 
-Logs are available at `/usr/local/var/log/swarm-bee/bee.log`
+Logs are available at `/usr/local/var/log/sana-ant/ant.log`
 
 ```bash
-tail -f /usr/local/var/log/swarm-bee/bee.log
+tail -f /usr/local/var/log/sana-ant/ant.log
 ```
 
 
 ## Data Locations
 
-### Bee-clef
+### Ant-clef
 
-Configuration files are stored in `/etc/bee-clef/`
+Configuration files are stored in `/etc/ant-clef/`
 
-Key material and other data is stored in `/var/lib/bee-clef/`
+Key material and other data is stored in `/var/lib/ant-clef/`
 
-### Bee
+### Ant
 
-Configuration files are stored in `/etc/bee/`
+Configuration files are stored in `/etc/ant/`
 
-State, chunks and other data is stored in `/var/lib/bee/`
+State, chunks and other data is stored in `/var/lib/ant/`

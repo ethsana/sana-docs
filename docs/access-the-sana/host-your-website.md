@@ -4,7 +4,7 @@ id: host-your-website
 ---
 
 :::tip
-Comfortable with nodeJS and JavaScript? Check out [swarm-cli](/docs/working-with-ant/ant-tools), a command line tool you can use to easily interact with your Ant node!
+Comfortable with nodeJS and JavaScript? Check out [sana-cli](/docs/working-with-ant/ant-tools), a command line tool you can use to easily interact with your Ant node!
 :::
 
 Ant treats ENS as a first class citizen, wherever you can use a Sana reference, you can also use an ENS domain where the `content` ENS Resolver record is set to be a `bzz://` reference.
@@ -21,7 +21,7 @@ In order to resolve ENS names using your API endpoints, you must specify a valid
 bee start --resolver-options "https://cloudflare-eth.com"
 ```
 
-If specifying using your `bee.yaml` configuration file, the syntax is as follows:
+If specifying using your `ant.yaml` configuration file, the syntax is as follows:
 
 ```bash
 resolver-options: [ "https://cloudflare-eth.com" ]

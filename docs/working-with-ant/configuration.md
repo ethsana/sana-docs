@@ -3,35 +3,35 @@ title: Configuration
 id: configuration
 ---
 
-Bee is a very flexible program, and can be configured in a variety of
+Ant is a very flexible program, and can be configured in a variety of
 ways depending on your use case. This expanded section will cover
 configuration in detail.
 
 ## Important Configuration Changes
 
 :::important
-Before starting Bee for the first time, there is *some* configuration
+Before starting Ant for the first time, there is *some* configuration
 to do! Make sure you consider updating the following recommended
 settings!
 :::
 
 ### Full Node
 
-By default, Bee runs as a [light
+By default, Ant runs as a [light
 node](/docs/access-the-sana/light-nodes). To fully participate in
-the swarm, you must set the `--full-node` option to `true`.
+the sana, you must set the `--full-node` option to `true`.
 
 ### Swap Endpoint
 
-In order to access the blockchain, your Bee must be connected to an XDAI blockchain node on the XDAI network. We recommend running your own XDAI Node, but if you prefer, you may also sign up to [getblock.io](https://getblock.io) API service and set your url to be `https://stake.getblock.io/mainnet/?api_key=your-api-key`
+In order to access the blockchain, your Ant must be connected to an XDAI blockchain node on the XDAI network. We recommend running your own XDAI Node, but if you prefer, you may also sign up to [getblock.io](https://getblock.io) API service and set your url to be `https://stake.getblock.io/mainnet/?api_key=your-api-key`
 
 ### NAT Address
 
 To enable others to connect to your node, you must broadcast your
-public IP and ensure Bee is accessible on the correct p2p port
+public IP and ensure Ant is accessible on the correct p2p port
 (default `1634`). We recommend that you [manually configure your
 external IP and check connectivity](/docs/installation/connectivity)
-to ensure that your Bee is able to receive inbound connections from
+to ensure that your Ant is able to receive inbound connections from
 other peers.
 
 First determine your public IP address.
@@ -52,20 +52,20 @@ nat-addr: "123.123.123.123:1634"
 
 ### LevelDB Open File Descriptors Limit
 
-Bee is designed to work on a lot of different hardware. To facilitate
+Ant is designed to work on a lot of different hardware. To facilitate
 the exploration of this, we have given node
 operators access to leveldb's `--db-open-files-limit`. This influences
-the speed with which Bee can read and write to its database, and
+the speed with which Ant can read and write to its database, and
 therefore its performance in forwarding and serving chunks. Some say
 setting this to much more than the default 200 leads to a much
-enhanced ability to participate in the swarm and get those BZZs!
+enhanced ability to participate in the sana and get those BZZs!
 Share your experience in the #node-operators channel of our [Discord
-server](https://discord.gg/wdghaQsGq5) to help us make this process
+server](https://discord.gg/c72mpR7Erf) to help us make this process
 more automated in the future!
 
 ### ENS Endpoint
 
-The ENS domain resolution system is used to host websites on Bee, and in order to use this your Bee must be connected to an Ethereum blockchain node on the main network. If you would like to [browse the swarm](/docs/access-the-sana/browse-the-swarm) We recommend you sign up to [Infura's](https://infura.io) API service and set your `--resolver-options=https://mainnet.infura.io/v3/your-api-key`.
+The ENS domain resolution system is used to host websites on Ant, and in order to use this your Ant must be connected to an Ethereum blockchain node on the main network. If you would like to [browse the sana](/docs/access-the-sana/browse-the-sana) We recommend you sign up to [Infura's](https://infura.io) API service and set your `--resolver-options=https://mainnet.infura.io/v3/your-api-key`.
 
 ## Specifying Configuration
 
@@ -79,11 +79,11 @@ Configuration is processed in the following ascending order of preference:
 
 ### Command Line Arguments
 
-Run `bee start --help` in your Terminal to get the list of available command line arguments.
+Run `ant start --help` in your Terminal to get the list of available command line arguments.
 
 ### Environment variables
 
-Bee config may also be passed using environment variables.
+Ant config may also be passed using environment variables.
 
 Environment variables are set as variables in your operating system's
 session or systemd configuration file. To set an environment variable,
@@ -95,29 +95,29 @@ export VARIABLE_NAME=variableValue
 
 Verify if it is correctly set by running `echo $VARIABLE_NAME`.
 
-All available configuration options are available as `BEE` prefixed,
+All available configuration options are available as `ANT` prefixed,
 capitalised, and underscored environment variables.
 
-e.g. `--api-addr` becomes `BEE_API_ADDR`.
+e.g. `--api-addr` becomes `ANT_API_ADDR`.
 
 
 ### Configuration file
-Bee can also be configured by providing a YAML configuration file using the `--config` flag.
+Ant can also be configured by providing a YAML configuration file using the `--config` flag.
 
 ```bash
-bee start --config /home/<user>/bee-config.yaml 
+ant start --config /home/<user>/ant-config.yaml 
 ```
 
 #### Automatically generate a config file
 
-Configuration files can be easily generated by simply substituting the `start` command with `printconfig` when starting Bee using the command line.
+Configuration files can be easily generated by simply substituting the `start` command with `printconfig` when starting Ant using the command line.
 
 ```bash
-bee printconfig &> bee-config.yaml
+ant printconfig &> ant-config.yaml
 ```
 
 This produces the following file contents, showing the default
-configuration of Bee:
+configuration of Ant:
 
 ```yaml
 api-addr: :1633
@@ -129,9 +129,9 @@ cache-capacity: "1000000"
 clef-signer-enable: false
 clef-signer-endpoint: ""
 clef-signer-ethereum-address: ""
-config: /home/user/.bee.yaml
+config: /home/user/.ant.yaml
 cors-allowed-origins: []
-data-dir: /home/user/.bee
+data-dir: /home/user/.ant
 db-block-cache-capacity: "33554432"
 db-disable-seeks-compaction: false
 db-open-files-limit: "200"
@@ -165,7 +165,7 @@ swap-initial-deposit: "10000000000000000"
 swap-legacy-factory-addresses: []
 tracing-enable: false
 tracing-endpoint: 127.0.0.1:6831
-tracing-service-name: bee
+tracing-service-name: ant
 transaction: ""
 verbosity: "5"
 warmup-time: 20m0s
@@ -173,38 +173,38 @@ welcome-message: ""
 ```
 
 
-## Configuring Bee Installed Using a Package Manager
+## Configuring Ant Installed Using a Package Manager
 
-Bee node's installed using package managers `apt-get` or `yum` are
+Ant node's installed using package managers `apt-get` or `yum` are
 configured using a configuration file which is automatically generated
 during the installation process.
 
-To alter Bee's configuration, simply edit the configuration file as
-desired, and restart your Bee node using `systemctl`.
+To alter Ant's configuration, simply edit the configuration file as
+desired, and restart your Ant node using `systemctl`.
 
 ### Linux
 
 ```bash
-sudo vi /etc/bee/bee.yaml
-sudo systemctl restart bee
+sudo vi /etc/ant/ant.yaml
+sudo systemctl restart ant
 ```
 
 ### MacOS
 
 ```bash
-vi /usr/local/etc/swarm-bee/bee.yaml
-brew services restart swarm-bee
+vi /usr/local/etc/sana-ant/ant.yaml
+brew services restart sana-ant
 ```
 
 ## Configuration Options
 
-Bee provides the following options to customise your node.
+Ant provides the following options to customise your node.
 
 ### Global
 
 #### --config
 
-*default* `/home/<user>/.bee.yaml`
+*default* `/home/<user>/.ant.yaml`
 
 The location of a YAML configuration file containing configuration options. See [configuration](#configuration-file).
 
@@ -229,12 +229,12 @@ The expected block time of the attached SWAP endpoint.
 *default* `/dnsaddr/bootnode.ethswarm.org`
 
 This is a [multiaddr](https://github.com/multiformats/multiaddr)
-specifying the Bee bootnodes used for bootstrapping the network. It
+specifying the Ant bootnodes used for bootstrapping the network. It
 can be multiple values.
 
-By default a node connects to the Swarm mainnet.  When using a private or test network, network specific bootnodes must be set. 
+By default a node connects to the Sana mainnet.  When using a private or test network, network specific bootnodes must be set. 
 
-Any Bee node in a network can act as a bootnode.
+Any Ant node in a network can act as a bootnode.
 
 #### --cache-capacity
 
@@ -261,10 +261,10 @@ You may also specify a custom IPC file path for your Clef signer.
 
 *default* **selects the clef address at index 0**
 
-Use this command to specify which Bee Clef address is used if you have imported multiple keys into Bee Clef.
+Use this command to specify which Ant Clef address is used if you have imported multiple keys into Ant Clef.
 
 :::warning
-If you have multiple addresses imported into your instance of Bee Clef, you must specify your address for each node, including the first one, as addresses may been re-ordered during import.
+If you have multiple addresses imported into your instance of Ant Clef, you must specify your address for each node, including the first one, as addresses may been re-ordered during import.
 :::
 
 #### --cors-allowed-origins
@@ -275,15 +275,15 @@ HTTP/WS origin domains or wildcards defining these, which the API will
 allow responses to, e.g.
 
 ```bash
-bee start --cors-allowed-origins="*"
-bee start --cors-allowed-origins="https://website.ethswarm.org"
+ant start --cors-allowed-origins="*"
+ant start --cors-allowed-origins="https://website.ethswarm.org"
 ```
 
 #### --data-dir
 
-*default* `/home/<user>/.bee`
+*default* `/home/<user>/.ant`
 
-The location on your disk where Bee stores its data. Data in this
+The location on your disk where Ant stores its data. Data in this
 directory will be required to restore a node state using the same key.
 
 This consists of the following three types of data.
@@ -295,7 +295,7 @@ This consists of chunks and files that you have pinned locally, cached chunks yo
 
 ##### 2. State Data (statestore)
 
-This is information about the local state of your Bee node and should be backed up.
+This is information about the local state of your Ant node and should be backed up.
 
 ##### 3. Keystore Data (keys)
 
@@ -312,8 +312,7 @@ They are the cryptographic proof of your network identity and cannot be recovere
  [Openfile](https://pkg.go.dev/github.com/syndtr/goleveldb@v1.0.0/leveldb#OpenFile)
 method. Please let us know how you get on with tweaking these settings
 on your hardware in the
-[#node-operators](https://discord.gg/X3ph5yGRFU) channel on our
-[Discord server](https://discord.gg/wdghaQsGq5)*
+[Discord server](https://discord.gg/c72mpR7Erf)*
 
 #### --db-block-cache-capacity
 *default* `33554432`
@@ -413,7 +412,7 @@ Enables web-sockets transport for p2p communications.
 
 *default* `""`
 
-Password used to decrypt Swarm identity keys. 
+Password used to decrypt Sana identity keys. 
 
 :::danger
 Passing passwords as command line arguments is insecure. Use a password file or environment variable in production environments.
@@ -429,7 +428,7 @@ The path to a file that contains password for decrypting keys. The empty string 
 
 *default* `1000000000000`
 
-Amount in BZZ below the peers payment threshold which causes Bee to
+Amount in BZZ below the peers payment threshold which causes Ant to
 initiate settlement.
 
 #### --payment-threshold
@@ -500,9 +499,9 @@ The URL where the tracing service listens for Thrift protocol UDP messages.
 
 #### --tracing-service-name
 
-*default* `bee`
+*default* `ant`
 
-Bee service identifier in tracing spans.
+Ant service identifier in tracing spans.
 
 #### --transaction
 
@@ -512,7 +511,7 @@ As a spam prevention measure, for nodes which deployed their
 chequebook with v0.5.0 or before, specify `transaction` - [the
 transaction hash of any Ethereum transaction on the XDAI
 network](/docs/FAQ#how-can-i-find-a-transaction-hash-for-the---transaction-configuration-parameter)
-sent from the Bee node's Ethereum address.
+sent from the Ant node's Ethereum address.
 
 #### --verbosity
 

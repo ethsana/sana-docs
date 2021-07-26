@@ -3,7 +3,7 @@ title: Upload and Download Files
 id: upload-and-download
 ---
 
-When you upload your files to the swarm, they are split into 4kb
+When you upload your files to the sana, they are split into 4kb
 *chunks* and then distributed to nodes in the network that are
 responsible for storing and serving these parts of your content. Each
 chunk has a *postage stamp* stuck to it which attaches a value in BZZ
@@ -14,7 +14,7 @@ to be retained in the Distributable Immutable Store of Chunks
 
 ## Overview
 
-To upload data to the swarm, you must perform the following steps:
+To upload data to the sana, you must perform the following steps:
 
 1. Fund your node's wallet with BZZ.
 2. Purchase a *batch* of stamps and burn your BZZ.
@@ -24,7 +24,7 @@ To upload data to the swarm, you must perform the following steps:
 
 ## Purchasing Your Batch of Stamps
 
-In order to upload your data to swarm, you must agree to burn some of
+In order to upload your data to sana, you must agree to burn some of
 your BZZ to signify to storer and fowarder nodes that the content is
 important. Before you progress to the next step, you must buy stamps!
 See this guide on how to [purchase an appropriate batch of
@@ -41,31 +41,31 @@ curl http://localhost:1633
 ```
 
 ```
-Ethereum Swarm Ant
+Ethereum Sana Ant
 ```
 
 Once running, a file can be uploaded by making an HTTP POST request to the `files` endpoint of the Ant API.
 
-Here, you must specify your *Batch ID* in the `Swarm-Postage-Batch-Id` header as follows.
+Here, you must specify your *Batch ID* in the `Sana-Postage-Batch-Id` header as follows.
 
 ```bash
-curl -H "Swarm-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -F file=@bee.jpg http://localhost:1633/bzz
+curl -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -F file=@bee.jpg http://localhost:1633/bzz
 ```
 
 We may also pass the appropriate mime type in the `Content-Type` header, and a file name to the `name` query parameter so that the file will be correctly handled by web browsers and other applications.
 
 ```bash
-curl --data-binary @bee.jpg  -H "Swarm-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -H "Content-Type: video/jpg" "http://localhost:1633/bzz?name=bee.jpg"
+curl --data-binary @bee.jpg  -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -H "Content-Type: video/jpg" "http://localhost:1633/bzz?name=bee.jpg"
 ```
 
 :::danger
-Data uploaded to the swarm is always public. In Swarm, sensitive files
+Data uploaded to the sana is always public. In Sana, sensitive files
 must be [encrypted](/docs/access-the-sana/store-with-encryption)
 before uploading to ensure their contents always remains private.
 :::
 
 When succesful, a JSON formatted response will be returned, containing
-a **swarm reference** or **hash** which is the *address* of the
+a **sana reference** or **hash** which is the *address* of the
 uploaded file, for example:
 
 ```json
@@ -73,7 +73,7 @@ uploaded file, for example:
 ```
 Keep this *address* safe, as we'll use it to retrieve our content later on.
 
-In Swarm, every piece of data has a unique *address* which is a unique and reproducible cryptographic hash digest. If you upload the same file twice, you will always receive the same hash. This makes working with data in Swarm super secure!
+In Sana, every piece of data has a unique *address* which is a unique and reproducible cryptographic hash digest. If you upload the same file twice, you will always receive the same hash. This makes working with data in Sana super secure!
 
 :::info
 If you are uploading a large file it is useful to track the status of your upload as it is processed into the network. To improve the user experience, learn how to [follow the status of your upload](/docs/access-the-sana/syncing). 
@@ -83,7 +83,7 @@ Once your file has been **completely synced with the network**, you will be able
 
 ## Download
 
-Once your file is uploaded into the swarm, it can be retrieved with a
+Once your file is uploaded into the sana, it can be retrieved with a
 simple HTTP GET request.
 
 Substitute the *hash* in the last part of the URL with the reference
