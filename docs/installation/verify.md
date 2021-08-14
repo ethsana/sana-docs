@@ -1,3 +1,3 @@
 verify.md
 
-https://github.com/ethersphere/bee/pull/1581
+https://github.com/ethersphere/ant/pull/1581

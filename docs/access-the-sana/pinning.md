@@ -24,7 +24,7 @@ Files pinned using local pinning will still not necessarily be available to the 
 To store content so that it will persist even when Ant's garbage collection routine is deleting old chunks, we simply pass the `Sana-Pin` header set to `true` when uploading.
 
 ```bash
-curl -H "Sana-Pin: true" -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264"  --data-binary @bee.mp4 localhost:1633/bzz\?bee.mp4
+curl -H "Sana-Pin: true" -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264"  --data-binary @ant.mp4 localhost:1633/bzz\?ant.mp4
 ```
 
 ```json
@@ -121,7 +121,7 @@ To keep this content alive, your Ant node can be configured to refresh this cont
 First, we must start up our node with the `global-pinning-enable` flag set.
 
 ```bash
-bee start\
+ant start\
   --verbosity 5 \
   --swap-endpoint https://stake.getblock.io/mainnet/?api_key=your-api-key \
   --global-pinning-enable \
@@ -131,7 +131,7 @@ bee start\
 Next, we pin our file locally, as shown above.
 
 ```bash
-curl -H "Sana-Pin: true" --data-binary @bee.mp4 localhost:1633/bzz\?bee.mp4
+curl -H "Sana-Pin: true" --data-binary @ant.mp4 localhost:1633/bzz\?ant.mp4
 ```
 
 ```json

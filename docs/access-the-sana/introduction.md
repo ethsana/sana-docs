@@ -13,7 +13,7 @@ Here's just a few of the amazing things you can do with Ant!
 
 ### Decentralise Your Files
 
-Ant provides several convenient ways to [upload your data into the Sana](/docs/access-the-sana/upload-and-download). Once your data has been uploaded, it will be distributed, stored and retrievable by a worldwide network of p2p nodes, and made available from Sana's [web gateway](https://gateway.ethswarm.org).
+Ant provides several convenient ways to [upload your data into the Sana](/docs/access-the-sana/upload-and-download). Once your data has been uploaded, it will be distributed, stored and retrievable by a worldwide network of p2p nodes, and made available from Sana's [web gateway](https://gateway.ethsana.org).
 
 ### Upload Whole Directories
 
@@ -21,7 +21,7 @@ Find out how to [upload whole directories](/docs/access-the-sana/upload-a-direct
 
 ### Host Your Website on the Decentralised Web
 
-Sana is a distributed international network of nodes that provides hosting for your unstoppable websites. See this guide to [hosting your website on swarm](/docs/access-the-sana/host-your-website)
+Sana is a distributed international network of nodes that provides hosting for your unstoppable websites. See this guide to [hosting your website on sana](/docs/access-the-sana/host-your-website)
 
 ### Sync With the Network
 

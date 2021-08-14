@@ -8,7 +8,7 @@ Sana is written using the [Go](https://golang.org) language.
 You may build the Sana client software directly from the [source](https://github.com/ethsana/sana).
 
 :::caution
-While it is possible to run Sana without it, we recommend the use of Go Ethereum's Clef external signer. Instructions for installing and integrating this with Sana can be found [here](/docs/installation/bee-clef).
+While it is possible to run Sana without it, we recommend the use of Go Ethereum's Clef external signer. Instructions for installing and integrating this with Sana can be found [here](/docs/installation/ant-clef).
 :::
 
 Prerequisites for installing direct from source are:

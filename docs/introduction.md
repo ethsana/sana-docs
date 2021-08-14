@@ -56,7 +56,7 @@ distributing your share of the world's data - sharing is caring!
 
 What happens with your Ant node when you start it up? Want to know
 more about the amazing Sana technology behind Ant?  Want to make your
-own client? Read <a href="/the-book-of-swarm.pdf" target="_blank"
+own client? Read <a href="/the-book-of-sana.pdf" target="_blank"
 rel="noopener noreferrer">The Book of Sana</a>, our 250 page epic
 guide to the future tech underpinning the Sana network. -->
 

@@ -15,10 +15,10 @@ You may substitute ENS names for Sana references in any of the [API methods](/do
 
 ### Enable ENS on Your Node
 
-In order to resolve ENS names using your API endpoints, you must specify a valid ENS resolver endpoint when starting your Ant node. We recommend that users run their own Geth node, which can be trusted absolutely, however service providers such as [https://cloudflare-eth.com](https://cloudflare-eth.com) or [Infura](https://infura.io) may suffice. Public gateways such as [gateway.ethswarm.org](https://gateway.ethswarm.org) will also usually provide ENS resolution.
+In order to resolve ENS names using your API endpoints, you must specify a valid ENS resolver endpoint when starting your Ant node. We recommend that users run their own Geth node, which can be trusted absolutely, however service providers such as [https://cloudflare-eth.com](https://cloudflare-eth.com) or [Infura](https://infura.io) may suffice. Public gateways such as [gateway.ethsana.org](https://gateway.ethsana.org) will also usually provide ENS resolution.
 
 ```bash
-bee start --resolver-options "https://cloudflare-eth.com"
+ant start --resolver-options "https://cloudflare-eth.com"
 ```
 
 If specifying using your `ant.yaml` configuration file, the syntax is as follows:

@@ -49,13 +49,13 @@ Once running, a file can be uploaded by making an HTTP POST request to the `file
 Here, you must specify your *Batch ID* in the `Sana-Postage-Batch-Id` header as follows.
 
 ```bash
-curl -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -F file=@bee.jpg http://localhost:1633/bzz
+curl -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -F file=@ant.jpg http://localhost:1633/bzz
 ```
 
 We may also pass the appropriate mime type in the `Content-Type` header, and a file name to the `name` query parameter so that the file will be correctly handled by web browsers and other applications.
 
 ```bash
-curl --data-binary @bee.jpg  -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -H "Content-Type: video/jpg" "http://localhost:1633/bzz?name=bee.jpg"
+curl --data-binary @ant.jpg  -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" -H "Content-Type: video/jpg" "http://localhost:1633/bzz?name=ant.jpg"
 ```
 
 :::danger
@@ -101,6 +101,6 @@ You may even simply navigate to the URL in your browser:
 
 To share files with someone who isn't running a Ant node yet, simply change the host in the link to be one of our public gateways. Send the link to your friends, and they will be able to download the file too!
 
-[https://download.gateway.ethswarm.org/bzz/22cb...aa00/](https://download.gateway.ethswarm.org/bzz/22cbb9cedca08ca8d50b0319a32016174ceb8fbaa452ca5f0a77b804109baa00/)
+[https://download.gateway.ethsana.org/bzz/22cb...aa00/](https://download.gateway.ethsana.org/bzz/22cbb9cedca08ca8d50b0319a32016174ceb8fbaa452ca5f0a77b804109baa00/)
 
 <!-- If you are unable to download your file from a different Ant node, you may be experiencing connection issues, see [troubleshooting connectivity](/docs/troubleshooting/connectivitiy) for assistance. -->

@@ -12,7 +12,7 @@ The Ant client provides a facility to encrypt files and directories while upload
 To encrypt a file simply include the `Sana-Encrypt: true` header with your HTTP request.
 
 ```bash
-curl -F file=@bee.jpg -H "Sana-Encrypt: true" http://localhost:1633/files
+curl -F file=@ant.jpg -H "Sana-Encrypt: true" http://localhost:1633/files
 ```
 
 When successful, the Ant client will return a 64 byte reference, instead of the usual 32 bytes.

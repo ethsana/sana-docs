@@ -10,7 +10,7 @@ Comfortable with nodeJS and JavaScript? Check out [sana-cli](https://github.com/
 :::
 
 :::info
-If an uploaded directory contains an `index.html` file, when you navigate to the directory in a web browser it will automatically be served to users from our [Swarm gateways](https://gateway.ethswarm.org) as if it were a website hosted by a normal web server. Use this feature to host your unstoppable website on Sana!
+If an uploaded directory contains an `index.html` file, when you navigate to the directory in a web browser it will automatically be served to users from our [Sana gateways](https://gateway.ethsana.org) as if it were a website hosted by a normal web server. Use this feature to host your unstoppable website on Sana!
 :::
 
 This feature makes use of the [tar](https://www.gnu.org/software/tar/) command line utility to package the directory into a single file that can then be uploaded to the Ant API for processing and distributed into the sana for later retrieval.
@@ -78,6 +78,6 @@ Other files are served at their relative paths, e.g:
 
 Once your data has been [fully processed into the network](/docs/access-the-sana/syncing), you will then be able to retrieve it from any Ant node.
 
-[https://gateway.ethswarm.org/bzz/b25c89a...214917b/index.html](https://gateway.ethswarm.org/bzz/b25c89a401d9f26811680476619a1eb4a4e189e614bc6161cbfd8b343214917b/)
+[https://gateway.ethsana.org/bzz/b25c89a...214917b/index.html](https://gateway.ethsana.org/bzz/b25c89a401d9f26811680476619a1eb4a4e189e614bc6161cbfd8b343214917b/)
 
 If you are not able to download your file from a different Ant node, you may be experiencing connection issues, see [troubleshooting connectivity](/docs/installation/connectivity) for assistance.

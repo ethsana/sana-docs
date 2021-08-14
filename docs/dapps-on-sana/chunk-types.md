@@ -18,7 +18,7 @@ To be able trust your data, you must run your own Ant node that automatically ve
 
 ## Trojan Chunks
 
-Trojan chunks are a special version of content addressed chunks that have been 'mined' so that their natural home is in a particular area of the Sana. If the destination node is in the right neighbourhood, it will be able to receive and decrypt the message. See [PSS](/docs/dapps-on-sana/pss) for more information, or check out the [bee-js](/docs/dapps-on-sana/bee-js) bindings.
+Trojan chunks are a special version of content addressed chunks that have been 'mined' so that their natural home is in a particular area of the Sana. If the destination node is in the right neighbourhood, it will be able to receive and decrypt the message. See [PSS](/docs/dapps-on-sana/pss) for more information, or check out the [ant-js](/docs/dapps-on-sana/ant-js) bindings.
 
 ## Single Owner Chunks
 

@@ -6,28 +6,28 @@ id: connectivity
 To fully connect to the sana, your Sana node needs to be able to both
 send and receive messages from the outside world. Normally, your
 router will not allow other IP's on the Internet to connect, unless
-you have initiated the connection. Bees welcome newcomers in the
-swarm, as long as they play by the rules! If a node misbehaves, we
+you have initiated the connection. Ants welcome newcomers in the
+sana, as long as they play by the rules! If a node misbehaves, we
 will simply add it to a list of blocked nodes and refuse future
 connections from them.
 
 Here at Sana, every Sana counts! To make sure all Sanas can join the
 Sana, below you will find a detailed guide to navigating your way
 through your network and making out into the wild so you can buzz
-around fellow bees and maximise your chances of earning those SANAs. If
+around fellow antss and maximise your chances of earning those SANAs. If
 you still have problems, please join us in our [Discord
 server](https://discord.gg/wdghaQsGq5) and we'll help you find the
 way! 
 
 :::info
-To ensure your Bee has the best chance of particpating in the swarm,
-you must ensure your Bee is able to handle **both incoming and
+To ensure your Ant has the best chance of particpating in the sana,
+you must ensure your Ant is able to handle **both incoming and
 outgoing connections from the global Internet to its p2p port
 (`1634` by default)**. See below for a detailed guide on how to make sure
 this is the case, or for the 1337: check your
 `http://localhost:1635/addresses` to see which public ip and port
 libp2p is advertising and verify its connectivity to the rest of the
-Internet! You may need to alter your Bee nodes `nat-addr`
+Internet! You may need to alter your Ant nodes `nat-addr`
 configuration. 🤓
 :::
 
@@ -43,7 +43,7 @@ from nefarious actors when we join the wider Internet, it is sometimes
 important to filter this traffic so that some of these ports are off
 limits to the public.
 
-In order to allow messages to our p2p port from other Bee nodes that
+In order to allow messages to our p2p port from other Ant nodes that
 we have previously not connected, we must ensure that our network is
 set up to receive incoming connections (on port `1634` by default).
 
@@ -102,7 +102,7 @@ curl icanhazip.com
 178.128.196.191
 ```
 
-With Bee running, try to connect to your Bee's p2p port using the public IP adddress from another computer:
+With Ant running, try to connect to your Ant's p2p port using the public IP adddress from another computer:
 
 ```bash
 nc -zv 178.128.196.191 1634
@@ -110,7 +110,7 @@ nc -zv 178.128.196.191 1634
 
 If you have success, congratulations!
 
-If this still doesn't work for you, see the last part of *Manual: Configure Your Router and Bee* section below, as you may need to configure your `nat-addr`.
+If this still doesn't work for you, see the last part of *Manual: Configure Your Router and Ant* section below, as you may need to configure your `nat-addr`.
 
 ### Home, Commercial and Business Networks and Other Networks Behind NAT
 
@@ -154,7 +154,7 @@ public IP to the local one.
 
 The presence of NAT presents two problems for p2p networking. 
 
-The first is that it can be difficult for programs running on our computer to know our real public IP as it is not explicitly known by our computer's networking interface, which is configured with a private network IP. This is a relatively easy problem to solve as we can simply discover our public IP and then specify it in Bee's configuration, or indeed determine it using other means.
+The first is that it can be difficult for programs running on our computer to know our real public IP as it is not explicitly known by our computer's networking interface, which is configured with a private network IP. This is a relatively easy problem to solve as we can simply discover our public IP and then specify it in Ant's configuration, or indeed determine it using other means.
 
 The second issue is that our router has only 65535 ports to expose to
 the public network, however, *each device on your private network* is
@@ -164,7 +164,7 @@ fact, there is a full set of ports for each of the devices which are
 connected to the private network. To solve this second problem,
 routers commonly employ an approach known as *port forwarding*.
 
-Bee's solution to these problems come in two flavours, automatic and manual.
+Ant's solution to these problems come in two flavours, automatic and manual.
 
 ##### Automatic: Universal Plug and Play (UPnP)
 
@@ -184,15 +184,15 @@ a VPN, your *real* public IP. We urge you to disable UPnP on your
 router and use manual port forwarding as described below.
 :::
 
-Bee will use UPnP to determine your public IP, which is required for various internal processes.
+Ant will use UPnP to determine your public IP, which is required for various internal processes.
 
 In addition to this, a request will be sent to your router to ask it
 to forward a random one of its ports, which are exposed directly to
-the Internet, to the Bee p2p port (default `1634`) which your computer
+the Internet, to the Ant p2p port (default `1634`) which your computer
 is exposing only to the private network. Doing this creates a tunnel
-through which other Bee's may connect to your computer safely.
+through which other Ant's may connect to your computer safely.
 
-If you start your Bee node in a private network with UPnP available, the output of the addresses endpoint of your Debug API will look something like this:
+If you start your Ant node in a private network with UPnP available, the output of the addresses endpoint of your Debug API will look something like this:
 
 ```json
 [
@@ -209,11 +209,11 @@ router's randomly selected `20529` which is forwarded by the router to
 `192.168.0.10:1634`. These addresses in this multiaddress are also
 known as the underlay addresses.
 
-##### Manual: Configure Your Router and Bee
+##### Manual: Configure Your Router and Ant
 
 Inspecting the underlay addresses in the output of the addresses
 endpoint of our Debug API, we can see addresses only for *localhost*
-`127.0.0.1` and our *private network IP* `192.168.0.10`. Bee must be
+`127.0.0.1` and our *private network IP* `192.168.0.10`. Ant must be
 having trouble navigating our NAT.
 
 ```json
@@ -234,7 +234,7 @@ curl icanhazip.com
 86.98.94.9
 ```
 
-Now we can simply supply this IP in our Bee configuration on startup.
+Now we can simply supply this IP in our Ant configuration on startup.
 
 Solving our second problem is a little more difficult as we will need to interact with our router's firmware, which is a little cranky.
 
@@ -252,7 +252,7 @@ are modified by our router and forwarded to our private IP and port
 
 Sometimes this can be a little tricky, so let's verify we are able to make a TCP connection using [netcat](https://nmap.org/ncat/).
 
-First, with Bee **not** running, let's set up a simple TCP listener using Netcat on the same machine we would like to run Bee on.
+First, with Ant **not** running, let's set up a simple TCP listener using Netcat on the same machine we would like to run Ant on.
 
 ```bash
 nc -l 0.0.0.0 1634
@@ -270,13 +270,13 @@ Success! ✨
 
 If this didn't work for you, check out our Debugging Connectivity guide below.
 
-If it did, let's start our Bee node with the `--nat-addr` configured.
+If it did, let's start our Ant node with the `--nat-addr` configured.
 
 ```bash
-bee start --nat-addr 86.98.94.9:1634
+ant start --nat-addr 86.98.94.9:1634
 ```
 
-Checking our addresses endpoint again, we can now see that Bee has been able to successfully assign a public address! Congratulations, your Bee is now connected to the outside world!
+Checking our addresses endpoint again, we can now see that Ant has been able to successfully assign a public address! Congratulations, your Ant is now connected to the outside world!
 
 ```json
 [
@@ -291,16 +291,16 @@ Checking our addresses endpoint again, we can now see that Bee has been able to 
 If you are regularly connecting and disconnecting to a network, you
 may also want to use your router's firmware to configure the router to
 reserve and only assign the same local network IP from its DHCP pool
-to your computer's MAC address. This will ensure that your Bee
+to your computer's MAC address. This will ensure that your Ant
 seamlessly connects when you rejoin the network!
 :::
 
 ### Debugging Connectivity
 
-The above guide navigates your NAT, but there are still a few hurdles to overcome. To make sure there is a clear path from your computer to the outside world, let's follow our Bee's journey from the inside out.
+The above guide navigates your NAT, but there are still a few hurdles to overcome. To make sure there is a clear path from your computer to the outside world, let's follow our Ant's journey from the inside out.
 
 Let's set up a netcat listener on all interfaces on the computer we'd
-like to run Bee on as we have above.
+like to run Ant on as we have above.
 
 ```bash
 nc -l 0.0.0.0 1634
@@ -326,9 +326,9 @@ If we were successful, let's move on to the next stage.
 :::info
 If you are not able to get access to some firewall settings, or
 otherwise debug incoming connectivity, don't worry! All is not
-lost. Bee can function just fine with just outgoing
+lost. Ant can function just fine with just outgoing
 connections. However, if you can, it is worth the effort to allow
-incoming connections, as the whole swarm will benefit from the
+incoming connections, as the whole sana will benefit from the
 increased connectivity.
 :::
 
@@ -349,7 +349,7 @@ Now try to connect to your port using the global IP.
 nc -zv 86.98.94.9 1634
 ```
 
-If this is successful, our Bee node's path is clear!
+If this is successful, our Ant node's path is clear!
 
 If not, we can try a few things to make sure there are no barriers stopping us from getting through.
 
@@ -367,7 +367,7 @@ If not, we can try a few things to make sure there are no barriers stopping us f
 
   For each of these firewalls, set a special rule to allow UDP and TCP
   traffic to pass through on port `1634`. You may want to limit this
-  traffic to the Bee application only.
+  traffic to the Ant application only.
 
 2. Check your ingress' firewall.
 
@@ -379,7 +379,7 @@ If not, we can try a few things to make sure there are no barriers stopping us f
   Similarly, if you are connecting from within a private network, you
   may find that the port is blocked by the router. Each router is
   different, so consult your router's firware documentation to make
-  sure there are no firewalls in place blocking traffic on your Bee's
+  sure there are no firewalls in place blocking traffic on your Ant's
   designated p2p port.
 
   You may check this using netcat by trying to connect using your
@@ -401,6 +401,6 @@ If not, we can try a few things to make sure there are no barriers stopping us f
 3. Something else entirely?
 
   Networking is a complex topic, but it keeps us all together. If you
-  still can't connect to your Bee, get in touch via [The
-  Beehive](http://beehive.ethswarm.org/) and we'll do our best to get
-  you connected. In the swarm, no Bee is left behind.
+  still can't connect to your Ant, get in touch via [The
+  Anthive](http://anthive.ethsana.org/) and we'll do our best to get
+  you connected. In the sana, no Ant is left behind.

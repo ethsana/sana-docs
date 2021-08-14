@@ -6,10 +6,10 @@ id: docker
 Docker containers for Sana are hosted at [Docker Hub](https://hub.docker.com/r/ethsana/sana) for your convenience. 
 
 If running a Sana *full node*, it is recommended that you make use of
-Ethereum's external signer, [Clef](/docs/installation/bee-clef). Skip
+Ethereum's external signer, [Clef](/docs/installation/ant-clef). Skip
 ahead if you are comfortable with `docker` basics for instructions on
 how to use [docker-compose](/docs/installation/docker#docker-compose)
-to easily set up Bee with persistent storage and integration with the
+to easily set up Ant with persistent storage and integration with the
 Sana Clef container.
 
 ### Quick Start
@@ -55,7 +55,7 @@ Once you have generated your keys, leave Sana to run in the background...
 ```bash
 docker run\
   -d 
-  -v /path/to/.sana-docker:/home/sana/.bee\
+  -v /path/to/.sana-docker:/home/sana/.ant\
   -p 1635:1635 \
   -p 1634:1634 \
   -p 1633:1633\
@@ -103,7 +103,7 @@ First, retrieve the current `docker-compose.yaml` file.
 wget -q https://raw.githubusercontent.com/ethsana/sana/v0.0.3/packaging/docker/docker-compose.yml
 ```
 
-Next, create a `.env` file using the example file provided. This file will be responsible for storing configuration and secrets for our Bee and Bee Clef applications.
+Next, create a `.env` file using the example file provided. This file will be responsible for storing configuration and secrets for our Ant and Ant Clef applications.
 
 ```bash
 wget -q https://raw.githubusercontent.com/ethsana/sana/v0.0.3/packaging/docker/env -O .env
@@ -160,9 +160,9 @@ sana_1 | time="2020-12-15T18:43:14Z" level=warning msg="cannot continue until th
 Once you have determined your Sana's Ethereum addresses,
 [fund your node](/docs/installation/fund-your-node).
 
-After your transaction has been completed, your node should recognise that your wallet has been funded, and begin to deploy and fund your Bee chequebook!
+After your transaction has been completed, your node should recognise that your wallet has been funded, and begin to deploy and fund your Ant chequebook!
 
-Once Sana has completed this procedure, you may query the Bee [HTTP API](/docs/api-reference/api-reference) at `http://localhost:1633`.
+Once Sana has completed this procedure, you may query the Ant [HTTP API](/docs/api-reference/api-reference) at `http://localhost:1633`.
 
 ```bash
 curl localhost:1633

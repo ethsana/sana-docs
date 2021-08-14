@@ -226,7 +226,7 @@ The expected block time of the attached SWAP endpoint.
 
 #### --bootnode
 
-*default* `/dnsaddr/bootnode.ethswarm.org`
+*default* `/dnsaddr/bootnode.ethsana.org`
 
 This is a [multiaddr](https://github.com/multiformats/multiaddr)
 specifying the Ant bootnodes used for bootstrapping the network. It
@@ -276,7 +276,7 @@ allow responses to, e.g.
 
 ```bash
 ant start --cors-allowed-origins="*"
-ant start --cors-allowed-origins="https://website.ethswarm.org"
+ant start --cors-allowed-origins="https://website.ethsana.org"
 ```
 
 #### --data-dir

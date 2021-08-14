@@ -6,18 +6,18 @@ id: FAQ
 
 ## Connectivity
 
-### Which p2p port does Bee use and which should I open in my router?
+### Which p2p port does Ant use and which should I open in my router?
 
-The default p2p port for Bee in 1634, please forward this using your router and allow traffic over your firewall as necessary. Bee also supports UPnP but it is recommended you do not use this protocol as it lacks security. For more detailed information see the connectivity section in the docs. https://docs.ethswarm.org/docs/installation/connectivity
+The default p2p port for Ant in 1634, please forward this using your router and allow traffic over your firewall as necessary. Ant also supports UPnP but it is recommended you do not use this protocol as it lacks security. For more detailed information see the connectivity section in the docs. https://docs.ethsana.org/docs/installation/connectivity
 
 
 ### How do I know if I am connected to other peers?
 
-You may communicate with your Bee using it’s HTTP api. Type `curl http://localhost:1635/peers` at your command line to see a list of your peers.
+You may communicate with your Ant using it’s HTTP api. Type `curl http://localhost:1635/peers` at your command line to see a list of your peers.
 
 
 ### What does "Failed to connect to local host port 1635: Connection refused" mean?
-Your node is not listening on port 1635, either the debug-api is not enabled, or it is not listening on localhost. Make sure your bee.yaml file has `debug-api-enable: true`
+Your node is not listening on port 1635, either the debug-api is not enabled, or it is not listening on localhost. Make sure your ant.yaml file has `debug-api-enable: true`
 
 
 
@@ -35,50 +35,50 @@ The "context deadline exceeded" is a non critical warning. It means that a node 
 
 ### How do I set up a blockchain endpoint?
 
-- If you use "bee start" 
-    - you can set it in your bee configuration under --swap-endpoint or BEE_SWAP_ENDPOINT
-    - open ~/.bee.yaml
+- If you use "ant start" 
+    - you can set it in your ant configuration under --swap-endpoint or ANT_SWAP_ENDPOINT
+    - open ~/.ant.yaml
     - set `swap-endpoint: https://stake.getblock.io/mainnet/?api_key=your-api-key`
 
 
-- If you use bee.service
-    - you can set it in your bee configuration under --swap-endpoint or BEE_SWAP_ENDPOINT
-    - open /etc/bee/bee.yaml
+- If you use ant.service
+    - you can set it in your ant configuration under --swap-endpoint or ANT_SWAP_ENDPOINT
+    - open /etc/ant/ant.yaml
     - and then uncomment `swap-endpoint` configuration
     - and set it to `https://stake.getblock.io/mainnet/?api_key=your-api-key`
-    - after that sudo systemctl restart bee
+    - after that sudo systemctl restart ant
 
 
-### How to export private keys from the node with bee-clef installed
+### How to export private keys from the node with ant-clef installed
 
-If you are running Bee together with the Bee-Clef, you can type in the command line `bee-clef-keys` and that will store the .JSON file into your home folder and copy the password in your clipboard.
+If you are running Ant together with the Ant-Clef, you can type in the command line `ant-clef-keys` and that will store the .JSON file into your home folder and copy the password in your clipboard.
 
 
-### I have bee-clef installed but I can't export private keys.
-It happens quite a lot that bee-clef is installed, but getting the address from bee-clef-keys does not yield the same output as `:1635/addresses`
+### I have ant-clef installed but I can't export private keys.
+It happens quite a lot that ant-clef is installed, but getting the address from ant-clef-keys does not yield the same output as `:1635/addresses`
 
-In this case, the user most likely does not have clef enabled in the configuration of the bee node.
+In this case, the user most likely does not have clef enabled in the configuration of the ant node.
 
 This doesn't work for you? You get erorr -> `xclip: not found” or “Error: Can’t open display: (null)`
 
 Try running the command below:
-`sudo cat /var/lib/bee-clef/password`
+`sudo cat /var/lib/ant-clef/password`
 
 You can then use that to import to Metamask or any other web3 wallet provider.
 
 
-### How to export private keys from the node (without bee-clef)?
+### How to export private keys from the node (without ant-clef)?
 
 You can find insturction here in README section:
-https://github.com/ethersphere/exportSwarmKey
+https://github.com/ethersphere/exportSanaKey
 
 You can also follow to the mini-guide on the link below:
 https://pastebee.com/?3b2a4cecafa21a7afcdd4d4f3d74fef1d5551acd91eb2d3a5b750dc9a161fbcf
 
 
-### How to import bee node address to Metamask?
+### How to import ant node address to Metamask?
 
-1. [export your bee node private keys](https://hackmd.io/tfKVeHaIQGewlGTC4ooESg#How-to-export-private-keys-from-the-node-with-bee-claf-installed)
+1. [export your ant node private keys](https://hackmd.io/tfKVeHaIQGewlGTC4ooESg#How-to-export-private-keys-from-the-node-with-ant-claf-installed)
 2. go to Metamask and click import account
 3. choose select type: JSON file
 4. upload exported .JSON file (which contains your keys)
@@ -86,28 +86,28 @@ https://pastebee.com/?3b2a4cecafa21a7afcdd4d4f3d74fef1d5551acd91eb2d3a5b750dc9a1
 6. click Import
 
 
-### What are the restart commands of bee?
+### What are the restart commands of ant?
 
-If you use bee.service:
+If you use ant.service:
 
-- Start: `sudo systemctl start bee.service`
-- Stop: `sudo systemctl stop bee.service`
-- Status: `sudo systemctl status bee.service`
+- Start: `sudo systemctl start ant.service`
+- Stop: `sudo systemctl stop ant.service`
+- Status: `sudo systemctl status ant.service`
 
-If you use "bee start" 
+If you use "ant start" 
 
-- Start: `bee start` 
+- Start: `ant start` 
 - Stop: `ctrl + c` or `cmd + c` or close terminal to stop process
 
 
 ### Relevant endpoints and explanations
 
-Balances: https://docs.ethswarm.org/debug-api/#tag/Balance
-Chequebook: https://docs.ethswarm.org/debug-api/#tag/Chequebook
-Status: https://docs.ethswarm.org/debug-api/#tag/Status
-Connectivity: https://docs.ethswarm.org/debug-api/#tag/Connectivity
-Settlements: https://docs.ethswarm.org/debug-api/#tag/Settlements
-Chunk: https://docs.ethswarm.org/debug-api/#tag/Chunk
+Balances: https://docs.ethsana.org/debug-api/#tag/Balance
+Chequebook: https://docs.ethsana.org/debug-api/#tag/Chequebook
+Status: https://docs.ethsana.org/debug-api/#tag/Status
+Connectivity: https://docs.ethsana.org/debug-api/#tag/Connectivity
+Settlements: https://docs.ethsana.org/debug-api/#tag/Settlements
+Chunk: https://docs.ethsana.org/debug-api/#tag/Chunk
 
 Most common use cases:
 
@@ -141,7 +141,7 @@ Yes, but their free plan has limit 40k requests per day.
 
 ### Where can I find documents about the cashout commands?
 
-https://docs.ethswarm.org/docs/working-with-ant/cashing-out
+https://docs.ethsana.org/docs/working-with-ant/cashing-out
 
 
 ### When I run http://localhost:1635/chequebook/balance I get "totalBalance" and "availableBalance" what is the difference?
@@ -152,24 +152,24 @@ It's like what the bank thinks your balance is vs what your chequebook knows is 
 
 ### What determines the number of peers and how to influence their number? Why are there sometimes 300+ peers and sometimes 30?
 
-The number of connected peers is determined by your node as it attempts to keep the distributed Kademlia well connected.  As nodes come and go in the network your peer count will go up and down. If you watch bee's output logs for "successfully connected", there should be a mix of (inbound) and (outbound) at the end of those messages.  If you only get (outbound) then you my need to get your p2p port opened through your firewall and/or forwarded by your router. Check out the connectivity section in the docs https://docs.ethswarm.org/docs/installation/connectivity.
+The number of connected peers is determined by your node as it attempts to keep the distributed Kademlia well connected.  As nodes come and go in the network your peer count will go up and down. If you watch ant's output logs for "successfully connected", there should be a mix of (inbound) and (outbound) at the end of those messages.  If you only get (outbound) then you my need to get your p2p port opened through your firewall and/or forwarded by your router. Check out the connectivity section in the docs https://docs.ethsana.org/docs/installation/connectivity.
 
 
-### What is the difference between "systemctl" and "bee start"?
+### What is the difference between "systemctl" and "ant start"?
 
-*bee start* and *systemctl start bee* actually run 2 different instances with 2 different *bee.yaml* files and two different data directories.
+*ant start* and *systemctl start ant* actually run 2 different instances with 2 different *ant.yaml* files and two different data directories.
 
-*bee start* uses *~/.bee.yaml* and the *~/.bee* directory for data
-*systemctl* uses */etc/bee/bee.yaml* and (IIRC) */var/lib/bee* for data
+*ant start* uses *~/.ant.yaml* and the *~/.ant* directory for data
+*systemctl* uses */etc/ant/ant.yaml* and (IIRC) */var/lib/ant* for data
 
 
-## Swarm Protocol
+## Sana Protocol
 
 
 ### Can I use one Ethereum Address/Wallet for many nodes?
 
-No, this violates the requirements of the Swarm Protocol. The Swarm 
-Protocol relies upon the `Swarm Address`, also known as the `peer 
+No, this violates the requirements of the Sana Protocol. The Sana 
+Protocol relies upon the `Sana Address`, also known as the `peer 
 address`. This address is a **hash of the node's Ethereum address**, 
 therefore it is deterministic. As all nodes must have a unique address,
 if you were to use the same wallet, it would violate the uniqueness 

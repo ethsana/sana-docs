@@ -7,7 +7,7 @@ Ant is the first client to work with the Sana network.
 
 ## Setting Up Ant for Developing Dapps
 
-To develop apps on Ant, you might need to adjust the following settings. Check out the brand new [bee-factory](https://github.com/ethersphere/bee-factory) for information on how to run a self contained development environment so you can go wild in sana without spending all your BZZ on swap and stamps!
+To develop apps on Ant, you might need to adjust the following settings. Check out the brand new [ant-factory](https://github.com/ethersphere/ant-factory) for information on how to run a self contained development environment so you can go wild in sana without spending all your BZZ on swap and stamps!
 
 ## Hosting Your Dapps & Storing Their Data
 
@@ -36,7 +36,7 @@ computers, your applications can have privileged access to all sorts
 of useful tools and ways to interact with the sana. Check out the
 [API](/docs/api-reference/api-reference) and
 [Debug API](/docs/api-reference/api-reference) as well as
-[bee-js](/docs/dapps-on-sana/bee-js) for details on what you can do
+[ant-js](/docs/dapps-on-sana/ant-js) for details on what you can do
 with your Ant!
 
 ## Dapps With Sana Gateways

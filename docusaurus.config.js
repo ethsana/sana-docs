@@ -79,11 +79,11 @@ module.exports = {
             },
             // {
             //   label: "Mattermost",
-            //   href: "https://beehive.ethswarm.org/",
+            //   href: "https://beehive.ethsana.org/",
             // },
             // {
             //   label: "Reddit",
-            //   href: "https://www.reddit.com/r/ethswarm",
+            //   href: "https://www.reddit.com/r/ethsana",
             // },
             {
               label: "Twitter",
@@ -91,7 +91,7 @@ module.exports = {
             },
             {
               label: "Medium",
-              href: "https://ethswarm.medium.com/",
+              href: "https://ethsana.medium.com/",
             },
           ],
         },
@@ -100,7 +100,7 @@ module.exports = {
           items: [
             // {
             //   label: "Blog",
-            //   href: "https://medium.com/ethereum-swarm",
+            //   href: "https://medium.com/ethereum-sana",
             // },
             {
               label: "GitHub",
@@ -113,11 +113,11 @@ module.exports = {
         //   items: [
         //     {
         //       label: 'Blog',
-        //       href: 'https://medium.com/ethereum-swarm',
+        //       href: 'https://medium.com/ethereum-sana',
         //     },
         //     {
         //       label: 'GitHub',
-        //       href: 'https://github.com/ethersphere/bee',
+        //       href: 'https://github.com/ethersphere/ant',
         //     },
         //   ],
         // },
@@ -125,9 +125,9 @@ module.exports = {
       copyright: `Copyleft © ${new Date().getFullYear()}.`,
     },
     // announcementBar: {
-    //   id: 'bee_announcements',
+    //   id: 'ant_announcements',
     //   content:
-    //     '🐝 v0.5.0 is released feat. Swarm Feeds! Update your Bees now! 🐝',
+    //     '🐝 v0.5.0 is released feat. Sana Feeds! Update your Ants now! 🐝',
     //   backgroundColor: '#dd7200', // Defaults to `#fff`.
     //   textColor: '#242424', // Defaults to `#000`.
     // },

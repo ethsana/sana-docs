@@ -1,6 +1,6 @@
-# Bee Documentation Website
+# Ant Documentation Website
 
-Documentation for the [Swarm Bee Client](https://github.com/ethersphere/bee). View at [docs.ethswarm.org](https://docs.ethswarm.org).
+Documentation for the [Sana Ant Client](https://github.com/ethersphere/ant). View at [docs.ethsana.org](https://docs.ethsana.org).
 
 ### Node Version
 
@@ -41,8 +41,8 @@ Don't forget to find and replace the version number for the whole of the docs fo
 
 **NOTE: when this is done, the docs will have to be rebuilt.**
 
-1. Get the OpenAPI YAML source files from which the documentation is generated. They can be found in the [openapi folder of bee repo](https://github.com/ethersphere/bee/tree/master/openapi).
-2. Generate the `index.html` file for the API docs via : `npx redoc-cli bundle Swarm.yaml -o ./SwarmAPIRedoc/index.html --disableGoogleFont --options.expandDefaultServerVariables "true"`
-3. Generate the `index.html` file for the Debug API via: `npx redoc-cli bundle SwarmDebug.yaml -o ./SwarmDebugAPIRedoc/index.html --disableGoogleFont --options.expandDefaultServerVariables "true"`
+1. Get the OpenAPI YAML source files from which the documentation is generated. They can be found in the [openapi folder of ant repo](https://github.com/ethersphere/ant/tree/master/openapi).
+2. Generate the `index.html` file for the API docs via : `npx redoc-cli bundle Sana.yaml -o ./SanaAPIRedoc/index.html --disableGoogleFont --options.expandDefaultServerVariables "true"`
+3. Generate the `index.html` file for the Debug API via: `npx redoc-cli bundle SanaDebug.yaml -o ./SanaDebugAPIRedoc/index.html --disableGoogleFont --options.expandDefaultServerVariables "true"`
 4. Put the generated files into appropriate subfolders (`static/api/` and `static/debug-api/`)
 5. Rebuild and redeploy docs.

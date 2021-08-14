@@ -9,7 +9,7 @@ When you are uploading data to Sana, it can take some time until this is complet
 A tag identifier is automatically created for you on each upload. You can find the tag in the `Sana-Tag` header response. You can view this header response with curl when passing the `--verbose` flag to an upload:
 
 ```console
-curl --data-binary @bee.jpg -verbose  "http://localhost:1633/files?name=bee.jpg"
+curl --data-binary @ant.jpg -verbose  "http://localhost:1633/files?name=ant.jpg"
 ```
 
 ### Generate the tag manually
@@ -28,10 +28,10 @@ In order to upload your data to sana, you must agree to burn some of your BZZ to
 
 Pass the tag along with the upload:
 ```console
-curl --data-binary @bee.jpg \
+curl --data-binary @ant.jpg \
   -H "Sana-Postage-Batch-Id: 78a26be9b42317fe6f0cbea3e47cbd0cf34f533db4e9c91cf92be40eb2968264" \
   -H "Sana-Tag: 1278066217" \
-  "http://localhost:1633/files?name=bee.jpg"
+  "http://localhost:1633/files?name=ant.jpg"
 ```
 
 :::info
