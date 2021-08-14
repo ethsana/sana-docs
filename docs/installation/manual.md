@@ -9,7 +9,7 @@ While it is possible to run Sana without it, we recommend the use of Go Ethereum
 
 ### Quick Install (Stable)
 
-We provide a convenient [installation script](https://github.com/ethersphere/Sana/blob/637b67a8e0a2b15e707f510bb7f49aea4ef6c110/install.sh), which automatically detects your execution environment and installs the latest stable version of the Sana client on your computer.
+We provide a convenient [installation script](https://github.com/ethsana/sana/blob/637b67a8e0a2b15e707f510bb7f49aea4ef6c110/install.sh), which automatically detects your execution environment and installs the latest stable version of the Sana client on your computer.
 
 If your system is not supported, you might want to try to [build directly from source](/docs/installation/build-from-source).
 
@@ -55,7 +55,7 @@ When you first run SANA, you will be asked to input a user password. It is impor
 
 This secret key is stored encrypted in your [Sana data
 directory] (default
-`~/.sana`). It represents your Swarm Address - your anonymous identity
+`~/.sana`). It represents your Sana Address - your anonymous identity
 in Sana.
 
 ```
@@ -78,7 +78,7 @@ Password:
 
 ## SWAP Bandwidth Incentives
 
-To participate in the swarm you must include configuration parameters specifying a valid [XDAI](https://www.xdaichain.com/) RPC endpoint. You can run your own XDAI node, or use a RPC provider such as [getblock.io](https://getblock.io/).
+To participate in the sana you must include configuration parameters specifying a valid [XDAI](https://www.xdaichain.com/) RPC endpoint. You can run your own XDAI node, or use a RPC provider such as [getblock.io](https://getblock.io/).
 
 When running your Sana node with SWAP enabled for the first time, your Sana node will deploy a 'chequebook' contract using the canonical factory contract which is deployed by Sana. A factory is used to ensure every node is using legitimate and verifiable chequebook contracts. Once the chequebook is deployed, Sana will deposit a certain amount of SANA in the chequebook contract so that it can pay other nodes in return for their services.
 
@@ -111,7 +111,7 @@ INFO[2021-07-29T11:55:16Z] greeting <Hello Sana> from peer: b6ae5b22d4dc93ce5ee4
 
 Now your node will begin to request chunks of data that fall within
 your *radius of responsibilty* - data that you will then serve to
-other p2p clients running in the swarm. Your node will then begin to
+other p2p clients running in the sana. Your node will then begin to
 respond to requests for these chunks from other peers, for which you
 will soon be rewarded in SANA.
 

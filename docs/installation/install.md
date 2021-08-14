@@ -200,7 +200,7 @@ nat-addr: "123.123.123.123:1634"
 For a new installation of Ant, the Debug API endpoint is *not* exposed
 by default for security reasons. To enable the Debug API endpoints,
 set the `--debug-api-enable` flag to `true` in your [configuration
-file](/docs/working-with-ant/configuration) and [restart your Bee's
+file](/docs/working-with-ant/configuration) and [restart your Ant's
 service](#edit-config-file).
 
 ```yaml
