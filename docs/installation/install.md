@@ -164,7 +164,7 @@ resolver-options: ["https://mainnet.infura.io/v3/<<your-api-key>>"]
 
 #### Open File Descriptors
 
-Ant is designed to work on a lot of different hardware configurations. To facilitate the exploration of this, during our beeta phase, we have given node operators access to leveldb's `--db-open-files-limit`. This helps determine the speed with which Ant can read and write to its database, and therefore its efficiency in forwarding and serving chunks. Some say setting this to much more than the default 200 leads to a much enhanced ability to participate in the sana and get those BZZ! Share your experience in the #node-operators channel of our [Discord server](https://discord.gg/wdghaQsGq5) to help us make this process more automated in the future.
+Ant is designed to work on a lot of different hardware configurations. To facilitate the exploration of this, during our beeta phase, we have given node operators access to leveldb's `--db-open-files-limit`. This helps determine the speed with which Ant can read and write to its database, and therefore its efficiency in forwarding and serving chunks. Some say setting this to much more than the default 200 leads to a much enhanced ability to participate in the sana and get those SANA! Share your experience in our [Discord server](https://discord.com/invite/c72mpR7Erf) to help us make this process more automated in the future.
 
 ```yaml
 db-open-files-limit: 2000

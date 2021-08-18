@@ -141,7 +141,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/ethsana/sana-docs/blob/master/sidebars.js",
+            "https://github.com/ethsana/sana-docs/blob/master",
         },
         // blog: {
         //   showReadingTime: false,

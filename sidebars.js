@@ -17,6 +17,14 @@ module.exports = {
       ],
       collapsed: true,
     },
+    {
+      type: "category",
+      label: "Miner tutorial",
+      items: [
+        "miner-tutorial/deploy-sana-node",
+      ],
+      collapsed: true,
+    },
     // {
     //   type: "category",
     //   label: "Working With Ant",
