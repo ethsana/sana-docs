@@ -22,7 +22,7 @@ cat /etc/modprobe.d/sev.conf
 options kvm_amd sev=1
 ```
 通过```cat /sys/module/kvm_amd/parameters/sev```查看值为1表示SEV特性开启
-    
+
 ### Inter
 查看自己的芯片型号
 
@@ -71,13 +71,15 @@ ant-linux-amd64 tee 查看TEE支持情况
 sudo apt-get update
 sudo apt-get install wget
 ```
-![image](./assets/5.png)  
-安装过程中询问是否安装，输入```y```回车即可，耐心等待，依次执行。  
+<!-- ![image](./assets/5.png)   -->
+安装过程中询问是否安装，输入```y```回车即可。
+
 2. 创建sana工作文件夹
 ```bash
 mkdir sana
 cd ./sana
 ```
+
 3. 下载ant-linux-amd64包，设置包的执行权限
 ```bash
 wget https://github.com//ethsana/sana/releases/download/v0.1.1/ant-linux-amd64
@@ -90,7 +92,22 @@ chmod +x ./ant-linux-amd64
 ```bash
 ./ant-linux-amd64 start --verbosity 5 --full-node --swap-endpoint <上一步注册的xDai RPC地址> --debug-api-enable --cors-allowed-origins "*"
 ```
+
+:::info
+启动参数也可以写在配置文件中
+```bash
+sudo vi ~/.sana.yaml
+```
+配置参数请参阅文档: [configuration](/docs/working-with-ant/configuration)
+:::  
+
 3. 启动成功后设置密码  
-![image](./assets/6.png)   
-4. 第二次确认密码，获取钱包地址  
+![image](./assets/6.png)  
+
+4. 第二次确认密码，获取ethereum address  
 ![image](./assets/7.png)
+
+## 第四步 质押币
+1. 给在第三步获取的ethereum address转入50001 SANA作为质押币。
+2. 给在第三步获取的ethereum address转入足够的xDai用作交易手续费（建议1 xDai）。
+3. 重启节点，开始挖矿。

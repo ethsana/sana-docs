@@ -22,6 +22,7 @@ module.exports = {
       label: "Miner tutorial",
       items: [
         "miner-tutorial/deploy-sana-node",
+        "miner-tutorial/dashboard",
       ],
       collapsed: true,
     },

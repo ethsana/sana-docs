@@ -99,7 +99,7 @@ running in the background as a service on your computer.
 #### AMD64
 
 ```bash
-wget https://github.com/ethsana/sana/releases/download/v0.0.3/ant-linux-amd64
+wget https://github.com/ethsana/sana/releases/download/v0.1.1/ant-linux-amd64
 sudo cp ant-linux-amd64 /usr/sbin/ant
 ```
 
