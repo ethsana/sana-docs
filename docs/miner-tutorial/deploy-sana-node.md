@@ -109,5 +109,4 @@ sudo vi ~/.sana.yaml
 
 ## 第四步 质押币
 1. 给在第三步获取的ethereum address转入50001 SANA作为质押币。
-2. 给在第三步获取的ethereum address转入足够的xDai用作交易手续费（建议1 xDai）。
-3. 重启节点，开始挖矿。
+2. 确保ethereum address里有足够的xdai用于支付gas费用，建议最低1 xDai。
